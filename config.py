@@ -1,20 +1,6 @@
 import os
 from datetime import datetime
 
-# MongoDB Configuration
-MONGO_URL = "mongodb+srv://rcdbuser:Sd3b8WfFzSs94lHa@cluster0.sjf0s.mongodb.net/"
-DB_NAME = "rapid-claims-9ead3739-1f5a-439a-913d-1035e71d0679"
-COLLECTION_NAME = "charts"
-
-# Date Range Configuration
-START_DATE = datetime(2025, 2, 10)   # February 10th, 2025
-END_DATE = datetime(2025, 7, 10, 23, 59, 59)  # July 10th, 2025 end of day
-
-# Duke Organization ID (you may need to adjust this based on your data structure)
-DUKE_ORG_ID = "Duke"  # This might need to be updated based on actual data
-
-# Claim Status Configuration
-TARGET_CLAIM_STATUSES = [4, 12]  # 4 = hold, 12 = EHR declined
 
 # OpenAI Deployment Configurations
 OPENAI_DEPLOYMENTS = [
@@ -66,5 +52,3 @@ OPENAI_DEPLOYMENTS = [
 BATCH_SIZE = 10  # Smaller batch size to prevent timeouts
 MAX_WORKERS = 10  # Reduce workers to prevent overwhelming the API
 
-# Output Configuration
-OUTPUT_FILE = "duke_hold_analysis_results.csv" 
