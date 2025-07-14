@@ -73,3 +73,5 @@ logs/
 # Cache
 .cache/
 *.cache 
+
+config.py
