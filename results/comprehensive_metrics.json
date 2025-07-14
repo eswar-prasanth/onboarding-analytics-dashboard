@@ -1,0 +1,2053 @@
+{
+  "original_accuracy": {
+    "chart_level": {
+      "complete_match_rate": 0.48484848484848486,
+      "partial_match_rate": 0.42424242424242425,
+      "no_match_rate": 0.09090909090909091,
+      "complete_matches": 48,
+      "partial_matches": 42,
+      "no_matches": 9,
+      "total_patients": 99
+    },
+    "code_level": {
+      "overall_accuracy": 0.6913265306122449,
+      "total_sutherland_codes": 313,
+      "total_missed_codes": 121,
+      "total_extra_codes": 200,
+      "miss_rate": 0.3865814696485623
+    }
+  },
+  "code_importance_analysis": {
+    "important_codes": {
+      "total_important_codes": 22,
+      "missed_important_codes": 22,
+      "important_code_accuracy": 0.0,
+      "important_miss_rate": 1.0
+    },
+    "unimportant_codes": {
+      "total_unimportant_codes": 291,
+      "missed_unimportant_codes": 71,
+      "unimportant_code_accuracy": 0.7560137457044673,
+      "unimportant_miss_rate": 0.24398625429553264
+    }
+  },
+  "post_ai_review": {
+    "complete_matches": 79,
+    "partial_matches": 11,
+    "no_matches": 9,
+    "complete_match_rate": 0.797979797979798,
+    "partial_match_rate": 0.1111111111111111,
+    "no_match_rate": 0.09090909090909091
+  },
+  "improvements": {
+    "partial_to_complete_conversions": 31,
+    "accuracy_improvement": 0.31313131313131315
+  },
+  "manual_coding_analysis": {
+    "total_reviewed_codes": 179,
+    "sutherland_errors": 28,
+    "manual_coding_accuracy": 0.8435754189944135,
+    "ai_corrections": 13,
+    "extra_codes_by_ai": 69,
+    "corrected_codes": {
+      "R930": "should_not_code",
+      "I6389": "I63512",
+      "I517": "should_not_code",
+      "R931": "should_not_code",
+      "N3289": "should_not_code",
+      "K6389": "should_not_code",
+      "N838": "N83202",
+      "R7989": "should_not_code",
+      "M47819": "should_not_code",
+      "C7951": "should_code",
+      "Z98890": "should_not_code",
+      "R79.1 (Elevated D-Dimer) and R50.9 (Fever, unspecified)": "N10 (Acute pyelonephritis) and N12 (Pyelitis)",
+      "N2889": "Q625",
+      "R162": "R160 and R161",
+      "C089": "Z8522",
+      "E049": "E042",
+      "\u2014 (no cervical degenerative change codes)": "M47812 and M5030",
+      "E278": "should_not_code",
+      "R932": "K5900",
+      "N8189": "should_not_code",
+      "Z780": "should_not_code",
+      "R9389": "should_not_code",
+      "M2578": "should_not_code",
+      "M9981": "should_not_code",
+      "G936": "should_not_code",
+      "S062X0A": "S06360A",
+      "None (code not provided)": "I517",
+      "N281": "should_code"
+    }
+  },
+  "corrected_code_accuracy": {
+    "total_codes_reviewed": 179,
+    "ai_correct_codes": 34,
+    "sutherland_correct_codes": 145,
+    "corrected_accuracy": 1.0,
+    "improvement_over_original": 0.0
+  },
+  "detailed_changes": [
+    {
+      "patient_id": "2668260",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "AI coding more accurate (AI: 1.00, Sutherland: 0.50)",
+      "sutherland_errors": 2,
+      "ai_corrections": 1,
+      "extra_codes": 0,
+      "sutherland_score": 0.5,
+      "ai_score": 1.0
+    },
+    {
+      "patient_id": "2552692",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/3",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 2,
+      "sutherland_score": 1.0,
+      "ai_score": 0.0
+    },
+    {
+      "patient_id": "2667334",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/1",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 0,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2674844",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/5",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 3,
+      "sutherland_score": 1.0,
+      "ai_score": 0.4
+    },
+    {
+      "patient_id": "2667738",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/9",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 6,
+      "sutherland_score": 0.9,
+      "ai_score": 0.3
+    },
+    {
+      "patient_id": "2657619",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 1/6",
+      "sutherland_errors": 1,
+      "ai_corrections": 0,
+      "extra_codes": 3,
+      "sutherland_score": 0.75,
+      "ai_score": 0.3
+    },
+    {
+      "patient_id": "2668256",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/9",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 4,
+      "sutherland_score": 1.0,
+      "ai_score": 0.3
+    },
+    {
+      "patient_id": "2671724",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/2",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2579273",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "AI coding more accurate (AI: 1.00, Sutherland: 0.50)",
+      "sutherland_errors": 1,
+      "ai_corrections": 1,
+      "extra_codes": 1,
+      "sutherland_score": 0.5,
+      "ai_score": 1.0
+    },
+    {
+      "patient_id": "2671705",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/2",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2623336",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/2",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2626588",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/4",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.0
+    },
+    {
+      "patient_id": "2598282",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/3",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 2,
+      "sutherland_score": 1.0,
+      "ai_score": 0.33
+    },
+    {
+      "patient_id": "2579160",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "AI coding more accurate (AI: 1.00, Sutherland: 0.50)",
+      "sutherland_errors": 1,
+      "ai_corrections": 0,
+      "extra_codes": 0,
+      "sutherland_score": 0.5,
+      "ai_score": 1.0
+    },
+    {
+      "patient_id": "2527636",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/1",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 0,
+      "sutherland_score": 1.0,
+      "ai_score": 0.8
+    },
+    {
+      "patient_id": "2666625",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "AI coding more accurate (AI: 1.00, Sutherland: 0.50)",
+      "sutherland_errors": 1,
+      "ai_corrections": 1,
+      "extra_codes": 0,
+      "sutherland_score": 0.5,
+      "ai_score": 1.0
+    },
+    {
+      "patient_id": "2623358",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/2",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2663910",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/5",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.33
+    },
+    {
+      "patient_id": "2666006",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 1/7",
+      "sutherland_errors": 1,
+      "ai_corrections": 0,
+      "extra_codes": 4,
+      "sutherland_score": 0.9,
+      "ai_score": 0.3
+    },
+    {
+      "patient_id": "2584170",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/2",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2667407",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/5",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.3
+    },
+    {
+      "patient_id": "2598475",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/2",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2663810",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/6",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 4,
+      "sutherland_score": 1.0,
+      "ai_score": 0.4
+    },
+    {
+      "patient_id": "2593095",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/3",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 0,
+      "sutherland_score": 1.0,
+      "ai_score": 0.0
+    },
+    {
+      "patient_id": "2665472",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/7",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 0.9,
+      "ai_score": 0.4
+    },
+    {
+      "patient_id": "2604872",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/2",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 1,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2665745",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/1",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 0,
+      "sutherland_score": 1.0,
+      "ai_score": 0.75
+    },
+    {
+      "patient_id": "2675019",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/3",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 0,
+      "sutherland_score": 1.0,
+      "ai_score": 0.0
+    },
+    {
+      "patient_id": "2671817",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/3",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 2,
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    {
+      "patient_id": "2526276",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "Low Sutherland error rate: 0/7",
+      "sutherland_errors": 0,
+      "ai_corrections": 0,
+      "extra_codes": 0,
+      "sutherland_score": 1.0,
+      "ai_score": 0.2
+    },
+    {
+      "patient_id": "2665929",
+      "original_match": "Partial Match",
+      "new_match": "Complete Match (Post-Review)",
+      "reason": "AI corrections (1) > Sutherland errors (0)",
+      "sutherland_errors": 0,
+      "ai_corrections": 1,
+      "extra_codes": 11,
+      "sutherland_score": 0.8,
+      "ai_score": 0.5
+    }
+  ],
+  "pre_review_code_accuracy": {
+    "pre_review_metrics": {
+      "total_sutherland_codes": 313,
+      "total_ai_codes": 392,
+      "correctly_coded_by_ai": 192,
+      "missed_by_ai": 121,
+      "extra_by_ai": 200,
+      "overall_accuracy": 0.6134185303514377,
+      "miss_rate": 0.3865814696485623,
+      "extra_rate": 0.5102040816326531,
+      "precision": 0.4897959183673469,
+      "recall": 0.6134185303514377
+    },
+    "patient_level_data": [
+      {
+        "patient_id": "2673963",
+        "sutherland_codes": 4,
+        "ai_codes": 4,
+        "correct_codes": 4,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2668260",
+        "sutherland_codes": 6,
+        "ai_codes": 5,
+        "correct_codes": 4,
+        "missed_codes": 2,
+        "extra_codes": 1,
+        "accuracy_rate": 0.6666666666666666
+      },
+      {
+        "patient_id": "2552046",
+        "sutherland_codes": 1,
+        "ai_codes": 3,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 2,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2667736",
+        "sutherland_codes": 3,
+        "ai_codes": 4,
+        "correct_codes": 3,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2650180",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2650179",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2533424",
+        "sutherland_codes": 1,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2665305",
+        "sutherland_codes": 6,
+        "ai_codes": 12,
+        "correct_codes": 5,
+        "missed_codes": 1,
+        "extra_codes": 7,
+        "accuracy_rate": 0.8333333333333334
+      },
+      {
+        "patient_id": "2552692",
+        "sutherland_codes": 2,
+        "ai_codes": 3,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 2,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2664438",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 0,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2667334",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2665926",
+        "sutherland_codes": 9,
+        "ai_codes": 15,
+        "correct_codes": 6,
+        "missed_codes": 3,
+        "extra_codes": 9,
+        "accuracy_rate": 0.6666666666666666
+      },
+      {
+        "patient_id": "2564110",
+        "sutherland_codes": 2,
+        "ai_codes": 3,
+        "correct_codes": 0,
+        "missed_codes": 2,
+        "extra_codes": 3,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2564296",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2527641",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2674844",
+        "sutherland_codes": 6,
+        "ai_codes": 7,
+        "correct_codes": 3,
+        "missed_codes": 3,
+        "extra_codes": 4,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2657612",
+        "sutherland_codes": 5,
+        "ai_codes": 4,
+        "correct_codes": 2,
+        "missed_codes": 3,
+        "extra_codes": 2,
+        "accuracy_rate": 0.4
+      },
+      {
+        "patient_id": "2552768",
+        "sutherland_codes": 1,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2667738",
+        "sutherland_codes": 5,
+        "ai_codes": 8,
+        "correct_codes": 2,
+        "missed_codes": 3,
+        "extra_codes": 6,
+        "accuracy_rate": 0.4
+      },
+      {
+        "patient_id": "2651605",
+        "sutherland_codes": 8,
+        "ai_codes": 8,
+        "correct_codes": 6,
+        "missed_codes": 2,
+        "extra_codes": 2,
+        "accuracy_rate": 0.75
+      },
+      {
+        "patient_id": "2657619",
+        "sutherland_codes": 8,
+        "ai_codes": 9,
+        "correct_codes": 5,
+        "missed_codes": 3,
+        "extra_codes": 4,
+        "accuracy_rate": 0.625
+      },
+      {
+        "patient_id": "2668256",
+        "sutherland_codes": 5,
+        "ai_codes": 5,
+        "correct_codes": 1,
+        "missed_codes": 4,
+        "extra_codes": 4,
+        "accuracy_rate": 0.2
+      },
+      {
+        "patient_id": "2649724",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2661393",
+        "sutherland_codes": 1,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2589956",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 0,
+        "missed_codes": 2,
+        "extra_codes": 2,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2598392",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2671724",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2533406",
+        "sutherland_codes": 1,
+        "ai_codes": 3,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 2,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2579273",
+        "sutherland_codes": 3,
+        "ai_codes": 3,
+        "correct_codes": 2,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.6666666666666666
+      },
+      {
+        "patient_id": "2594541",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2671705",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2579160",
+        "sutherland_codes": 2,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 0,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2667393",
+        "sutherland_codes": 3,
+        "ai_codes": 3,
+        "correct_codes": 3,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2626588",
+        "sutherland_codes": 4,
+        "ai_codes": 4,
+        "correct_codes": 1,
+        "missed_codes": 3,
+        "extra_codes": 3,
+        "accuracy_rate": 0.25
+      },
+      {
+        "patient_id": "2623336",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2598282",
+        "sutherland_codes": 2,
+        "ai_codes": 3,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 2,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2572456",
+        "sutherland_codes": 3,
+        "ai_codes": 3,
+        "correct_codes": 3,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2665925",
+        "sutherland_codes": 5,
+        "ai_codes": 14,
+        "correct_codes": 5,
+        "missed_codes": 0,
+        "extra_codes": 9,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2604861",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 2,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2666625",
+        "sutherland_codes": 3,
+        "ai_codes": 4,
+        "correct_codes": 1,
+        "missed_codes": 2,
+        "extra_codes": 3,
+        "accuracy_rate": 0.3333333333333333
+      },
+      {
+        "patient_id": "2527636",
+        "sutherland_codes": 5,
+        "ai_codes": 5,
+        "correct_codes": 4,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.8
+      },
+      {
+        "patient_id": "2674760",
+        "sutherland_codes": 11,
+        "ai_codes": 13,
+        "correct_codes": 8,
+        "missed_codes": 3,
+        "extra_codes": 5,
+        "accuracy_rate": 0.7272727272727273
+      },
+      {
+        "patient_id": "2666006",
+        "sutherland_codes": 4,
+        "ai_codes": 7,
+        "correct_codes": 1,
+        "missed_codes": 3,
+        "extra_codes": 6,
+        "accuracy_rate": 0.25
+      },
+      {
+        "patient_id": "2623358",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2663910",
+        "sutherland_codes": 6,
+        "ai_codes": 3,
+        "correct_codes": 2,
+        "missed_codes": 4,
+        "extra_codes": 1,
+        "accuracy_rate": 0.3333333333333333
+      },
+      {
+        "patient_id": "2664161",
+        "sutherland_codes": 7,
+        "ai_codes": 7,
+        "correct_codes": 2,
+        "missed_codes": 5,
+        "extra_codes": 5,
+        "accuracy_rate": 0.2857142857142857
+      },
+      {
+        "patient_id": "2603717",
+        "sutherland_codes": 1,
+        "ai_codes": 3,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 2,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2598475",
+        "sutherland_codes": 1,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2633654",
+        "sutherland_codes": 2,
+        "ai_codes": 3,
+        "correct_codes": 2,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2584170",
+        "sutherland_codes": 3,
+        "ai_codes": 3,
+        "correct_codes": 2,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.6666666666666666
+      },
+      {
+        "patient_id": "2674870",
+        "sutherland_codes": 4,
+        "ai_codes": 9,
+        "correct_codes": 4,
+        "missed_codes": 0,
+        "extra_codes": 5,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2667407",
+        "sutherland_codes": 8,
+        "ai_codes": 6,
+        "correct_codes": 4,
+        "missed_codes": 4,
+        "extra_codes": 2,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2578401",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 0,
+        "missed_codes": 2,
+        "extra_codes": 2,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2593095",
+        "sutherland_codes": 4,
+        "ai_codes": 4,
+        "correct_codes": 1,
+        "missed_codes": 3,
+        "extra_codes": 3,
+        "accuracy_rate": 0.25
+      },
+      {
+        "patient_id": "2610736",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2663912",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2651616",
+        "sutherland_codes": 3,
+        "ai_codes": 10,
+        "correct_codes": 3,
+        "missed_codes": 0,
+        "extra_codes": 7,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2671686",
+        "sutherland_codes": 1,
+        "ai_codes": 4,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 3,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2671730",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 0,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2649683",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2665974",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 0,
+        "missed_codes": 2,
+        "extra_codes": 2,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2674857",
+        "sutherland_codes": 3,
+        "ai_codes": 5,
+        "correct_codes": 3,
+        "missed_codes": 0,
+        "extra_codes": 2,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2674750",
+        "sutherland_codes": 10,
+        "ai_codes": 11,
+        "correct_codes": 5,
+        "missed_codes": 5,
+        "extra_codes": 6,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2675473",
+        "sutherland_codes": 3,
+        "ai_codes": 3,
+        "correct_codes": 3,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2663810",
+        "sutherland_codes": 3,
+        "ai_codes": 5,
+        "correct_codes": 1,
+        "missed_codes": 2,
+        "extra_codes": 4,
+        "accuracy_rate": 0.3333333333333333
+      },
+      {
+        "patient_id": "2555143",
+        "sutherland_codes": 3,
+        "ai_codes": 3,
+        "correct_codes": 3,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2649739",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2650608",
+        "sutherland_codes": 3,
+        "ai_codes": 4,
+        "correct_codes": 3,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2610884",
+        "sutherland_codes": 1,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2664083",
+        "sutherland_codes": 2,
+        "ai_codes": 4,
+        "correct_codes": 2,
+        "missed_codes": 0,
+        "extra_codes": 2,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2675007",
+        "sutherland_codes": 3,
+        "ai_codes": 6,
+        "correct_codes": 2,
+        "missed_codes": 1,
+        "extra_codes": 4,
+        "accuracy_rate": 0.6666666666666666
+      },
+      {
+        "patient_id": "2665472",
+        "sutherland_codes": 6,
+        "ai_codes": 5,
+        "correct_codes": 1,
+        "missed_codes": 5,
+        "extra_codes": 4,
+        "accuracy_rate": 0.16666666666666666
+      },
+      {
+        "patient_id": "2604645",
+        "sutherland_codes": 2,
+        "ai_codes": 3,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 2,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2667355",
+        "sutherland_codes": 9,
+        "ai_codes": 6,
+        "correct_codes": 5,
+        "missed_codes": 4,
+        "extra_codes": 1,
+        "accuracy_rate": 0.5555555555555556
+      },
+      {
+        "patient_id": "2675480",
+        "sutherland_codes": 4,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 3,
+        "extra_codes": 1,
+        "accuracy_rate": 0.25
+      },
+      {
+        "patient_id": "2629177",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 0,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2629105",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2629078",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2665929",
+        "sutherland_codes": 10,
+        "ai_codes": 18,
+        "correct_codes": 7,
+        "missed_codes": 3,
+        "extra_codes": 11,
+        "accuracy_rate": 0.7
+      },
+      {
+        "patient_id": "2594544",
+        "sutherland_codes": 2,
+        "ai_codes": 1,
+        "correct_codes": 0,
+        "missed_codes": 2,
+        "extra_codes": 1,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2675011",
+        "sutherland_codes": 3,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 2,
+        "extra_codes": 0,
+        "accuracy_rate": 0.3333333333333333
+      },
+      {
+        "patient_id": "2650637",
+        "sutherland_codes": 8,
+        "ai_codes": 10,
+        "correct_codes": 8,
+        "missed_codes": 0,
+        "extra_codes": 2,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2604872",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2629079",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2675019",
+        "sutherland_codes": 4,
+        "ai_codes": 6,
+        "correct_codes": 1,
+        "missed_codes": 3,
+        "extra_codes": 5,
+        "accuracy_rate": 0.25
+      },
+      {
+        "patient_id": "2574499",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2665745",
+        "sutherland_codes": 4,
+        "ai_codes": 3,
+        "correct_codes": 3,
+        "missed_codes": 1,
+        "extra_codes": 0,
+        "accuracy_rate": 0.75
+      },
+      {
+        "patient_id": "2667404",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 0,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2573389",
+        "sutherland_codes": 1,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2665712",
+        "sutherland_codes": 6,
+        "ai_codes": 5,
+        "correct_codes": 2,
+        "missed_codes": 4,
+        "extra_codes": 3,
+        "accuracy_rate": 0.3333333333333333
+      },
+      {
+        "patient_id": "2675017",
+        "sutherland_codes": 5,
+        "ai_codes": 11,
+        "correct_codes": 3,
+        "missed_codes": 2,
+        "extra_codes": 8,
+        "accuracy_rate": 0.6
+      },
+      {
+        "patient_id": "2671817",
+        "sutherland_codes": 6,
+        "ai_codes": 7,
+        "correct_codes": 5,
+        "missed_codes": 1,
+        "extra_codes": 2,
+        "accuracy_rate": 0.8333333333333334
+      },
+      {
+        "patient_id": "2555307",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 1,
+        "extra_codes": 1,
+        "accuracy_rate": 0.5
+      },
+      {
+        "patient_id": "2573092",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2594615",
+        "sutherland_codes": 2,
+        "ai_codes": 4,
+        "correct_codes": 0,
+        "missed_codes": 2,
+        "extra_codes": 4,
+        "accuracy_rate": 0.0
+      },
+      {
+        "patient_id": "2526276",
+        "sutherland_codes": 5,
+        "ai_codes": 5,
+        "correct_codes": 1,
+        "missed_codes": 4,
+        "extra_codes": 4,
+        "accuracy_rate": 0.2
+      },
+      {
+        "patient_id": "2555308",
+        "sutherland_codes": 1,
+        "ai_codes": 1,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2673964",
+        "sutherland_codes": 1,
+        "ai_codes": 2,
+        "correct_codes": 1,
+        "missed_codes": 0,
+        "extra_codes": 1,
+        "accuracy_rate": 1.0
+      },
+      {
+        "patient_id": "2570329",
+        "sutherland_codes": 2,
+        "ai_codes": 2,
+        "correct_codes": 2,
+        "missed_codes": 0,
+        "extra_codes": 0,
+        "accuracy_rate": 1.0
+      }
+    ]
+  },
+  "post_review_code_accuracy": {
+    "post_review_metrics": {
+      "codes_reviewed_by_ai": 179,
+      "ai_correct_decisions": 34,
+      "sutherland_errors_found": 30,
+      "ai_corrections_accepted": 30,
+      "corrected_accuracy": 1.0,
+      "improvement_in_accuracy": 0.09584664536741214,
+      "error_reduction_rate": 0.16759776536312848,
+      "ai_decision_accuracy": 0.18994413407821228
+    },
+    "comparison_metrics": {
+      "original_accuracy": 0.6134185303514377,
+      "post_review_accuracy": 0.7092651757188498,
+      "net_improvement": 0.09584664536741214,
+      "relative_improvement": 0.15625
+    },
+    "patient_corrections": [
+      {
+        "patient_id": "2668260",
+        "codes_reviewed": 2,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 1.0
+      },
+      {
+        "patient_id": "2552692",
+        "codes_reviewed": 3,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2667334",
+        "codes_reviewed": 1,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2674844",
+        "codes_reviewed": 5,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2657612",
+        "codes_reviewed": 5,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 0.4
+      },
+      {
+        "patient_id": "2667738",
+        "codes_reviewed": 9,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2665926",
+        "codes_reviewed": 4,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 0.5
+      },
+      {
+        "patient_id": "2651605",
+        "codes_reviewed": 2,
+        "ai_correct": 1,
+        "sutherland_errors": 1,
+        "improvement_rate": 0.5
+      },
+      {
+        "patient_id": "2657619",
+        "codes_reviewed": 6,
+        "ai_correct": 1,
+        "sutherland_errors": 1,
+        "improvement_rate": 0.16666666666666666
+      },
+      {
+        "patient_id": "2668256",
+        "codes_reviewed": 9,
+        "ai_correct": 1,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.1111111111111111
+      },
+      {
+        "patient_id": "2671724",
+        "codes_reviewed": 2,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2579273",
+        "codes_reviewed": 2,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 1.0
+      },
+      {
+        "patient_id": "2671705",
+        "codes_reviewed": 2,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2623336",
+        "codes_reviewed": 2,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2626588",
+        "codes_reviewed": 4,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2598282",
+        "codes_reviewed": 3,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2579160",
+        "codes_reviewed": 1,
+        "ai_correct": 1,
+        "sutherland_errors": 1,
+        "improvement_rate": 1.0
+      },
+      {
+        "patient_id": "2527636",
+        "codes_reviewed": 1,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2666625",
+        "codes_reviewed": 2,
+        "ai_correct": 2,
+        "sutherland_errors": 1,
+        "improvement_rate": 1.0
+      },
+      {
+        "patient_id": "2623358",
+        "codes_reviewed": 2,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2663910",
+        "codes_reviewed": 5,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2666006",
+        "codes_reviewed": 7,
+        "ai_correct": 1,
+        "sutherland_errors": 1,
+        "improvement_rate": 0.14285714285714285
+      },
+      {
+        "patient_id": "2674760",
+        "codes_reviewed": 5,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 0.4
+      },
+      {
+        "patient_id": "2584170",
+        "codes_reviewed": 2,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2667407",
+        "codes_reviewed": 5,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2598475",
+        "codes_reviewed": 2,
+        "ai_correct": 1,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.5
+      },
+      {
+        "patient_id": "2664161",
+        "codes_reviewed": 8,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 0.25
+      },
+      {
+        "patient_id": "2663810",
+        "codes_reviewed": 6,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2593095",
+        "codes_reviewed": 3,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2665472",
+        "codes_reviewed": 7,
+        "ai_correct": 1,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.14285714285714285
+      },
+      {
+        "patient_id": "2675007",
+        "codes_reviewed": 4,
+        "ai_correct": 1,
+        "sutherland_errors": 1,
+        "improvement_rate": 0.25
+      },
+      {
+        "patient_id": "2674750",
+        "codes_reviewed": 10,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 0.2
+      },
+      {
+        "patient_id": "2675480",
+        "codes_reviewed": 4,
+        "ai_correct": 3,
+        "sutherland_errors": 3,
+        "improvement_rate": 0.75
+      },
+      {
+        "patient_id": "2667355",
+        "codes_reviewed": 5,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 0.4
+      },
+      {
+        "patient_id": "2604872",
+        "codes_reviewed": 2,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2665745",
+        "codes_reviewed": 1,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2665712",
+        "codes_reviewed": 5,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 0.4
+      },
+      {
+        "patient_id": "2675017",
+        "codes_reviewed": 4,
+        "ai_correct": 2,
+        "sutherland_errors": 2,
+        "improvement_rate": 0.5
+      },
+      {
+        "patient_id": "2675019",
+        "codes_reviewed": 3,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2671817",
+        "codes_reviewed": 3,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2526276",
+        "codes_reviewed": 7,
+        "ai_correct": 0,
+        "sutherland_errors": 0,
+        "improvement_rate": 0.0
+      },
+      {
+        "patient_id": "2665929",
+        "codes_reviewed": 14,
+        "ai_correct": 1,
+        "sutherland_errors": 1,
+        "improvement_rate": 0.07142857142857142
+      }
+    ],
+    "baseline_metrics": {
+      "total_sutherland_codes": 313,
+      "total_ai_codes": 392,
+      "correctly_coded_by_ai": 192,
+      "missed_by_ai": 121,
+      "extra_by_ai": 200,
+      "overall_accuracy": 0.6134185303514377,
+      "miss_rate": 0.3865814696485623,
+      "extra_rate": 0.5102040816326531,
+      "precision": 0.4897959183673469,
+      "recall": 0.6134185303514377
+    }
+  },
+  "unified_post_review_accuracy": {
+    "original_accuracy": {
+      "complete_match_rate": 0.48484848484848486,
+      "partial_match_rate": 0.42424242424242425,
+      "no_match_rate": 0.09090909090909091,
+      "code_level_accuracy": 0.6134185303514377
+    },
+    "unified_post_review_accuracy": {
+      "complete_match_rate": 0.48484848484848486,
+      "partial_match_rate": 0.5151515151515151,
+      "no_match_rate": 0.0,
+      "code_level_accuracy": 0.7092651757188498
+    },
+    "total_improvements": {
+      "chart_level_improvement": 0.09090909090909091,
+      "code_level_improvement": 0.09584664536741214,
+      "complete_match_improvement": 0.0,
+      "partial_match_improvement": 0.09090909090909091,
+      "combined_accuracy_improvement": 0.18675573627650305
+    },
+    "improvement_breakdown": {
+      "partial_match_improvements": {
+        "source": "AI Review of Partial Matches",
+        "code_level_improvement": 0.09584664536741214,
+        "codes_corrected": 30,
+        "codes_reviewed": 179,
+        "ai_accuracy_on_reviews": 0.18994413407821228
+      },
+      "no_match_conversions": {
+        "source": "No Match to Match Conversions",
+        "chart_level_improvement": 0.09090909090909091,
+        "cases_reviewed": 9,
+        "potential_complete_conversions": 0,
+        "potential_partial_conversions": 9,
+        "total_conversions": 9
+      }
+    },
+    "detailed_metrics": {
+      "partial_match_details": {
+        "post_review_metrics": {
+          "codes_reviewed_by_ai": 179,
+          "ai_correct_decisions": 34,
+          "sutherland_errors_found": 30,
+          "ai_corrections_accepted": 30,
+          "corrected_accuracy": 1.0,
+          "improvement_in_accuracy": 0.09584664536741214,
+          "error_reduction_rate": 0.16759776536312848,
+          "ai_decision_accuracy": 0.18994413407821228
+        },
+        "comparison_metrics": {
+          "original_accuracy": 0.6134185303514377,
+          "post_review_accuracy": 0.7092651757188498,
+          "net_improvement": 0.09584664536741214,
+          "relative_improvement": 0.15625
+        },
+        "patient_corrections": [
+          {
+            "patient_id": "2668260",
+            "codes_reviewed": 2,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 1.0
+          },
+          {
+            "patient_id": "2552692",
+            "codes_reviewed": 3,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2667334",
+            "codes_reviewed": 1,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2674844",
+            "codes_reviewed": 5,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2657612",
+            "codes_reviewed": 5,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 0.4
+          },
+          {
+            "patient_id": "2667738",
+            "codes_reviewed": 9,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2665926",
+            "codes_reviewed": 4,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 0.5
+          },
+          {
+            "patient_id": "2651605",
+            "codes_reviewed": 2,
+            "ai_correct": 1,
+            "sutherland_errors": 1,
+            "improvement_rate": 0.5
+          },
+          {
+            "patient_id": "2657619",
+            "codes_reviewed": 6,
+            "ai_correct": 1,
+            "sutherland_errors": 1,
+            "improvement_rate": 0.16666666666666666
+          },
+          {
+            "patient_id": "2668256",
+            "codes_reviewed": 9,
+            "ai_correct": 1,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.1111111111111111
+          },
+          {
+            "patient_id": "2671724",
+            "codes_reviewed": 2,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2579273",
+            "codes_reviewed": 2,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 1.0
+          },
+          {
+            "patient_id": "2671705",
+            "codes_reviewed": 2,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2623336",
+            "codes_reviewed": 2,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2626588",
+            "codes_reviewed": 4,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2598282",
+            "codes_reviewed": 3,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2579160",
+            "codes_reviewed": 1,
+            "ai_correct": 1,
+            "sutherland_errors": 1,
+            "improvement_rate": 1.0
+          },
+          {
+            "patient_id": "2527636",
+            "codes_reviewed": 1,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2666625",
+            "codes_reviewed": 2,
+            "ai_correct": 2,
+            "sutherland_errors": 1,
+            "improvement_rate": 1.0
+          },
+          {
+            "patient_id": "2623358",
+            "codes_reviewed": 2,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2663910",
+            "codes_reviewed": 5,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2666006",
+            "codes_reviewed": 7,
+            "ai_correct": 1,
+            "sutherland_errors": 1,
+            "improvement_rate": 0.14285714285714285
+          },
+          {
+            "patient_id": "2674760",
+            "codes_reviewed": 5,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 0.4
+          },
+          {
+            "patient_id": "2584170",
+            "codes_reviewed": 2,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2667407",
+            "codes_reviewed": 5,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2598475",
+            "codes_reviewed": 2,
+            "ai_correct": 1,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.5
+          },
+          {
+            "patient_id": "2664161",
+            "codes_reviewed": 8,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 0.25
+          },
+          {
+            "patient_id": "2663810",
+            "codes_reviewed": 6,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2593095",
+            "codes_reviewed": 3,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2665472",
+            "codes_reviewed": 7,
+            "ai_correct": 1,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.14285714285714285
+          },
+          {
+            "patient_id": "2675007",
+            "codes_reviewed": 4,
+            "ai_correct": 1,
+            "sutherland_errors": 1,
+            "improvement_rate": 0.25
+          },
+          {
+            "patient_id": "2674750",
+            "codes_reviewed": 10,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 0.2
+          },
+          {
+            "patient_id": "2675480",
+            "codes_reviewed": 4,
+            "ai_correct": 3,
+            "sutherland_errors": 3,
+            "improvement_rate": 0.75
+          },
+          {
+            "patient_id": "2667355",
+            "codes_reviewed": 5,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 0.4
+          },
+          {
+            "patient_id": "2604872",
+            "codes_reviewed": 2,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2665745",
+            "codes_reviewed": 1,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2665712",
+            "codes_reviewed": 5,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 0.4
+          },
+          {
+            "patient_id": "2675017",
+            "codes_reviewed": 4,
+            "ai_correct": 2,
+            "sutherland_errors": 2,
+            "improvement_rate": 0.5
+          },
+          {
+            "patient_id": "2675019",
+            "codes_reviewed": 3,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2671817",
+            "codes_reviewed": 3,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2526276",
+            "codes_reviewed": 7,
+            "ai_correct": 0,
+            "sutherland_errors": 0,
+            "improvement_rate": 0.0
+          },
+          {
+            "patient_id": "2665929",
+            "codes_reviewed": 14,
+            "ai_correct": 1,
+            "sutherland_errors": 1,
+            "improvement_rate": 0.07142857142857142
+          }
+        ],
+        "baseline_metrics": {
+          "total_sutherland_codes": 313,
+          "total_ai_codes": 392,
+          "correctly_coded_by_ai": 192,
+          "missed_by_ai": 121,
+          "extra_by_ai": 200,
+          "overall_accuracy": 0.6134185303514377,
+          "miss_rate": 0.3865814696485623,
+          "extra_rate": 0.5102040816326531,
+          "precision": 0.4897959183673469,
+          "recall": 0.6134185303514377
+        }
+      },
+      "no_match_details": {
+        "cases_reviewed": 9,
+        "potential_complete_matches": 0,
+        "potential_partial_matches": 9,
+        "total_potential_upgrades": 9,
+        "chart_level_improvement": 0.09090909090909091,
+        "complete_match_rate_improvement": 0.0,
+        "partial_match_rate_improvement": 0.09090909090909091
+      }
+    }
+  },
+  "no_match_analysis": {
+    "total_no_match_cases": 9,
+    "successful_reviews": 9,
+    "potential_upgrades": 9,
+    "upgrade_potential": {
+      "to_partial_match": 9,
+      "to_complete_match": 0
+    },
+    "ai_better_cases": 5,
+    "sutherland_better_cases": 4,
+    "review_success_rate": 1.0
+  }
+}

@@ -1,0 +1,839 @@
+[
+  {
+    "code": "Z98890",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "The Z codes pertain to a patient's history or status, and in this case, Z98890 is a code for a postprocedural state that does not have immediate clinical implications. It is used for background information rather than indicating an active disease process.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code provides historical context but does not affect the current interpretation of radiological images or alter immediate management decisions.",
+    "original_code": "Z98890"
+  },
+  {
+    "code": "R930",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R930 is part of the R series, which includes symptom codes, signs, and abnormal clinical findings. Although it indicates an abnormal finding on imaging, it is non-specific and does not provide a definitive diagnosis or require immediate intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the abnormal finding noted by R930 can prompt further investigation, on its own it generally does not change immediate treatment or alter the radiological interpretation significantly.",
+    "original_code": "R930"
+  },
+  {
+    "code": "N3289",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "The code N32.89 (noting that the dot may be omitted as N3289) refers to 'other specified disorders of bladder.' This condition is neither acute nor malignant, and while it describes a bladder disorder, it typically does not necessitate urgent intervention or significantly alter the immediate radiologic assessment.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Although bladder findings can be incidentally noted on imaging studies, this code generally reflects a non-urgent condition that does not require immediate changes in patient management based on radiologic findings.",
+    "original_code": "N3289"
+  },
+  {
+    "code": "Y929",
+    "classification": "unimportant",
+    "category": "Administrative/External Cause Codes",
+    "reasoning": "ICD code Y929 is part of the external cause codes which are used for classifying circumstances leading to an injury. It does not represent a diagnosis or a pathological finding that directly affects treatment decisions or prognosis.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While external cause codes can provide additional context about how an injury occurred, they do not directly influence the interpretation of radiological findings or imaging-based treatment planning.",
+    "original_code": "Y929"
+  },
+  {
+    "code": "M47819",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "M47819 pertains to a form of degenerative spondylosis, most likely involving radiculopathy. These are common chronic, age-related degenerative changes that generally do not alter acute patient management or require emergency intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While such degenerative changes are often noted in radiology reports, they typically do not have immediate clinical or therapeutic implications unless correlated with severe symptoms.",
+    "original_code": "M47819"
+  },
+  {
+    "code": "I6389",
+    "classification": "important",
+    "category": "Acute Conditions",
+    "reasoning": "I6389 is associated with cerebral infarction (stroke), an acute condition that requires immediate medical attention. Stroke codes are critical in determining treatment and management plans.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists play a key role in diagnosing strokes through imaging studies. Accurate identification and reporting are essential as imaging findings directly influence emergent therapeutic decisions and patient outcomes.",
+    "original_code": "I6389"
+  },
+  {
+    "code": "I517",
+    "classification": "important",
+    "category": "Structural Abnormalities",
+    "reasoning": "ICD code I517 denotes cardiomegaly, which indicates an enlarged heart. This finding is clinically significant as it often reflects underlying cardiac conditions such as heart failure or cardiomyopathy. Its identification on radiologic examinations directly impacts patient management and treatment decisions.",
+    "clinical_impact": "medium",
+    "radiology_relevance": "Radiologists must report cardiomegaly because it is an abnormal structural finding that often necessitates further evaluation, potentially altering clinical management and follow-up care.",
+    "original_code": "I517"
+  },
+  {
+    "code": "K838",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "K838 represents 'other specified diseases of the biliary tract' which, while clinically relevant in a broader context, does not indicate an acute condition, malignant process, or significant structural abnormality that would typically alter immediate management. It is generally used to document less critical biliary disorders.",
+    "clinical_impact": "low",
+    "radiology_relevance": "In radiology reporting, this code is less likely to change immediate clinical management or require urgent intervention, and is often noted as an incidental or less critical finding.",
+    "original_code": "K838"
+  },
+  {
+    "code": "R9082",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R9082 belongs to the R series, which generally includes symptom codes or abnormal clinical findings. Such codes are often non-specific and do not directly impact immediate clinical decision-making or urgent management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the code may be noted on radiology reports in the context of abnormal findings, it does not typically alter the urgency or approach of imaging interpretation and patient management.",
+    "original_code": "R9082"
+  },
+  {
+    "code": "R791",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "The R791 code falls under the R series, which generally encompasses symptoms, signs, and abnormal clinical findings that are non-specific. This code does not indicate an acute condition or a finding that would directly change patient management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While abnormal findings may be noted in radiology reports, they are typically incidental and do not usually require immediate changes in treatment or emergent management.",
+    "original_code": "R791"
+  },
+  {
+    "code": "N2889",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "N2889 refers to other specified disorders of the kidney and ureter which are generally non-specific and do not indicate an acute or life-threatening condition. This code is typically used for incidental findings that do not directly change immediate patient management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the abnormality may be noted on imaging, it is generally incidental and does not require urgent clinical intervention, thus not significantly affecting radiology reporting in the context of emergent or high-impact findings.",
+    "original_code": "N2889"
+  },
+  {
+    "code": "I6782",
+    "classification": "important",
+    "category": "Acute Conditions",
+    "reasoning": "I6782 (interpreted as I67.82 - Cerebral atherosclerosis) reflects a significant cerebrovascular disease. Although it may not represent an acute stroke event, it identifies the presence of atherosclerotic changes in the cerebral vessels, which is clinically important as it predisposes patients to acute cerebrovascular events.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Detection of cerebral atherosclerosis on imaging studies is critical because it influences risk stratification, preventative strategies, and may guide urgent further investigation or intervention to prevent stroke.",
+    "original_code": "I6782"
+  },
+  {
+    "code": "J3489",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "J3489 represents an unspecified disorder of the nose and nasal sinuses. It typically refers to a chronic or incidental finding that does not indicate an acute or life\u2010threatening condition, and therefore it does not usually impact immediate clinical management or require urgent intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While radiologists may note such findings, they are generally incidental and do not alter treatment plans or urgent diagnostic considerations.",
+    "original_code": "J3489"
+  },
+  {
+    "code": "R195",
+    "classification": "unimportant",
+    "category": "Symptom Codes (R series)",
+    "reasoning": "ICD code R195 falls within the R series, which generally covers symptoms, signs, and abnormal clinical findings that are not specific for acute or severe conditions. This type of code typically does not alter immediate clinical management nor does it indicate a life-threatening condition.",
+    "clinical_impact": "low",
+    "radiology_relevance": "In radiology reporting, while such findings might be noted as part of the overall clinical picture, they are usually non-specific and do not necessitate urgent intervention or significantly impact diagnostic interpretation.",
+    "original_code": "R195"
+  },
+  {
+    "code": "G936",
+    "classification": "important",
+    "category": "Acute Conditions",
+    "reasoning": "ICD code G936 is used for a serious neurologic condition\u2014in this case, cerebral edema. Cerebral edema is an acute, potentially life\u2010threatening condition that can arise from various causes (e.g., trauma, stroke, or other brain insults), requiring prompt detection and management. Its presence on imaging directly influences treatment decisions and patient management, particularly in emergency settings.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists must be vigilant when imaging studies suggest cerebral edema as it necessitates urgent intervention. Accurate identification and measurement of edema can guide immediate therapeutic actions and potentially improve patient outcomes.",
+    "original_code": "G936"
+  },
+  {
+    "code": "J984",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "J984 is used for a non-specific respiratory disorder that does not fall under acute, malignant, or otherwise structurally significant conditions. It typically represents a less definitive diagnosis that is not expected to alter immediate clinical management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "In radiology reporting, this code is unlikely to drive urgent or major treatment decisions and is generally considered an incidental or background finding rather than a focus of critical intervention.",
+    "original_code": "J984"
+  },
+  {
+    "code": "C73",
+    "classification": "important",
+    "category": "Cancer Codes",
+    "reasoning": "C73 represents a malignant neoplasm of the thyroid gland, which is a cancer diagnosis. This directly impacts patient prognosis, treatment planning, and management, necessitating precise radiological staging and evaluation.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists must accurately identify and report thyroid malignancies to assist in staging, direct subsequent diagnostic workup, and inform therapeutic planning, making it a critical finding in radiology reports.",
+    "original_code": "C73"
+  },
+  {
+    "code": "K63.89",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "K63.89 corresponds to 'Other specified diseases of intestine,' which is a non-specific and generally less acutely impactful gastrointestinal diagnosis. It does not fall under high-impact categories such as cancer, acute vascular events, or significant structural abnormalities.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While radiologists may note incidental intestinal abnormalities, this diagnosis usually does not prompt immediate intervention or significantly alter patient management in the acute setting.",
+    "original_code": "K6389"
+  },
+  {
+    "code": "Z85060",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "Z85060 is a personal history code indicating a past malignant neoplasm. Although it denotes a history of cancer, it does not represent an active disease process or current clinical finding, and typically does not change immediate radiological interpretation or management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code provides historical context but does not affect current imaging evaluation or emergent treatment decisions.",
+    "original_code": "Z85060"
+  },
+  {
+    "code": "C787",
+    "classification": "important",
+    "category": "Cancer Codes",
+    "reasoning": "C787 is a cancer code indicating a malignant neoplasm. Malignant neoplasms are critical in clinical decision-making as they directly impact patient prognosis, staging, and treatment planning.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists must accurately report malignant neoplasms since these findings guide further diagnostic work-up, treatment planning, and can influence urgent clinical management.",
+    "original_code": "C787"
+  },
+  {
+    "code": "K861",
+    "classification": "important",
+    "category": "Progressive Diseases/Structural Abnormalities",
+    "reasoning": "K861 represents other chronic pancreatitis, a chronic inflammatory condition of the pancreas that can lead to significant structural changes such as calcifications, fibrosis, and ductal alterations. These changes are pivotal in guiding clinical management and monitoring disease progression.",
+    "clinical_impact": "medium",
+    "radiology_relevance": "Imaging plays a key role in identifying the characteristic features of chronic pancreatitis. Radiologists must report findings such as calcifications and pancreatic duct abnormalities, as these directly influence treatment decisions and management strategies.",
+    "original_code": "K861"
+  },
+  {
+    "code": "R933",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "ICD code R933 falls under the 'R' series, which primarily includes symptoms, signs, and abnormal clinical findings. These codes are generally non-specific and indicate an abnormal finding without a definitive diagnosis, thus having low impact on immediate patient management in the context of radiology.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While abnormal imaging findings noted by this code may prompt additional investigation, they are not immediately critical for radiological reporting or immediate therapeutic decision-making.",
+    "original_code": "R933"
+  },
+  {
+    "code": "K769",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "K76.9 (commonly written as K76.9 in ICD-10, representing unspecified liver disease) is a non-specific diagnosis. Without additional detail, it does not denote an acute, malignant, or otherwise immediately critical condition that would impact urgent patient management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Although liver abnormalities are often evaluated on imaging, an unspecified liver disease diagnosis is generally considered a minor finding that does not drive immediate clinical decisions or alter urgent radiological reporting.",
+    "original_code": "K769"
+  },
+  {
+    "code": "R931",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R931 falls within the R series, which comprises symptoms, signs, and abnormal clinical findings. This code generally reflects an abnormal imaging result without specific diagnostic confirmation, and as such, it does not directly impact immediate clinical management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While it indicates an abnormal finding on imaging, the non-specific nature of this code means it is primarily used for documentation rather than influencing urgent diagnostic or therapeutic decisions.",
+    "original_code": "R931"
+  },
+  {
+    "code": "R42",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R42 represents dizziness and giddiness, which are non-specific symptoms and generally do not indicate an acute or life-threatening condition in the context of radiology. This code is used for a symptom rather than a definitive diagnosis and thus holds less clinical significance for radiological reporting.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Dizziness is a non-specific symptom and doesn't directly influence imaging interpretations or immediate treatment decisions in radiology, making it less critical to report compared to definitive structural or acute pathological findings.",
+    "original_code": "R42"
+  },
+  {
+    "code": "N858",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "N858 represents a noninflammatory disorder of the uterus that is generally benign. It does not indicate a malignant process, acute condition, or complication that would significantly alter immediate management or treatment decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While radiologists may note this finding, it is typically incidental and does not affect acute clinical management or require urgent intervention.",
+    "original_code": "N858"
+  },
+  {
+    "code": "R030",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R030 represents an elevated blood pressure reading without a diagnosis of hypertension. This is a non-specific finding that typically does not alter immediate patient management in the context of radiology reporting.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Such a finding is incidental and does not directly affect radiological interpretations or decision making in imaging studies.",
+    "original_code": "R030"
+  },
+  {
+    "code": "Z978",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "ICD code Z978 indicates the presence of other functional implants. Although implants might be noted on imaging and can cause artifacts, the code itself is used for historical documentation and does not indicate an active disease process requiring intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the presence of an implant can influence the interpretation of radiological images due to possible artifacts, it does not alter the immediate clinical management or diagnosis, making it a low-priority finding in radiology reporting.",
+    "original_code": "Z978"
+  },
+  {
+    "code": "N838",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "N838 corresponds to other noninflammatory disorders of the ovary, fallopian tube, and broad ligament. This condition is generally benign and does not indicate an acute process, malignant neoplasm, or a significant structural abnormality that would alter immediate patient management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This finding is often incidental on imaging studies and does not typically necessitate urgent follow-up or change in patient management unless additional concerning features are present.",
+    "original_code": "N838"
+  },
+  {
+    "code": "R7989",
+    "classification": "unimportant",
+    "category": "Symptom Codes (R series)",
+    "reasoning": "R7989 is a code from the R series, which typically represents abnormal findings that are non-specific. This code does not indicate a definitive diagnosis or an acute condition that would alter radiologic interpretation.",
+    "clinical_impact": "low",
+    "radiology_relevance": "The code is less likely to have direct implications on radiology reporting, as it represents a non-specific abnormal finding rather than a structural abnormality, acute condition, or cancer that would guide immediate radiologic or clinical decisions.",
+    "original_code": "R7989"
+  },
+  {
+    "code": "K8050",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "This code describes a calculus of the bile duct in the absence of cholangitis or cholecystitis. While the presence of a bile duct stone is relevant to the patient's overall health, it does not indicate an acute or malignant process and is generally considered an incidental finding unless associated with symptoms of obstruction or infection.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Radiologists should report the presence of a bile duct calculus, but in the absence of accompanying complications or acute findings, it does not require immediate intervention or significantly alter the clinical management.",
+    "original_code": "K8050"
+  },
+  {
+    "code": "K8689",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "The code K8689 refers to other specified diseases of the pancreas, which are not classified as malignant neoplasms, acute conditions, major structural abnormalities, or procedural complications. Although pancreatic pathology can be significant in certain contexts, this specific code does not denote an immediately life\u2010threatening or acute condition and therefore has a lower impact on urgent radiology reporting.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the pancreas is an important organ and abnormalities warrant attention, this code typically represents a chronic or incidental finding that does not require immediate intervention, and thus it has lower relevance in emergent radiological assessments.",
+    "original_code": "K8689"
+  },
+  {
+    "code": "H748X3",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "ICD code H748X3 falls within an eye disorder category that, based on its structure, does not indicate a malignant, acute, or otherwise severe condition requiring immediate intervention or substantially affecting patient prognosis. It appears to represent a less critical, chronic, or incidental ocular finding with no direct implication for urgent radiologic management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code is less relevant to radiology reporting as it does not typically alter immediate treatment decisions or urgent imaging interpretations. It is considered a minor finding and primarily serves for documentation rather than influencing acute clinical management.",
+    "original_code": "H748X3"
+  },
+  {
+    "code": "G9389",
+    "classification": "unimportant",
+    "category": "Assessment of Non-specific Neurological Disorders",
+    "reasoning": "G9389 (typically representing 'Other specified disorders of brain' when written as G93.89) is a catch-all code that does not specify an acute, malignant, or structural abnormality requiring immediate or specific intervention. It often serves as a placeholder for conditions that do not clearly fit into more defined, clinically significant categories.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code is less likely to influence acute radiological decision-making or immediate management plans, as it does not indicate a well-defined structural or emergent pathology. Radiologists would note the code in context but it usually does not drive urgent imaging interpretation or treatment adjustments.",
+    "original_code": "G9389"
+  },
+  {
+    "code": "I618",
+    "classification": "important",
+    "category": "Acute Conditions",
+    "reasoning": "I618 falls within the cerebrovascular disease codes (I60-I69), specifically indicating an intracerebral hemorrhage subtype. This is an acute, life-threatening condition that requires immediate intervention and significantly impacts patient management.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Critical for radiologists to identify and report intracerebral hemorrhage, as its detection influences emergent treatment decisions and directly affects patient outcomes.",
+    "original_code": "I618"
+  },
+  {
+    "code": "Z942",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "Z942 indicates the status of a transplanted organ, which is primarily historical and not an active disease process. Although the patient's transplant history is relevant for ongoing care, it does not directly impact the immediate interpretation of imaging studies unless there is a complication present.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the recognition of transplant status is essential for a comprehensive patient history, it is not a focus for urgent radiologic interpretation unless new complications arise. It mainly serves to inform the radiologist of background medical history.",
+    "original_code": "Z942"
+  },
+  {
+    "code": "Z01818",
+    "classification": "unimportant",
+    "category": "History/Screening Codes",
+    "reasoning": "The code Z01818 falls within the Z series, which is used for factors influencing health status and contact with health services. It represents an encounter or documentation detail rather than an active disease process, and usually does not alter immediate clinical management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code is primarily administrative and does not directly affect radiological findings or the interpretation of imaging studies, thus is not critical in the context of radiology reporting.",
+    "original_code": "Z01818"
+  },
+  {
+    "code": "T8386XA",
+    "classification": "important",
+    "category": "Procedural Complications",
+    "reasoning": "This ICD code falls within the T80-T88 range that covers complications of surgical and medical care. T8386XA indicates a complication related to a device or procedure, which is clinically significant because it often necessitates further diagnostic evaluation and potential intervention.",
+    "clinical_impact": "high",
+    "radiology_relevance": "It is critical for radiologists to report and evaluate imaging findings related to device complications or procedural issues, as these findings can directly influence patient management and surgical planning.",
+    "original_code": "T8386XA"
+  },
+  {
+    "code": "R93819",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "The provided ICD code belongs to the R series, which generally covers symptoms, signs, and abnormal clinical findings. Although the code indicates an abnormal finding on diagnostic imaging, it is non-specific and does not in itself indicate an acute or immediately life\u2010threatening condition.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While radiologists should note and report such findings, they typically do not require the immediate treatment decisions that more significant pathologies do, serving more as indicators for potential follow-up rather than urgent intervention.",
+    "original_code": "R93819"
+  },
+  {
+    "code": "G31.84",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "G31.84, which denotes mild cognitive impairment, is a diagnosis that, while important in the context of long-term patient management and potential progression to dementia, is not an acute or emergent condition. It does not directly impact immediate radiological interpretation or urgent treatment decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "In radiology reporting, this code is generally used as part of the patient's background information rather than a finding that necessitates urgent intervention. Its presence does not alter the interpretation of imaging studies in an emergent setting.",
+    "original_code": "G3184"
+  },
+  {
+    "code": "C439",
+    "classification": "important",
+    "category": "Cancer Codes",
+    "reasoning": "C439 represents a malignant neoplasm, specifically malignant melanoma of an unspecified body site. Malignant melanoma is an aggressive cancer that significantly affects patient prognosis and treatment planning, making it a clinically significant finding.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologic evaluation is critical in staging the disease, detecting metastasis, and guiding treatment decisions, making accurate reporting essential.",
+    "original_code": "C439"
+  },
+  {
+    "code": "C220",
+    "classification": "important",
+    "category": "Cancer Codes",
+    "reasoning": "C220 is classified under the malignant neoplasm series, indicating the presence of a cancerous tumor. This type of diagnosis is critical for determining prognosis and treatment plans, placing it in the urgent and significant category of reporting.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists must report such a finding as it directly affects staging and management decisions in oncology. Accurate identification and reporting of malignant neoplasms are essential to guide further workup and treatment planning.",
+    "original_code": "C220"
+  },
+  {
+    "code": "R509",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R509 is a non-specific symptom code representing an abnormal clinical finding that does not provide a definitive diagnosis. It is generally used for symptoms without specifying the underlying cause, which typically does not impact immediate radiologic interpretations or treatment decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "In radiology reporting, this code is of low relevance as it does not indicate a specific pathology or acute condition requiring urgent intervention.",
+    "original_code": "R509"
+  },
+  {
+    "code": "K429",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "K429 refers to an unspecified umbilical hernia. Unless there are complications such as incarceration, obstruction, or gangrene, this is typically considered an incidental finding rather than a condition with high clinical urgency.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Although radiologists should note the presence of an umbilical hernia, it is generally an incidental finding that does not significantly alter immediate patient management or require urgent intervention.",
+    "original_code": "K429"
+  },
+  {
+    "code": "R162",
+    "classification": "unimportant",
+    "category": "Symptom Codes (R series)",
+    "reasoning": "The R code series generally includes symptoms, signs, and abnormal clinical findings that are non-specific. R162, without indicating an acute or definitive pathological condition, typically represents a finding that does not directly affect immediate clinical management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While such findings may be noted in a radiology report, they are generally considered incidental and do not usually impact urgent treatment decisions or detailed diagnostic planning.",
+    "original_code": "R162"
+  },
+  {
+    "code": "Z981",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "Z codes represent personal history or postprocedural states that do not impact current imaging interpretation or acute management. 'Z981' is used for historical or past condition information which is important for overall patient context but not critical when evaluating imaging findings.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the code provides background information on a patient's medical history, it does not alter the interpretation or reporting of current radiologic examinations.",
+    "original_code": "Z981"
+  },
+  {
+    "code": "N402",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "N402 refers to a benign urological condition, generally associated with benign prostatic hyperplasia. As a non-malignant and typically chronic condition, it usually does not have an immediate or severe clinical impact and is often an incidental finding on imaging studies.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This finding is commonly noted but does not generally alter urgent treatment decisions or radiological management, unless there are complicating factors such as significant urinary obstruction.",
+    "original_code": "N402"
+  },
+  {
+    "code": "N400",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "N400 falls under benign prostatic conditions (such as benign prostatic hyperplasia) which, although they may be noted incidentally on imaging, generally do not change immediate patient management or require emergent intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the observation may be mentioned in the radiology report, it is typically an incidental finding that does not alter the clinical management or require significant radiological follow-up.",
+    "original_code": "N400"
+  },
+  {
+    "code": "R188",
+    "classification": "unimportant",
+    "category": "Symptom Codes (R series)",
+    "reasoning": "ICD code R188 belongs to the non-specific symptom code category. Codes in the R series typically indicate symptoms or abnormal findings that are not diagnostic of a specific disease. In this case, it is less clinically significant for radiology reporting as it does not impact immediate management decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While noted in the report, this non-specific abnormal finding is unlikely to alter further diagnostic imaging decisions or treatment plans.",
+    "original_code": "R188"
+  },
+  {
+    "code": "Z9842",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "ICD code Z9842 falls within the Z series, which typically captures historical or status information that does not represent an active disease process. As such, it is used for documenting a past event or condition rather than an immediate clinical issue requiring urgent intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the code provides useful historical context, it does not influence the interpretation of current radiologic findings or necessitate modifications in the imaging approach, making it less critical for immediate radiology reporting.",
+    "original_code": "Z9842"
+  },
+  {
+    "code": "C089",
+    "classification": "important",
+    "category": "Cancer Codes",
+    "reasoning": "This code falls within the malignant neoplasm series (C codes), indicating a type of cancer. Malignant neoplasms are clinically significant because they have a direct impact on patient prognosis, treatment planning, and staging.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists must report findings related to malignant neoplasms as these findings directly influence therapeutic decisions and require precise monitoring for disease progression or metastasis.",
+    "original_code": "C089"
+  },
+  {
+    "code": "E049",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "E049 represents a diagnosis of nontoxic goiter, unspecified, which is a benign thyroid condition. This is typically a chronic, non-acute state and does not usually impact immediate treatment decisions or require urgent intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While a goiter may be incidentally noted on radiologic examinations, it generally does not alter the immediate management or reporting priorities in a radiology report unless there are additional concerning features.",
+    "original_code": "E049"
+  },
+  {
+    "code": "Z9841",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "The ICD code Z9841 is a history code that pertains to a postprocedural state. It provides background information on a patient's surgical history rather than indicating an active condition, and therefore it does not typically alter immediate imaging interpretation or decision making in radiology reporting.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the code may be noted in a patient's history, it generally does not affect the radiologist's current assessment or immediate management.",
+    "original_code": "Z9841"
+  },
+  {
+    "code": "R109",
+    "classification": "unimportant",
+    "category": "Symptom Codes (R series)",
+    "reasoning": "R109 represents a non-specific symptom (likely unspecified abdominal pain) that does not indicate a definitive diagnosis or an immediately life-threatening issue. Such codes are used mainly to document symptoms rather than confirmed clinical conditions, and as such, they generally do not alter urgent clinical management or treatment decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the symptom may be noted, it does not directly impact imaging interpretation or require immediate radiological intervention unless correlated with other more concerning findings.",
+    "original_code": "R109"
+  },
+  {
+    "code": "R590",
+    "classification": "unimportant",
+    "category": "Symptoms Codes",
+    "reasoning": "ICD code R590 falls under the R series, which represents symptoms, signs, and abnormal clinical findings. This code is non-specific and generally indicates an incidental finding, such as mildly enlarged lymph nodes, without direct evidence of an acute or life-threatening condition.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While this finding may be noted in imaging reports, it typically does not alter immediate patient management or require urgent intervention unless correlated with other significant clinical findings.",
+    "original_code": "R590"
+  },
+  {
+    "code": "M79604",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "M79604 represents a musculoskeletal pain syndrome (likely specifying pain in a limb region) that is primarily symptomatic. It does not denote an acute, life-threatening condition, structural abnormality, or cancer. Therefore, while it may be relevant in a clinical context, it is of low immediate clinical impact in radiology reporting and is considered a minor finding.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Radiologists typically note symptomatic pain only if it correlates with imaging findings. In isolation, this code does not significantly alter imaging interpretation or urgency of management.",
+    "original_code": "M79604"
+  },
+  {
+    "code": "I770",
+    "classification": "important",
+    "category": "Structural Abnormalities",
+    "reasoning": "I77.0 represents an acquired arteriovenous fistula, a vascular abnormality that can have significant hemodynamic consequences. Identification of such a structural abnormality is important as it may lead to complications like high-output cardiac failure or require interventional treatment.",
+    "clinical_impact": "medium",
+    "radiology_relevance": "Detection and accurate reporting of an arteriovenous fistula on imaging studies are essential. Radiologists play a key role in identifying the abnormal vascular communication which can impact treatment planning and follow-up management.",
+    "original_code": "I770"
+  },
+  {
+    "code": "Z95828",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "The code Z95828 falls within the Z codes category, which are used to record a patient's history or status, such as the presence of an implanted device. While this information is relevant for overall patient management, it is generally considered historical and does not directly impact the interpretation of current radiological findings.",
+    "clinical_impact": "low",
+    "radiology_relevance": "In radiology reporting, this code is less critical as it does not reflect an active pathology or acute condition that would alter imaging interpretation. It provides background information that may be noted but usually does not necessitate immediate changes in radiologic management.",
+    "original_code": "Z95828"
+  },
+  {
+    "code": "Z954",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "ICD code Z954 falls under the Z series which generally indicates historical or status information rather than an active, acute condition. While it indicates a past procedure or status (such as the presence of a transplant or implanted device), it does not denote an ongoing disease process that would alter immediate radiological interpretation.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code provides context about the patient\u2019s medical history, but it does not impact the current imaging findings or necessitate urgent radiological intervention.",
+    "original_code": "Z954"
+  },
+  {
+    "code": "Z960",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "ICD code Z960 is part of the Z series, which generally indicates personal history or the presence of devices/implants without current clinical disease. This information, while useful for context, does not typically influence immediate imaging interpretation or treatment decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "The presence of an implant or device (as indicated by this code) is noted in the patient's history but does not affect the acute imaging findings. Therefore, while it should be recorded, it is not a priority in urgent radiological reporting.",
+    "original_code": "Z960"
+  },
+  {
+    "code": "E278",
+    "classification": "unimportant",
+    "category": "Minor Findings/Other Endocrine Disorders",
+    "reasoning": "ICD code E278 (typically representing E27.8 \u2013 Other specified disorders of adrenal gland) refers to a chronic or non-acute endocrine condition which is not associated with immediate risk, malignancy, or acute complications that require emergent intervention. It does not fall into categories of cancers, acute conditions, or structural abnormalities that would directly alter urgent clinical management or radiologic interpretation.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While radiologists should be aware of relevant patient history including endocrine disorders, this code usually does not alter the immediate imaging strategy or prompt emergent actions.",
+    "original_code": "E278"
+  },
+  {
+    "code": "R932",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "The code falls within the R series, which generally encompasses symptoms, signs, and abnormal clinical findings. In this case, R932 is used to denote a non\u2010specific abnormal finding on a diagnostic test that does not in itself confirm a diagnosis or indicate an acute condition.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Although the code alerts clinicians to an abnormal imaging result, it does not immediately affect patient management or suggest a specific pathology. It generally serves as a trigger for further investigation rather than having direct treatment implications.",
+    "original_code": "R932"
+  },
+  {
+    "code": "M228X1",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "The code M228X1 refers to a musculoskeletal disorder (typically involving the patella) that is generally chronic or degenerative in nature. It does not represent an acute, malignant, or immediately life\u2010threatening condition and is usually seen as an incidental or minor abnormality in imaging studies.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While it is important for radiologists to note musculoskeletal findings, this particular code does not alter immediate patient management or require urgent intervention, and is thus considered of lower clinical priority in the context of radiology reporting.",
+    "original_code": "M228X1"
+  },
+  {
+    "code": "M25861",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "M25861 falls under the musculoskeletal category typically used for joint pain or other non-specific joint problems. This type of code represents a symptom rather than a life\u2010threatening or acute condition, and it does not generally alter urgent management or treatment decisions in a radiology context.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While joint pain may be noted in an imaging study, it does not usually require emergent intervention or significantly impact the reporting priorities for radiologists.",
+    "original_code": "M25861"
+  },
+  {
+    "code": "G93.9",
+    "classification": "unimportant",
+    "category": "Minor Findings/Non-specific Diagnoses",
+    "reasoning": "G93.9 denotes an unspecified disorder of the brain. Its lack of specificity means it does not clearly indicate an acute, progressive, or critical condition such as a stroke, malignancy, or procedural complication. This unspecific diagnosis is less likely to affect immediate treatment decisions or require urgent intervention based on radiology alone.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the code may provide some clinical context, its non-specific nature means it generally does not alter the radiologic evaluation or reporting priorities in a significant way.",
+    "original_code": "G939"
+  },
+  {
+    "code": "C229",
+    "classification": "important",
+    "category": "Cancer Codes",
+    "reasoning": "This code belongs to the C series for malignant neoplasms, indicating a cancer diagnosis. Malignant neoplasms are always clinically significant as they require detailed investigation, management, and treatment planning.",
+    "clinical_impact": "high",
+    "radiology_relevance": "For radiologists, identifying and reporting malignant lesions are critical for staging, guiding biopsies, and assessing treatment response. This code directly impacts oncological management and patient outcomes.",
+    "original_code": "C229"
+  },
+  {
+    "code": "C61",
+    "classification": "important",
+    "category": "Cancer Codes",
+    "reasoning": "C61 represents malignant neoplasm of the prostate, which is a form of cancer. This diagnosis significantly impacts the patient's prognosis and guides decisions related to oncologic management, staging, and treatment planning.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologic imaging is essential for identifying potential metastases, evaluating the extent of disease, and aiding in treatment planning, making it a crucial finding in radiological reports.",
+    "original_code": "C61"
+  },
+  {
+    "code": "R9439",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R9439 is a code in the R series, which generally encompasses symptoms, signs, and abnormal clinical or laboratory findings that are non-specific. This type of code does not typically have direct implications for immediate treatment decisions or imaging interpretation.",
+    "clinical_impact": "low",
+    "radiology_relevance": "The code is not directly related to a radiologic diagnosis or treatment planning, thus it has minimal impact on radiology reporting.",
+    "original_code": "R9439"
+  },
+  {
+    "code": "M4802",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "M4802 is a code associated with degenerative changes in the spine, which typically represents an incidental, chronic finding rather than an acute or life\u2010threatening condition. Such degenerative spinal changes generally do not alter immediate treatment decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While it is important for radiologists to document degenerative changes when present, these findings are commonly encountered and usually do not affect urgent clinical management or immediate patient outcomes.",
+    "original_code": "M4802"
+  },
+  {
+    "code": "M9981",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "The code M9981 falls within the musculoskeletal category and does not represent a malignant neoplasm, acute condition, major structural abnormality, or a procedural complication as defined in the clinical significance guidelines. It likely refers to a chronic or less critical musculoskeletal finding which generally has lower immediate clinical impact compared to the important categories.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While this finding may be noted on imaging studies, it does not typically alter emergent management or require urgent intervention. Radiologists may report it for completeness and context, but it is not a high-priority finding.",
+    "original_code": "M9981"
+  },
+  {
+    "code": "M2578",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "ICD code M2578 is related to a joint disorder that is typically chronic or degenerative in nature rather than an acute, life\u2010threatening condition. It does not represent a malignant neoplasm, acute infection, or severe structural abnormality, which reduces its clinical urgency in most cases.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While radiologists should note any structural abnormalities or degenerative changes, this code is less critical for immediate treatment decisions. It usually does not impact emergent management, making it of lower priority in radiology reporting.",
+    "original_code": "M2578"
+  },
+  {
+    "code": "N8189",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "N8189 refers to an 'other specified' disorder of the female genital prolapse spectrum. While it describes a structural abnormality, it is generally a benign chronic condition and usually does not alter immediate management. It is often encountered incidentally and does not warrant acute intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Radiologists may note this finding on pelvic imaging; however, it typically does not influence emergent treatment decisions or overall patient prognosis.",
+    "original_code": "N8189"
+  },
+  {
+    "code": "Z780",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "The Z780 code falls under the Z series which typically deals with historical information or factors not directly relevant to the current clinical status. This information is generally used for context but does not directly influence immediate radiological interpretation or treatment decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While it provides background information, it does not alter the radiological findings, diagnosis, or interpretation, making it less critical in the context of radiology reporting.",
+    "original_code": "Z780"
+  },
+  {
+    "code": "R9389",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "The code R9389 is an R series code, which generally reflects non-specific abnormal findings on diagnostic imaging rather than a defined pathological process. These codes, while noted on reports, are usually incidental findings and do not typically impact immediate clinical management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the finding may be noted on a radiology report, it does not ordinarily affect urgent treatment decisions or require immediate follow-up, making it less critical for radiological assessment.",
+    "original_code": "R9389"
+  },
+  {
+    "code": "Z4659",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "ICD code Z4659 is used as an encounter code for the adjustment and fitting of a device. It is an administrative code and reflects a routine follow-up situation rather than an active disease process or clinically significant finding. As such, it does not impact current radiological interpretation or immediate treatment decisions.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code is relevant for documenting device adjustments but does not indicate an acute or significant pathology that would be critical to highlight in a radiology report.",
+    "original_code": "Z4659"
+  },
+  {
+    "code": "I288",
+    "classification": "important",
+    "category": "Progressive Diseases",
+    "reasoning": "ICD code I288 pertains to other specified pulmonary heart diseases, which may reflect significant underlying pulmonary vascular pathology. Such conditions can be indicative of progressive cardiac or pulmonary vascular disease, potentially impacting patient management, prognosis, and treatment planning.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists should note and report imaging findings that correlate with pulmonary heart diseases, as these conditions may prompt further diagnostic work-up or urgent clinical intervention due to their progressive nature.",
+    "original_code": "I288"
+  },
+  {
+    "code": "R0602",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R0602 indicates a symptom (shortness of breath) that is generally non-specific. While the symptom is clinically relevant in patient assessments, as a standalone code it does not directly affect radiologic interpretations or suggest a specific diagnosis without further context.",
+    "clinical_impact": "low",
+    "radiology_relevance": "In radiology reporting, symptom codes like R0602 provide contextual information but do not alter the diagnostic imaging findings or immediate treatment decisions.",
+    "original_code": "R0602"
+  },
+  {
+    "code": "R000",
+    "classification": "unimportant",
+    "category": "Symptom Codes",
+    "reasoning": "R000 is within the range of symptom codes (R00-R99) that represent non-specific clinical signs. While symptoms can be important in clinical scenarios, in this context the code is not directly linked to a diagnosed condition impacting management.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code is less relevant for radiology reporting as it does not indicate a specific imaging finding or pathology that would alter treatment decisions.",
+    "original_code": "R000"
+  },
+  {
+    "code": "N6315",
+    "classification": "important",
+    "category": "Structural Abnormalities",
+    "reasoning": "The code N6315 represents an unspecified lump in the breast. Although it is not a confirmed malignant neoplasm (i.e., not in the C series), any breast lump is a finding that must be carefully evaluated. Its presence may indicate an underlying pathology, including cancer, and therefore mandates appropriate imaging work-up and follow\u2010up assessment.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Identification of a breast lump is critical in radiology as it directs further evaluation (e.g., additional imaging modalities, biopsy) to rule out malignancy. This finding has significant implications for patient management, diagnostic workup, and treatment planning.",
+    "original_code": "N6315"
+  },
+  {
+    "code": "W2100XA",
+    "classification": "unimportant",
+    "category": "External Cause Codes",
+    "reasoning": "W2100XA is an external cause code that describes the mechanism of an accidental injury. It does not indicate a specific disease process, acute medical condition, or structural abnormality that would directly affect treatment decisions or radiologic interpretation.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Although knowledge of the injury mechanism may provide background context in trauma cases, the code itself does not alter imaging findings, diagnostic interpretation, or immediate patient management.",
+    "original_code": "W2100XA"
+  },
+  {
+    "code": "Z471",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "The Z471 code falls within the Z series, which generally relates to follow-up, aftercare, or historical aspects of patient care. This information is administrative and does not usually influence immediate diagnostic imaging interpretation.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the code provides context regarding a patient\u2019s follow-up status or past treatments, it does not affect the current radiological assessment or emergent care decisions.",
+    "original_code": "Z471"
+  },
+  {
+    "code": "M47812",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "The code M47812 represents a degenerative condition of the spine (spondylosis) which is considered a common, age-related degenerative change. It is typically an incidental finding and does not usually require immediate clinical intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While radiologists should note the presence of degenerative changes, these findings usually do not necessitate urgent management and are often regarded as incidental unless correlated with significant clinical symptoms.",
+    "original_code": "M47812"
+  },
+  {
+    "code": "S12090A",
+    "classification": "important",
+    "category": "Acute Conditions",
+    "reasoning": "S12090A is an ICD-10 code that denotes an acute traumatic injury to the cervical spine (such as a fracture) on the initial encounter. Fractures in the cervical spine are critical injuries due to the potential for neurological compromise and other serious complications, necessitating immediate diagnosis and management.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists must identify and report cervical spine fractures promptly in imaging studies to ensure appropriate urgent management, prevent further complications, and guide trauma treatment decisions.",
+    "original_code": "S12090A"
+  },
+  {
+    "code": "H748X2",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "H748X2 refers to a specific disorder of the ear that is not associated with malignancy, acute life\u2010threatening events, procedural complications, or progressive diseases. In the context of radiology reports, such an isolated ear disorder is typically considered an incidental or minor finding that does not alter immediate management or require urgent intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While the ear abnormality described by this code may be noted on imaging, it generally does not influence acute treatment decisions or risk stratification and is therefore of limited immediate relevance in radiology reporting.",
+    "original_code": "H748X2"
+  },
+  {
+    "code": "K56609",
+    "classification": "important",
+    "category": "Acute Conditions",
+    "reasoning": "K56609 refers to an intestinal obstruction, a condition that often presents acutely and can be life-threatening if not promptly diagnosed and managed. Radiological imaging plays a critical role in identifying the location, severity, and potential complications of the obstruction, directly influencing treatment planning.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Accurate radiological identification of intestinal obstruction is essential for urgent surgical or medical intervention, making this finding highly significant in radiology reporting.",
+    "original_code": "K56609"
+  },
+  {
+    "code": "S062X0A",
+    "classification": "important",
+    "category": "Acute Conditions",
+    "reasoning": "The ICD code S062X0A pertains to a traumatic head injury (with detail provided by the placeholders in the code) on an initial encounter. Traumatic brain injuries are acute conditions that require prompt radiological evaluation to assess for potentially life-threatening intracranial hemorrhage, fractures, or brain injury. This has direct implications on patient management and treatment planning.",
+    "clinical_impact": "high",
+    "radiology_relevance": "This code is critical for radiology reporting as it mandates detailed imaging studies (such as CT or MRI) to accurately diagnose the extent of the trauma, facilitating urgent intervention and influencing clinical decision-making.",
+    "original_code": "S062X0A"
+  },
+  {
+    "code": "M40204",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "M40204 is a code for a type of kyphosis, a structural abnormality of the spine that is generally chronic and incidental. In the absence of additional clinical context suggesting an acute or severe presentation, this finding is typically considered a degenerative or developmental alteration rather than an immediate threat.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Radiologists may note the abnormal spinal curvature; however, unless it is associated with acute symptoms or severe deformity requiring intervention, it does not significantly alter immediate patient management or require urgent follow\u2010up.",
+    "original_code": "M40204"
+  },
+  {
+    "code": "I70203",
+    "classification": "important",
+    "category": "Progressive Diseases",
+    "reasoning": "The I70 series refers to atherosclerosis, which is a progressive vascular disease that can lead to complications such as ischemia and ulceration. This code indicates an advanced state of arterial disease that can have significant clinical implications for patient management.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Radiologists must identify and report findings of atherosclerotic changes as these directly influence treatment decisions and risk stratification, particularly when associated with complications like ulceration.",
+    "original_code": "I70203"
+  },
+  {
+    "code": "R937",
+    "classification": "unimportant",
+    "category": "Symptom Codes (R series)",
+    "reasoning": "ICD code R937 falls under the R series, which is generally used for abnormal clinical or imaging findings that are non-specific. These codes usually represent findings that do not point to a specific active disease process requiring immediate intervention.",
+    "clinical_impact": "low",
+    "radiology_relevance": "Although radiologists report these abnormal imaging findings, they are typically incidental and nonspecific, not altering immediate patient management in a critical manner.",
+    "original_code": "R937"
+  },
+  {
+    "code": "C50212",
+    "classification": "important",
+    "category": "Cancer Codes",
+    "reasoning": "This ICD code represents a malignant neoplasm of the breast, which is a cancer diagnosis. Cancer codes have high clinical significance as they directly affect prognosis, staging, and treatment decisions.",
+    "clinical_impact": "high",
+    "radiology_relevance": "Identifying and reporting a malignant breast neoplasm is critical in radiology, as it guides further diagnostic evaluation, treatment planning, and follow-up imaging for disease progression or metastasis.",
+    "original_code": "C50212"
+  },
+  {
+    "code": "Z905",
+    "classification": "unimportant",
+    "category": "History Codes",
+    "reasoning": "Z905 is a history code, indicating prior health status or surgical outcome without direct implications on current imaging interpretation or immediate patient care. While it provides background information, it does not change the clinical management based on radiological findings.",
+    "clinical_impact": "low",
+    "radiology_relevance": "It is useful for obtaining a comprehensive patient history but does not affect the current radiological assessment or urgent clinical decision-making.",
+    "original_code": "Z905"
+  },
+  {
+    "code": "N289",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "N289 (Disorder of kidney and ureter, unspecified) is a nonspecific code that does not indicate a clearly defined, acute, or progressive condition. It generally represents an incidental or vague finding that lacks the detailed diagnostic emphasis required for high clinical impact.",
+    "clinical_impact": "low",
+    "radiology_relevance": "This code is less likely to influence immediate radiological interpretations or decision-making, as it does not provide specific information regarding a significant pathology.",
+    "original_code": "N289"
+  },
+  {
+    "code": "D3011",
+    "classification": "unimportant",
+    "category": "Minor Findings",
+    "reasoning": "D3011 is a code for a benign neoplasm. The clinically significant cancer codes are reserved for malignant neoplasms (C codes), and benign neoplasms typically have less impact on immediate treatment or prognosis.",
+    "clinical_impact": "low",
+    "radiology_relevance": "While radiologists should note the presence of benign lesions, these findings do not usually alter urgent patient management or require immediate intervention.",
+    "original_code": "D3011"
+  }
+]

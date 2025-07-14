@@ -1,0 +1,15 @@
+{
+  "pipeline_info": {
+    "csv_file": "sutherland_radiology_results.csv",
+    "start_time": "2025-07-14T18:56:15.096204",
+    "end_time": "2025-07-14T19:20:49.127569",
+    "total_runtime_minutes": 24.56718995
+  },
+  "file_exports": {
+    "analysis_results": "analysis_results.json",
+    "code_classifications": "code_classifications.json",
+    "partial_match_reviews": "partial_match_reviews.json",
+    "comprehensive_metrics": "comprehensive_metrics.json",
+    "changes_csv": "analysis_changes.csv"
+  }
+}

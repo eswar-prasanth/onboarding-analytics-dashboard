@@ -1,0 +1,317 @@
+[
+  {
+    "patient_id": "2564110",
+    "analysis": [
+      {
+        "sutherland_code": "Z85060",
+        "ai_code": "T80818A",
+        "status": "different_approach",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "Z85060 represents a personal history code that does not reflect the patient\u2019s current active treatment, while T80818A is clearly designed to capture the administration of a therapeutic radiopharmaceutical (Lutetium 177 DOTATATE). In a patient undergoing active treatment for a metastatic neuroendocrine tumor, documenting the specific therapeutic procedure is clinically critical.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": "C787",
+        "ai_code": "C7B02, C7A019",
+        "status": "different_approach",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "C787 in the Sutherland approach appears to provide a single, less\u2010differentiated diagnosis code that combines the malignant process. In contrast, AI\u2019s approach breaks the tumor classification into two codes (likely one for the primary small bowel neuroendocrine tumor and one for the metastatic involvement, such as the liver). This granularity better aligns with the clinical details of a low grade, well-differentiated tumor with liver metastasis.",
+        "severity": "moderate"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 0.4,
+      "ai_score": 0.9
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "While both systems are addressing aspects of the patient\u2019s condition, the differences in coding philosophy (history recording versus active treatment procedure and detailed tumor classification) suggest that with improved mapping or additional documentation, a partial match could be reached. However, the fundamental difference in emphasis makes a complete match unlikely without a change in one system\u2019s approach."
+    },
+    "overall_assessment": "The AI coding approach is more accurate for this case, as it appropriately captures the therapeutic intervention with a specific treatment code and provides a more detailed classification of the malignancy that reflects both the primary tumor and its metastatic spread. In contrast, the Sutherland system appears to under-code aspects by using a personal history code and a single, less specific tumor code. These discrepancies, while moderate in clinical impact, could have implications for billing accuracy and clinical documentation. It is recommended that efforts be made to align the coding approaches where possible or to adopt the more clinically informative AI methodology for this type of treatment documentation."
+  },
+  {
+    "patient_id": "2664438",
+    "analysis": [
+      {
+        "sutherland_code": "Z98890",
+        "ai_code": null,
+        "status": "sutherland_only",
+        "is_sutherland_correct": false,
+        "is_ai_correct": false,
+        "clinical_justification": "The manual coder assigned Z98890, which is generally used for other specified postprocedural states and is not directly relevant to the clinical scenario. The report documents an ultrasound\u2010guided core needle biopsy of a prominent left axillary lymph node, not a postprocedural condition. This code does not capture the diagnostic intent or the underlying clinical presentation, and therefore does not reflect the patient\u2019s condition accurately.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R590",
+        "status": "ai_only",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "The AI coder selected R590, corresponding to 'Localized enlarged lymph nodes' (ICD-10 R59.0), which aligns with the clinical history of a 'prominent left axillary lymph node'. Even though the lymph node measured 1.0 cm (which is borderline in size), the descriptor 'prominent' in the report supports a diagnosis of lymph node abnormality warranting further evaluation via biopsy. Thus, R590 better reflects the clinical indication for the procedure.",
+        "severity": "moderate"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 0.3,
+      "ai_score": 0.9
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "The case currently shows a No Match because the Sutherland coding approach appears to have misinterpreted the primary indication by using an unrelated postprocedural code while the AI system captured the clinical intent by coding for an abnormal lymph node (R590). With revision, if Sutherland had aligned the diagnosis to reflect the clinical history (for example, by selecting R590 or an equivalent appropriate diagnostic code) it would have moved toward at least a partial match. However, achieving a complete match would require both systems to use a coding approach that reflects both the procedure and the underlying clinical indication consistently."
+    },
+    "overall_assessment": "In this case, the AI coding approach (R590) more accurately reflects the clinical scenario of an ultrasound\u2010guided core needle biopsy performed for evaluation of a prominent left axillary lymph node, whereas the Sutherland code (Z98890) is not clinically justified. The discrepancy, while moderate in clinical significance, could affect both billing accuracy and clinical data integrity if not corrected. It is recommended that manual coders review the clinical context closely and consider aligning the diagnostic code with R590 or an appropriate equivalent to improve consistency between coding systems."
+  },
+  {
+    "patient_id": "2671730",
+    "analysis": [
+      {
+        "sutherland_code": "M79604",
+        "ai_code": "M79661",
+        "status": "different_approach",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "clinical_justification": "The clinical report documents a limited, unilateral (right lower extremity) venous duplex study performed with compression, color, and spectral Doppler imaging consistent with a focused evaluation for deep venous thrombosis. The Sutherland code (M79604) appears to accurately capture this focused, limited examination as ordered (i.e. a limited right lower extremity study). In contrast, the AI-selected code (M79661) seems to imply a broader or more comprehensive study approach that is not supported by the report details. Although both codes refer to similar examinations of lower extremity veins, the difference lies in the interpretation of scope and billing intent. The Sutherland approach matches the reported work\u2010up and clinical intent (limited right leg exam), whereas the AI approach overstates the extent of the procedure.",
+        "severity": "minor"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "Although both coding systems capture the concept of a venous duplex examination of the lower extremity, the discrepancy stems from a difference in approach. With minor clarification of exam extent, this case could be reclassified as a Partial Match. However, as the AI approach does not sufficiently represent the limited, unilateral exam as documented, a Complete Match upgrade is not supported."
+    },
+    "overall_assessment": "In this No Match case, the manual Sutherland coding approach (M79604) more accurately reflects the clinical exam\u2014a limited duplex study of the right lower extremity veins\u2014as described in the report. The AI coding, while capturing the general concept of a venous duplex ultrasound, appears to over-expand the scope of the examination by applying a code (M79661) that suggests a broader or more complete evaluation. Although the discrepancy is of moderate billing significance, it is clinically minor because both coding approaches acknowledge the diagnostic intent of assessing for deep venous thrombosis. The case may be improved by aligning definitions across coding systems; as it stands, clarification leads to a potential partial match rather than a full match. Recommendations include reviewing the technical descriptors in the coding manuals to ensure that limited versus comprehensive approaches are uniformly defined to prevent such discrepancies in future coding evaluations."
+  },
+  {
+    "patient_id": "2578401",
+    "analysis": [
+      {
+        "sutherland_code": "Z98890",
+        "ai_code": "C801",
+        "status": "different_approach",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "The clinical documentation clearly notes that the patient has a recently diagnosed poorly differentiated adenocarcinoma of unknown primary and is undergoing an ultrasound\u2010guided biopsy of a left hip soft tissue mass to obtain tissue for histopathologic evaluation. The AI-assigned code C801 (which in this coding context appears to represent a malignant neoplasm of unspecified primary site) better reflects the patient\u2019s known oncologic history and the purpose of the procedure. In contrast, Sutherland\u2019s use of Z98890 does not have clear clinical support in the report and seems misplaced.",
+        "severity": "critical"
+      },
+      {
+        "sutherland_code": "R590",
+        "ai_code": "R599",
+        "status": "different_approach",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "The pre\u2010procedure diagnosis described in the report is lymphadenopathy, which aligns with the AI-assigned code R599 (commonly used to designate unspecified enlarged lymph nodes). The Sutherland code R590 appears to be a non\u2010standard or less precise variant that does not match standard diagnostic nomenclature. Although both codes intend to capture an abnormal lymph node finding, R599 is more accurate and consistent with standard clinical coding.",
+        "severity": "moderate"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 0.3,
+      "ai_score": 0.8
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "There is partial overlap in that both coding approaches were attempting to capture key aspects of the case \u2013 namely an abnormal lymph node finding and a diagnostic biopsy for possible malignancy. However, the discrepancies in the oncologic code (Z98890 vs. C801) and the subtle difference in the lymphadenopathy code (R590 vs. R599) are significant. With further review and clarification of the intended code definitions, the case might be upgraded to a partial match if the lymphadenopathy aspect were reconciled; however, the misalignment regarding the cancer component precludes a complete match."
+    },
+    "overall_assessment": "In reviewing this No Match case, the AI coding approach more accurately captures the clinical scenario. The AI-assigned code C801 appropriately reflects the patient\u2019s known diagnosis of a poorly differentiated adenocarcinoma of unknown primary, and R599 better describes the documented lymphadenopathy. In contrast, Sutherland\u2019s choice of Z98890 lacks supporting evidence in the report and R590 does not align with standard codes for lymphadenopathy. The discrepancies are clinically significant, particularly regarding the oncologic diagnosis, which drives patient management and subsequent care. It is recommended that the coding process be refined to ensure alignment with the clinical documentation, and that targeted education be provided to address these interpretative differences."
+  },
+  {
+    "patient_id": "2665974",
+    "analysis": [
+      {
+        "sutherland_code": "I770",
+        "ai_code": "M7981",
+        "status": "different_approach",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "clinical_justification": "The Sutherland code I770 is used to denote an acquired arteriovenous fistula \u2013 a primary component of this patient\u2019s dialysis access. In this context, the imaging findings and clinical history (AV fistula creation for dialysis use) are best captured by I770. The AI code M7981 (which appears to derive from a musculoskeletal or soft tissue disorder chapter) does not appropriately correspond to the vascular nature of the finding and seems misapplied.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": "Z95828",
+        "ai_code": "T82856A",
+        "status": "different_approach",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "The Sutherland code Z95828 generally indicates the presence of a dialysis graft, but it does not convey the complications identified in the report (i.e. severe stenosis within the venous stents). In contrast, the AI code T82856A is structured to denote complications associated with vascular devices; it better reflects the high\u2010grade stenosis in the graft. Thus, for the complication component, the AI approach is more appropriate.",
+        "severity": "moderate"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 0.7,
+      "ai_score": 0.6
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "Both systems capture elements of the clinical picture. Sutherland correctly identifies the AV fistula used in dialysis, while AI correctly emphasizes the complication (severe stenosis) of the vascular graft. With further alignment and a combined approach that integrates the accurate aspects of each system, this No Match case could be reclassified as a Partial Match."
+    },
+    "overall_assessment": "The case demonstrates divergent coding strategies. Sutherland\u2019s approach accurately captures the underlying arteriovenous access (I770) but does not address the device complication fully. On the other hand, the AI coding, while capturing the complication through T82856A, applies an M code that is not appropriate for vascular pathology. For patient safety and precise billing, it is recommended to integrate the correct elements \u2013 the use of I770 with a complication code similar to T82856A \u2013 to better reflect the complete clinical scenario. Overall, there is potential to upgrade this discrepancy to a partial match with better alignment of coding definitions."
+  },
+  {
+    "patient_id": "2594544",
+    "analysis": [
+      {
+        "sutherland_code": "N6315",
+        "ai_code": null,
+        "status": "sutherland_only",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "clinical_justification": "N6315 appropriately represents the ultrasound\u2010guided core needle biopsy of the right breast \u2013 the primary procedure described in the report. The AI system did not provide a corresponding code for this fundamental procedure component.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": "Z98890",
+        "ai_code": null,
+        "status": "sutherland_only",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "clinical_justification": "Z98890 appears to be used as an adjunct code to denote the placement of a marking clip (as described in the report). This additional detail is important for both clinical documentation and potential reimbursement. Its absence in the AI coding indicates the AI system may be consolidating details, thereby losing granularity.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "N6341",
+        "status": "ai_only",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "N6341 in the AI approach likely represents a bundled code for the entire procedure, including the biopsy (and possibly the clip placement). While it correctly captures the main diagnostic intervention, it does not separately itemize the clip placement, which could be of billing or documentation importance in some coding frameworks.",
+        "severity": "minor"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.8
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "The detailed approach by Sutherland (using N6315 and Z98890) covers both the biopsy and the clip placement aspects of the procedure. The AI code N6341 bundles the procedure into a single code and omits the separate coding of the clip placement. With clearer mapping rules that account for adjunct procedures, this case could potentially be reclassified as a partial match rather than a complete discrepancy."
+    },
+    "overall_assessment": "Sutherland's coding approach is more granular and clinically specific by separately coding the ultrasound\u2010guided core needle biopsy (N6315) and the clip placement (Z98890). Although the AI coding (N6341) correctly captures the central biopsy procedure, it omits an important component\u2014the clip placement\u2014as documented in the report. This discrepancy could have implications for billing accuracy and clinical documentation. Greater alignment between the coding systems, possibly by instructing the AI system to recognize adjunct procedures such as clip placement, would improve consistency. Overall, Sutherland's approach is more comprehensive for this case, and with updated mapping, this case could be reclassified as a partial match."
+  },
+  {
+    "patient_id": "2667404",
+    "analysis": [
+      {
+        "sutherland_code": "K56609",
+        "ai_code": "N400",
+        "status": "different_approach",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "clinical_justification": "The Sutherland code K56609 appears to represent the CT abdomen and pelvis protocol that was actually performed (with both IV and oral contrast) and thus accurately reflects the imaging study regardless of the clinical suspicion. In contrast, the AI code N400 seems to have been selected on the basis of the ordering diagnosis (i.e. evaluation for small bowel obstruction) rather than the final imaging interpretation, which explicitly stated that there was no bowel obstruction. This divergence indicates that the manual Sutherland approach more closely matches the technical performance and final report of the exam.",
+        "severity": "moderate"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 0.95,
+      "ai_score": 0.7
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "The differences stem primarily from the coding focus\u2014Sutherland codes based on the actual protocol performed (CT abdomen and pelvis with contrast) versus AI coding influenced by the clinical indication for small bowel obstruction. With better alignment between the ordering indication and the final imaging findings, these discrepancies might be reconciled to at least a partial match."
+    },
+    "overall_assessment": "In this case, the Sutherland manual coding approach is more accurate, as it codes the CT exam in accordance with the study actually performed and its technical details rather than the clinical suspicion. The AI method, which appears to lean on the clinical indication (SBO), fails to reflect the negative imaging findings and the complete nature of the exam, potentially leading to billing or record discrepancies. Although the overall impact is moderate, ensuring that coding accurately reflects what was performed is critical for both clinical documentation and reimbursement. Future alignment efforts between clinical ordering and imaging findings could allow for reclassification of such cases to at least a partial match."
+  },
+  {
+    "patient_id": "2594615",
+    "analysis": [
+      {
+        "sutherland_code": "C50212",
+        "ai_code": "C50412",
+        "status": "different_approach",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "Sutherland\u2019s use of a single code (C50212) for the localization does not fully capture the bilateral nature and modality-specific differences of the procedure. In contrast, AI\u2019s C50412 appears to represent one component (likely the right breast localization) reflecting the need to code separate interventions which matches the clinical description of distinct ultrasound\u2010guided localizations.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": "Z98890",
+        "ai_code": "C50811",
+        "status": "different_approach",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "Sutherland\u2019s additional code Z98890 seems to be used as an add\u2010on or modifier but does not specifically capture the left breast or the modality details. AI\u2019s C50811, on the other hand, is likely intended to account for the left breast localization, aligning better with the report that describes bilateral procedures and different guidance techniques.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "D242",
+        "status": "ai_only",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "The report denotes that several targets were localized under ultrasound guidance. AI\u2019s D242 code is used to capture the ultrasound guidance element, a key component in accurately reflecting the procedure\u2019s specifics. Sutherland\u2019s omission of a corresponding code means it misses this important detail.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "D4861",
+        "status": "ai_only",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "One lesion was localized using mammographic guidance. AI\u2019s D4861 code specifically addresses the mammographic component of the procedure. The absence of an equivalent in the Sutherland set indicates that the latter does not fully document the procedural complexity, thereby reducing coding precision.",
+        "severity": "moderate"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 0.5,
+      "ai_score": 0.9
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "Although both approaches document the localization procedure, the AI coding system provides a more granular representation by specifying laterality and the use of different imaging modalities. With further clarification in the Sutherland manual coding (e.g., by splitting the bilateral procedures into distinct codes and including guidance details), these discrepancies might be reclassified as a partial match. However, without those details the match remains incomplete."
+    },
+    "overall_assessment": "The AI coding approach is more accurate and clinically descriptive for this case. It captures the bilateral nature of the procedure and differentiates between the ultrasound\u2010guided and mammographic-guided localizations. The Sutherland codes, while indicating that a localization procedure took place, lack the nuance of modality and laterality, which could have billing and patient safety implications. It is recommended that the Sutherland approach be reviewed to consider a more detailed breakdown of the localization procedures in line with the clinical report to ensure a higher level of coding precision."
+  },
+  {
+    "patient_id": "2589956",
+    "analysis": [
+      {
+        "sutherland_code": "Z942",
+        "ai_code": null,
+        "status": "sutherland_only",
+        "is_sutherland_correct": false,
+        "is_ai_correct": false,
+        "clinical_justification": "Sutherland\u2019s use of Z942 appears to designate transplant status \u2013 however, the clinical text indicates a preoperative evaluation for bilateral lung transplant rather than documentation of a completed transplant procedure or status. Using a transplant status code at this stage is not fully concordant with the patient\u2019s current situation. Since the AI system does not include this code, it suggests that the Sutherland coder may have mis\u2010applied a transplantation status code.",
+        "severity": "moderate"
+      },
+      {
+        "sutherland_code": "Z01818",
+        "ai_code": "Z01811",
+        "status": "different_approach",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "Both codes are intended to address the preoperative or special examination encounter associated with lung transplant evaluation. However, the AI\u2019s Z01811 is closer in line with a standard documentation for an encounter for preprocedural evaluation. The difference of one digit indicates a variance in the modifier or specificity; given the exam context it is preferable to use the more precise encounter code \u2013 here, AI\u2019s approach appears more accurate.",
+        "severity": "minor"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "J849",
+        "status": "ai_only",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "clinical_justification": "The procedure performed was an X-ray fluoroscopy (diaphragmatic sniff test) to evaluate diaphragmatic motion. AI\u2019s inclusion of J849 \u2013 which in this context is used as an unlisted or miscellaneous code for the specific fluoroscopic exam \u2013 more completely captures the performed diagnostic procedure. The Sutherland coders did not include a corresponding procedural code, potentially omitting a key element needed for billing and clinical documentation.",
+        "severity": "moderate"
+      }
+    ],
+    "coding_accuracy_score": {
+      "sutherland_score": 0.6,
+      "ai_score": 0.8
+    },
+    "match_potential": {
+      "could_be_partial_match": true,
+      "could_be_complete_match": false,
+      "reasoning": "There is some commonality in capturing the preoperative evaluation (albeit with slight differences in the code extension), but the differences \u2013 namely the inappropriate use of a lung transplant status code by Sutherland and the additional, clinically relevant procedure code provided by AI \u2013 prevent this case from being classified as a complete match. Aligning the preoperative evaluation codes and including the diagnostic test would produce a partial match."
+    },
+    "overall_assessment": "In this No Match case, the AI coding approach is more accurate because it avoids misclassifying the patient\u2019s status and includes a specific code for the fluoroscopic diaphragmatic exam. The Sutherland system erroneously applies a transplant status code (Z942) where it is not yet applicable and omits the direct procedure coding. This discrepancy is clinically significant as it impacts both billing accuracy and the reflection of the patient\u2019s work\u2010up for lung transplant evaluation. Recommendations include re\u2010reviewing the indications for transplant status coding and aligning on the appropriate preoperative evaluation code, while ensuring that the performed diagnostic procedure is captured consistently."
+  }
+]

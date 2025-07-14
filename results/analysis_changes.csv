@@ -1,0 +1,32 @@
+patient_id,original_match,new_match,reason,sutherland_errors,ai_corrections,extra_codes,sutherland_score,ai_score
+2668260,Partial Match,Complete Match (Post-Review),"AI coding more accurate (AI: 1.00, Sutherland: 0.60)",2,1,0,0.6,1.0
+2552692,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/3,0,0,2,1.0,0.3
+2674844,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/7,0,0,4,1.0,0.5
+2657619,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/7,0,0,4,1.0,0.3
+2671724,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/1,0,0,0,1.0,0.5
+2579273,Partial Match,Complete Match (Post-Review),"AI coding more accurate (AI: 1.00, Sutherland: 0.67)",1,1,0,0.67,1.0
+2671705,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/2,0,0,1,1.0,0.0
+2579160,Partial Match,Complete Match (Post-Review),"AI coding more accurate (AI: 1.00, Sutherland: 0.80)",1,0,0,0.8,1.0
+2623336,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/1,0,0,0,1.0,0.0
+2626588,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/5,0,0,2,1.0,0.0
+2598282,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/3,0,0,2,1.0,0.0
+2527636,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/1,0,0,0,1.0,0.8
+2674760,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/6,0,0,3,0.9,0.6
+2623358,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/2,0,0,0,1.0,0.5
+2663910,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/5,0,0,1,1.0,0.4
+2666006,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 1/7,1,0,4,0.75,0.25
+2664161,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/6,0,0,1,1.0,0.0
+2584170,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/1,0,0,0,1.0,0.5
+2598475,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/1,0,0,0,1.0,0.7
+2593095,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/3,0,0,0,1.0,0.33
+2674750,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 1/11,1,0,6,0.8,0.2
+2663810,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/6,0,0,4,1.0,0.0
+2675007,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/5,0,0,4,1.0,0.5
+2667355,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/5,0,0,1,1.0,0.5
+2675480,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/4,0,0,1,1.0,0.3
+2604872,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/1,0,0,0,1.0,0.5
+2665929,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/4,0,0,0,0.85,0.35
+2665745,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/1,0,0,0,1.0,0.75
+2675019,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/3,0,0,0,1.0,0.0
+2671817,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/1,0,0,0,1.0,0.7
+2526276,Partial Match,Complete Match (Post-Review),Low Sutherland error rate: 0/9,0,0,4,1.0,0.0

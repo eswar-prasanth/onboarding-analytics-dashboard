@@ -1,0 +1,2391 @@
+[
+  {
+    "patient_id": "2668260",
+    "analysis": [
+      {
+        "sutherland_code": "R930",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "R930 represents an abnormal imaging finding (likely an abnormal result code) that in this case reflects a sign/symptom of the definitive diagnosis of acute left MCA territory infarct. According to the general guidelines, once a definitive diagnosis is documented (here, the acute infarct), additional sign/symptom codes that relate to that diagnosis are not necessary. The AI correctly omitted R930, avoiding redundant coding.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms; Definitive Diagnoses",
+        "clinical_context": "The MRI clearly demonstrates an acute left MCA territory infarct; coding the related abnormal imaging finding separately is not required.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "I6389",
+        "ai_code": "I63512",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The clinical text documents an 'acute left MCA territory infarct' which requires a definitive stroke code. The appropriate code for an acute left middle cerebral artery infarct is I63.512. Sutherland\u2019s code I6389 does not match the specificity required and may be an incorrectly formatted or less specific code. The AI\u2019s substitution with I63512 (interpretable as I63.512) is more accurate and aligns with the definitive diagnosis documentation.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Specific Conditions - Stroke",
+        "clinical_context": "The acute infarct in the left MCA territory is the primary radiological finding and demands a precise ICD-10 code that reflects the laterality and vascular territory.",
+        "recommended_action": "keep_ai"
+      }
+    ],
+    "overall_assessment": "The AI coding is more accurate in this case. It appropriately omitted the unnecessary sign/symptom code (R930) and substituted an accurate, definitive code (I63512 corresponding to I63.512) for the acute left MCA infarct.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.5,
+      "ai_score": 1.0
+    }
+  },
+  {
+    "patient_id": "2552692",
+    "analysis": [
+      {
+        "sutherland_code": "C73",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical text clearly states 'Thyroid cancer' with a history of thyroidectomy and papillary histology. C73 (malignant neoplasm of thyroid gland) must be coded as the definitive diagnosis per the guideline for definitive diagnoses. Its absence in the AI coding represents a critical oversight.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The patient\u2019s history and imaging workup for thyroid cancer mandate that the active malignancy is coded.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z85850",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Z85850 represents a personal history of malignant neoplasm of thyroid gland. However, the radiology report documents thyroid cancer as an active or definitive diagnosis, not merely a history. Therefore, substituting this history code for the appropriate active cancer code (C73) is incorrect.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "Active thyroid cancer workup was performed; coding as a personal history is not appropriate when an active malignancy is present.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R930",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "R930 is an extra code introduced by the AI without supporting documentation within the radiology report. The report\u2019s abnormal finding of indeterminate asymmetric uptake at the left tongue base is mentioned but does not warrant an additional code according to guidelines on incidental findings and coding only definitive diagnoses.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Unrelated Findings",
+        "clinical_context": "The imaging findings do not require an extra abnormality code when a definitive cancer diagnosis (C73) has been established and incidental findings are not separately coded.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate; the AI system missed the critical code C73 for thyroid cancer and incorrectly added the extraneous codes Z85850 and R930.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.0
+    }
+  },
+  {
+    "patient_id": "2667334",
+    "analysis": [
+      {
+        "sutherland_code": "I517",
+        "ai_code": "I081",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Both coding sets include I3139, indicating that the coders recognized a primary cardiac issue. However, while Sutherland applied I517 as a secondary code, the AI substituted I081. In ICD\u201010, codes in the I08 series (eg, I081) refer to conditions such as multiple or rheumatic valve diseases. The radiology report clearly documents normal valve morphology and function (eg, mild regurgitation is noted but not emphasized as clinically significant), and there is no evidence in the findings to support a rheumatic or multiple valve disease diagnosis. In contrast, Sutherland\u2019s use of I517 is more in line with coding for a cardiac condition related to the clinical indication of \u201cevaluation of dilated right ventricle\u201d (even though the imaging demonstrated normal ventricular size and function). Following the guideline that only definitive imaging findings and clearly documented diagnoses should be coded, Sutherland\u2019s secondary code is more appropriate than the AI\u2019s assignment of a code that suggests a different valvular pathology.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Specific Conditions: Mild valvular regurgitation not coded as significant disease",
+        "clinical_context": "The clinical indication was to evaluate a dilated right ventricle. Although the study demonstrated normal RV size and function and only noted minimal valve regurgitation, the code selected should reflect the clinical concern documented. The AI\u2019s I081 implies a rheumatic/multi\u2010valvular disease process that is not supported by the imaging findings.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "In this case Sutherland\u2019s coding is more accurate. While both systems capture a primary cardiac condition with I3139, the AI\u2019s extra code (I081) introduces a diagnosis that is not supported by the report. Sutherland\u2019s I517, although reflective of the clinical suspicion in the referral, better aligns with the documented findings when coding definitive diagnoses.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2674844",
+    "analysis": [
+      {
+        "sutherland_code": "R933",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report clearly documents diffusely decreased T2 signal throughout the liver and spleen, findings that are suggestive of a depositional process such as secondary hemochromatosis. Sutherland\u2019s use of R933 appears to capture one component of these abnormal imaging findings (for example, an abnormality in one of the organs) which is essential for comprehensive coding. The AI, by not including this code, omits a pertinent imaging abnormality described in the report.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding; Definitive Diagnoses",
+        "clinical_context": "Abnormal imaging findings that support a diagnosis of deposition disease are central to the radiologic interpretation.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "K861, K838",
+        "ai_code": "K8580",
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report provides a definitive diagnosis of new interstitial pancreatitis involving the pancreatic head, neck, and body. Sutherland\u2019s approach of coding with K861 and K838 (which appear to segment the complex acute pancreatic process and its described imaging features) more fully captures the diagnosis. In contrast, AI\u2019s substitution with the single code K8580 does not reflect the full breadth of the documented pancreatitis finding. According to coding guidelines, the definitive diagnosis should be completely and accurately represented.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Comprehensive Coding",
+        "clinical_context": "Accurate depiction of acute interstitial pancreatitis is critical given its role as the primary imaging finding in the study.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R935",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI introduced R935 without clear supportive evidence in the imaging findings. There is no description in the report that would warrant an additional abnormal imaging code corresponding to R935. Its inclusion appears to be an erroneous addition.",
+        "guideline_reference": "General Guidelines: Code Only Definitive Diagnoses",
+        "clinical_context": "No distinct imaging abnormality or separate diagnostic entity is documented that matches R935.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R945",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "R945 seems to relate to an abnormal laboratory or clinical finding (for example, elevated LFTs) that is mentioned in the clinical history. However, as per coding guidelines, related signs/symptoms or laboratory abnormalities that serve as indications rather than definitive imaging diagnoses should not be separately coded when they are part of the context for the study. The imaging report\u2019s definitive findings (like pancreatitis and abnormal organ signals) are the primary focus.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms Not Coded Separately When Related",
+        "clinical_context": "Elevated LFTs are part of the clinical indication and are not a direct imaging diagnosis.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R1115",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The code R1115 appears to reflect a clinical symptom such as failure to thrive, which, although mentioned in the clinical history, is not confirmed as an imaging finding. According to the guidelines, signs and symptoms that are related to the definitive diagnoses should not be separately coded when they are provided only as ancillary clinical information.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms Related to Definitive Conditions Are Not Coded Separately",
+        "clinical_context": "Failure to thrive is mentioned as part of the patient\u2019s clinical history rather than as an imaging observation needing separate coding.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding more accurately reflects the imaging findings by capturing all definitive diagnoses\u2014especially the dual components for abnormal liver/spleen signals and the detailed depiction of interstitial pancreatitis. The additional codes introduced by the AI (R935, R945, R1115) are not supported by the radiologic findings and represent overcoding of ancillary clinical information.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.4
+    }
+  },
+  {
+    "patient_id": "2657612",
+    "analysis": [
+      {
+        "sutherland_code": "K769",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report describes hyperintense lesions in the dome of the liver that could represent cysts and recommends further ultrasound characterization. In comprehensive coding, these incidental but documented liver findings are coded. Sutherland\u2019s inclusion of K769 (an unspecified liver disorder code capturing the incidental hepatic lesion) is appropriate while the AI omitted it.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Unrelated Findings",
+        "clinical_context": "Incidental hepatic lesions identified on cardiac MRI that may require follow\u2010up evaluation.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "I517",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "I517 (a cardiac code suggestive of a specific cardiomyopathy or other cardiac abnormality) appears to be based on the noted asymmetric septal hypertrophy. However, the report documents a basal anteroseptal wall thickness of 15 mm without a definitive clinical diagnosis of hypertrophic cardiomyopathy. Per guidelines, only definitive diagnoses should be coded. Thus, coding I517 is premature and not supported by the findings, making its omission by the AI appropriate.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Signs/Symptoms not coded separately",
+        "clinical_context": "The imaging finding of a 15 mm wall thickness is borderline and not definitively diagnostic of a cardiomyopathy.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "R931",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "R931 is a code used for abnormal findings on diagnostic imaging; however, the report already provides specific descriptions (eg, wall thickening and hepatic lesions) that are addressed via more specific codes. The use of a non\u2010specific abnormal imaging code (R931) is not indicated when definitive or descriptive findings are provided. Omitting R931\u2014as the AI did\u2014is in keeping with coding guidelines.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding of Definitive Diagnoses over non-specific abnormal imaging findings",
+        "clinical_context": "The report\u2019s abnormalities are already captured through specific incidental codes and descriptive findings, making a catch-all abnormal imaging code redundant.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I3489",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "I3489 appears to be an extra code applied by the AI that is not supported by any specific finding in the narrative. The report does not document a definitive diagnosis or abnormality (such as a valve disorder or specific cardiac conduction issue) that would warrant I3489. Therefore, its addition is not justified per the guidelines.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Only code documented findings",
+        "clinical_context": "There is no narrative finding in the report that supports an additional cardiac abnormality corresponding to I3489.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I422",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "I422 is an extra code generated by the AI, likely implying a nonrheumatic valve disorder that is not substantiated by the report. Although the mitral valve leaflet is noted to be qualitatively thickened, there is no evidence of hemodynamic significance or a definitive valve disorder. Thus, this additional code is not indicated.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Signs/Symptoms not coded separately",
+        "clinical_context": "The mild descriptive abnormality of the mitral valve does not reach the threshold for a separate valve disorder diagnosis.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland's coding is more accurate overall. It appropriately captures an incidental hepatic finding (K769) while avoiding spurious cardiac valve codes and avoiding use of a vague abnormal imaging code (R931). However, Sutherland incorrectly coded I517 based on a borderline finding that does not meet definitive diagnostic criteria. The AI, in turn, missed the liver lesion and avoided overcoding I517 and R931 but erroneously added unsupported codes (I3489 and I422).",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.6,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2667738",
+    "analysis": [
+      {
+        "sutherland_code": "R42",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report clearly documents that the patient presents with dizziness. R42 (dizziness and giddiness) is the appropriate symptom code. Its omission by the AI (which instead generated R1909 later) represents a missed opportunity to code a documented clinical sign.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Signs/Symptoms",
+        "clinical_context": "Dizziness is a directly reported symptom in the clinical history that supports the examination findings.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R030",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report notes unequal blood pressures in the extremities. R030 (abnormal blood-pressure reading) appropriately reflects this finding. The AI\u2019s failure to include this code represents a deviation from comprehensive coding of all related clinical signs.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Abnormal blood pressure readings are pertinent and support further evaluation, especially in the context of vascular abnormalities.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "N858",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "A large indeterminate cystic lesion in the pelvis is described. Sutherland\u2019s use of N858 (a code selected to reflect a pelvic or gynecologic finding) at least denotes the presence of an indeterminate pelvic cystic lesion. The AI did not capture this finding, which may have clinical relevance even if the organ\u2010of\u2010origin remains indeterminate.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Incidental pelvic lesions in imaging should be noted even if not definitively characterized, given potential need for further evaluation.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R1909",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Instead of coding dizziness correctly as R42, the AI appears to have used R1909\u2014a vague, non\u2010specific code for other symptoms/signs. This substitution does not accurately capture the specific symptom (dizziness) as documented in the report.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Sign/Symptom specificity",
+        "clinical_context": "Dizziness is explicitly mentioned and should be coded with its specific code rather than by a catch\u2010all other symptom code.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "J9811",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report notes a right upper lobe lung mass suspicious for malignancy. However, because the finding is described only as suspicious, it does not meet criteria for a definitive diagnosis of lung cancer. AI\u2019s use of J9811 (an atypical choice that might be interpreted as a malignant neoplasm code) is not supported by the report. Furthermore, neither coding set correctly captures the lung mass suspicion as no definitive cancer code is warranted here.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses versus Suspected Findings",
+        "clinical_context": "Imaging findings that are only suspicious for malignancy should be approached with caution in coding; a non-definitive (or follow\u2010up) code may be more appropriate than a malignant neoplasm code.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I708",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical history states a prior aortic valve replacement. The appropriate history code should reflect the status of a prosthetic valve (typically Z95.2) rather than I708. AI\u2019s inclusion of I708 is not supported by the clinical text and appears to be an incorrect substitution.",
+        "guideline_reference": "Specific Guidelines: Relevant Historical Findings",
+        "clinical_context": "A history of aortic valve replacement is important, but must be coded with the correct Z-code rather than an incorrect I-code.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "J432",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "There is no clear corresponding finding for J432 documented in the report. The AI\u2019s generation of this code cannot be substantiated by the imaging findings or patient history.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Clinical Relevance",
+        "clinical_context": "Every code must reflect a finding in the report; extraneous codes like J432 detract from coding accuracy.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z952",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "While the report mentions a history of aortic valve replacement, the proper code for such a history is typically a Z-code (for example, Z95.2). AI\u2019s use of Z952 is a mis\u2010coding of this historical detail. Sutherland did not include any code for this history, and if it were to be coded correctly it should employ the proper Z-code.",
+        "guideline_reference": "Specific Guidelines: Historical (Status) Codes",
+        "clinical_context": "Accurate coding of medical history is important; an incorrect Z-code (Z952) may lead to confusion or misinterpretation.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R918",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "R918 is a non\u2010specific code that does not clearly correspond to any distinct finding in the report. Its inclusion by the AI does not add useful clinical detail and represents an over\u2010coding of ambiguous findings.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Avoidance of Redundancy",
+        "clinical_context": "The imaging report contains specific findings, and each code should directly correlate to a documented abnormality rather than a vague non\u2010specific code.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding is more accurate as it correctly captures the documented signs and symptoms (dizziness, abnormal blood pressure, and pelvic cyst) while refraining from adding non\u2010specific or misapplied codes. The AI system not only omitted these pertinent codes but also introduced several extraneous codes that are not appropriately supported by the clinical report.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.9,
+      "ai_score": 0.3
+    }
+  },
+  {
+    "patient_id": "2665926",
+    "analysis": [
+      {
+        "sutherland_code": "K838",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report\u2019s impression states \u201cSuspected choledocholithiasis without biliary ductal dilatation.\u201d Sutherland\u2019s use of K838 correctly captures this suspected biliary pathology. AI\u2019s omission of K838 overlooks a pertinent diagnostic finding that is reported and should be coded as per the directive to code all related/pertinent diagnoses.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding; Specific Conditions regarding suspected choledocholithiasis",
+        "clinical_context": "Choledocholithiasis is mentioned in the impression and thus represents an important potential diagnosis that impacts clinical management.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "N3289",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "There is no clear correlate in the radiology report for N3289. The only genitourinary related note is that the bladder is minimally distended \u2013 a normal variant \u2013 and the prostate (addressed with N400) is described as enlarged and heterogeneous. The inclusion of an additional N-code (N3289) appears to overextend the coding. According to the guidelines, only definitive and pertinent diagnoses should be coded. Therefore, AI\u2019s decision to omit N3289 is more appropriate.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Comprehensive Coding (code only what is clearly supported by the report)",
+        "clinical_context": "No distinct abnormality correlating to N3289 is provided in the report; the bladder finding is not abnormal.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "K6389",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "Sutherland included K6389 likely to represent the interpretation of several mildly thickened small bowel loops with the suggestion to \u2018correlate clinically for enteritis.\u2019 However, because the report offers only an impression of possible enteritis without a definitive diagnosis, coding it with a disease\u2010specific code (K6389) may be premature. The guidelines instruct that only definitive diagnoses are to be coded, and non\u2010definitive suggestions (or mere impressions that require clinical correlation) are generally not coded separately.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses vs. Signs/Symptoms",
+        "clinical_context": "The bowel thickening is a non\u2010specific finding with a note to correlate clinically; as such, it does not warrant a confirmed diagnostic code.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R933, R93429, I517, I2510, I7090, J9811, R937, R932, I700",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "AI generated a bundle of additional codes that do not clearly reflect findings from the report. Although the report documents a few incidental vascular and cardiac findings (eg, mild cardiomegaly noted as an enlarged heart and coronary/aortic calcifications), many of the AI\u2019s extra codes (which include codes suggestive of coronary artery disease, additional atherosclerosis and non\u2010specific R-codes) extend beyond the definitive radiologic conclusions. The guidelines require that only well \u2013 supported definitive diagnoses, not speculative or incidental findings of uncertain clinical significance, be coded.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses over incidental findings and extraneous coding",
+        "clinical_context": "While the report describes aortic and coronary calcifications and a right internal iliac artery aneurysm (appropriately coded by both parties as I723 for the aneurysm), the extra codes by AI add conditions that are not explicitly mentioned or are speculative in nature.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding is more accurate overall. The Sutherland coder appropriately identified the key finding of suspected choledocholithiasis (K838) while avoiding overcoding unrelated or non\u2010definitive findings. In contrast, AI omitted an important code (K838) and appended multiple codes unrelated or only tangentially related to the report\u2019s definitive findings. There is some dispute regarding N3289 and K6389; based on the guidelines, omission of non\u2010definitive or extraneous codes (as AI did) is preferred.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.7,
+      "ai_score": 0.4
+    }
+  },
+  {
+    "patient_id": "2651605",
+    "analysis": [
+      {
+        "sutherland_code": "N838",
+        "ai_code": "N83202",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The clinical report documents a left adnexal cyst measuring 2.8 cm. Sutherland\u2019s use of N838 (which is a less specific form of the noninflammatory ovarian/adnexal disorder code) does not capture the laterality or specificity implied by the finding. In contrast, the AI code N83202 is a more detailed code within the N83.2 series for ovarian cysts (likely representing an acquired ovarian cyst with laterality specification), making it a better match for the definitive incidental finding as mandated by the comprehensive coding guidelines (see General Guidelines: Comprehensive Coding).",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Comprehensive Coding",
+        "clinical_context": "An incidental left adnexal cyst is noted on CT and should be accurately coded with a specific code that reflects the nature and laterality of the finding.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "Z978",
+        "ai_code": "Z931",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report mentions the distal portion of a VP shunt which is a definitive incidental device finding. Sutherland\u2019s choice of Z978 is intended to denote the presence of an implanted device (consistent with coding for incidental hardware findings). The AI\u2019s extra code of Z931 does not appropriately reflect the VP shunt status. The guidelines dictate that all definitive aspects of the exam, including incidental hardware, must be correctly captured; hence, the Sutherland code is more appropriate.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Device/Implant Documentation",
+        "clinical_context": "The incidental finding of a VP shunt is important to note and correctly code as part of the patient's status, even though it is not contributing to the current exam\u2019s acute findings.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Both the manual (Sutherland) and AI codings largely capture the exam findings; however, there is a trade\u2010off. The AI coding provides greater specificity for the adnexal cyst, while Sutherland\u2019s coding more accurately represents the VP shunt. A combined approach that uses the AI code for the adnexal cyst (N83202) and the Sutherland code for the VP shunt (Z978) would yield the most accurate overall coding.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.75,
+      "ai_score": 0.75
+    }
+  },
+  {
+    "patient_id": "2657619",
+    "analysis": [
+      {
+        "sutherland_code": "R7989",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The clinical information included an elevated liver function test and GGT; however, these laboratory abnormalities are provided as indications for the exam and are likely secondary to the definitive finding of a partially obstructive CBD stone. Per the guidelines, signs and symptoms related to a definitive diagnosis (in this case, the CBD stone) should not be coded separately. Therefore, including R7989 is not supported.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms not coded separately",
+        "clinical_context": "Elevated LFTs are the reason for obtaining the exam but are not an independent definitive diagnosis once the CBD stone is identified.",
+        "recommended_action": "remove_sutherland"
+      },
+      {
+        "sutherland_code": "K8050",
+        "ai_code": "K8051",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report states 'colonic diverticulosis without evidence of diverticulitis.' Sutherland\u2019s use of K8050 properly reflects uncomplicated diverticulosis. In contrast, AI\u2019s substitution with K8051 implies diverticulitis, which is not supported by the report.",
+        "guideline_reference": "General Guidelines: Comprehensive coding of definitive diagnoses and incidental findings",
+        "clinical_context": "The incidental finding of diverticulosis (without inflammation or infection) should be coded correctly, avoiding any implication of diverticulitis.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "K8689",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The imaging report documents multiple hepatic cysts with a notably sized cyst in segment 4A. Sutherland\u2019s inclusion of K8689 appropriately codes for these hepatic cysts as a definitive finding. AI\u2019s omission results in incomplete coding of pertinent hepatic pathology.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Definitive Diagnoses",
+        "clinical_context": "Hepatic cysts are an important incidental but definitive finding on the exam and should be coded.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R937",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "There is no documentation in the clinical report or imaging findings that supports the application of code R937. This code appears to be an extraneous addition and is not warranted by the documented findings.",
+        "guideline_reference": "General Guidelines: Code only what is definitively documented",
+        "clinical_context": "No abnormality corresponding to R937 is mentioned in the exam findings or clinical history.",
+        "recommended_action": "remove_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R945",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Similar to R937, code R945 is not substantiated by any specific finding within the report. The extra code does not align with any described abnormality in the imaging study.",
+        "guideline_reference": "General Guidelines: Code all related/pertinent diagnoses only",
+        "clinical_context": "There is no evidence in the report to suggest an abnormality that would require coding with R945.",
+        "recommended_action": "remove_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "K7689",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI-added code K7689 is not supported by any detail in the narrative of the exam. It appears to be an unwarranted substitution as no corresponding pathology is mentioned that would justify this code.",
+        "guideline_reference": "General Guidelines: Code only what is documented",
+        "clinical_context": "The report does not include findings that would require assigning a code such as K7689.",
+        "recommended_action": "remove_ai"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding overall more accurately reflects the documented findings, especially regarding diverticulosis (K8050) and hepatic cysts (K8689). However, Sutherland\u2019s inclusion of the laboratory abnormality (R7989) is not supported by the guidelines, as it is a sign/symptom related to the definitive diagnosis of a distal CBD stone. Conversely, AI introduced several extraneous codes (R937, R945, K7689, and incorrectly substituted K8051 for K8050) that are not supported by the clinical text.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.75,
+      "ai_score": 0.3
+    }
+  },
+  {
+    "patient_id": "2668256",
+    "analysis": [
+      {
+        "sutherland_code": "G9389",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical report clearly documents chronic infarcts (chronic right occipital and right cerebellar infarcts). The Sutherland code G9389 (interpreted as G93.89 \u2013 Other disorders of brain, often used for sequelae of cerebrovascular events) is used to capture these chronic findings, a definitive diagnosis per the guidelines. The AI did not include this code, thereby missing an important component of the patient\u2019s cerebrovascular disease profile.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Comprehensive Coding",
+        "clinical_context": "Chronic infarct findings are explicitly mentioned in the imaging impression and require coding to capture the full spectrum of the patient\u2019s cerebrovascular disease.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "I618",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report describes acute left middle cerebral artery (MCA) territory infarcts. The Sutherland code I618 (representing the acute infarction in the MCA territory) correctly reflects this definitive diagnosis, which is not captured by the AI. According to coding guidelines, all definitive diagnoses should be coded.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "Acute infarction in the MCA territory is the primary pathology detailed in the imaging findings and sets the basis for clinical management.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "H748X3",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report specifically notes the presence of cortical petechial hemorrhage overlying the acute infarct regions. Sutherland\u2019s H748X3 is used to capture this hemorrhagic component. Proper coding of hemorrhagic transformation or associated hemorrhage with infarction is important when documented; missing it can under-represent disease severity.",
+        "guideline_reference": "Specific Guidelines: Injury/Trauma/Fall and Comprehensive Coding of pertinent findings",
+        "clinical_context": "The presence of petechial hemorrhage influences treatment decisions and prognosis; hence, it must be separately coded when clearly documented.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "I6389",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report documents a subacute left posterior cerebral artery (PCA) territory infarct with subtle hemorrhagic features. Sutherland\u2019s I6389 correctly codes for this subacute infarct event. The omission of this code by the AI results in an incomplete representation of the patient\u2019s cerebrovascular status.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Comprehensive Coding",
+        "clinical_context": "Subacute PCA infarct is a definitive diagnosis that impacts the overall stroke assessment and subsequent clinical management.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R9082",
+        "ai_code": "R9082",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": true,
+        "reasoning": "Both coding methods included R9082, which suggests that this code appropriately reflects a nonspecific abnormal finding that may be used adjunctively. Since it is common to both and does not conflict with the definitive diagnoses already coded, its use is acceptable.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "R9082 appears to serve as an additional code capturing nonspecific findings and does not detract from the primary stroke-related diagnoses.",
+        "recommended_action": "keep_both"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I63532",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI added code I63532, which does not have a clear correlate in the radiology report. The report\u2019s language clearly specifies acute infarcts and hemorrhagic change; however, I63532 appears to be an erroneous substitution that does not match the documented findings.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Comprehensive Coding",
+        "clinical_context": "Incorrect territory or pathophysiological inferences may lead to misrepresenting the patient\u2019s actual condition, as the report does not support the use of I63532.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I63512",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Similarly, the AI\u2019s use of code I63512 is not supported by the clinical findings. The radiologist\u2019s description does not suggest findings that would warrant this code, making it an extraneous addition.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Comprehensive Coding",
+        "clinical_context": "The imaging report does not describe any pathology that matches the diagnostic definition of I63512, indicating a misinterpretation by the AI.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I611",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The addition of I611 by the AI is not corroborated by the report. There is no mention of pathology that would justify I611 (which may indicate a different type of cerebrovascular lesion such as a nontraumatic hemorrhage not otherwise specified).",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "Given that the report limits its discussion to infarcts with associated petechial hemorrhage as part of the stroke presentation, the code I611 is not clinically supported.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z961",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI\u2019s use of Z961 is not justified by the clinical text. Z96 codes generally denote the presence of devices or certain conditions (such as status post-procedural states) that are not mentioned in the imaging findings. This represents an extraneous addition.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "There is no clinical indication (such as a documented device or history) in the report that would require use of a Z96 series code.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "The Sutherland coding accurately reflects the definitive diagnoses documented in the radiology report \u2013 including acute left MCA infarct, subacute left PCA infarct, associated cortical petechial hemorrhage, and chronic infarct sequelae \u2013 in accordance with the imaging findings and coding guidelines. In contrast, the AI coding missed several critical codes and introduced extra codes that are not supported by the clinical text. Consequently, the Sutherland approach is more accurate and should be maintained.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.3
+    }
+  },
+  {
+    "patient_id": "2671724",
+    "analysis": [
+      {
+        "sutherland_code": "T8386XA",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report documents an intravesical thrombus surrounding a Foley catheter balloon, which represents a complication associated with the indwelling urinary device. According to the radiology coding guidelines, a definitive complication related to a device should be coded, and T8386XA appropriately captures this complication. AI failed to capture this necessary complication code.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Comprehensive Coding; Specific Conditions: Device complications",
+        "clinical_context": "The radiological findings note a thrombus surrounding the Foley catheter balloon, an important complication that impacts patient management.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "N3289",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI added code N3289, which typically designates an unspecified bladder disorder. However, the clinical report does not suggest a primary bladder pathology such as neurogenic bladder or other intrinsic bladder conditions. Instead, the bladder abnormality is clearly attributable to a device complication already appropriately coded with T8386XA.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms vs. Definitive Diagnoses; Specific Conditions: Device related complications",
+        "clinical_context": "The imaging findings are explained by the presence of a Foley catheter thrombus, not by an underlying primary bladder disorder that would require coding with N3289.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate. The definitive complication of the Foley catheter is properly coded with T8386XA, while the AI\u2019s extra code (N3289) is not supported by the clinical findings.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2579273",
+    "analysis": [
+      {
+        "sutherland_code": "M47819",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The clinical report\u2019s primary and definitive finding is metastatic disease in several ribs in a patient with known lung cancer. Instead of coding this definitive neoplastic spread using a secondary malignant neoplasm code (such as C79.51), Sutherland coded M47819 \u2013 a musculoskeletal code reflecting degenerative changes in the left sacroiliac joint. Although the report mentions degenerative changes in the SI joint, that finding is incidental and not the primary condition for which the exam was obtained. According to the guidelines (General Guidelines: Definitive Diagnoses and Unrelated Findings), incidental degenerative changes that are not the subject of the exam (or do not explain the patient\u2019s clinical presentation) should not be given precedence over the definitive diagnosis of metastases.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Unrelated Findings",
+        "clinical_context": "The exam was ordered for evaluation of osseous metastases in a patient with lung cancer. Metastatic disease is the primary and medically necessary diagnosis that should be accurately captured.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "C7951",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "AI correctly coded C7951, which represents a secondary malignant neoplasm of bone (commonly coded as C79.51), corresponding to the metastatic involvement described in multiple rib locations. Since the metastatic disease is the definitive diagnosis documented in the impression, this code is critical for reflecting the severity of the patient\u2019s condition. It aligns with the guidelines that mandate coding for all definitive diagnoses, particularly when they are medically necessary.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Medical Necessity",
+        "clinical_context": "The report identifies metastatic lesions in the right anterolateral 5th rib, left lateral 7th rib, and left posterior 7th and 12th ribs with further indeterminate foci \u2013 all findings that warrant a secondary malignant neoplasm code.",
+        "recommended_action": "keep_ai"
+      }
+    ],
+    "overall_assessment": "AI coding is more accurate because it properly captures the definitive diagnosis of metastatic bone disease (C7951) that is central to the report\u2019s purpose. Sutherland\u2019s use of M47819 for degenerative changes overemphasizes an incidental finding while missing the critical metastasis code.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.5,
+      "ai_score": 1.0
+    }
+  },
+  {
+    "patient_id": "2671705",
+    "analysis": [
+      {
+        "sutherland_code": "R93819",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiologist\u2019s impression included an abnormal imaging finding (in this case, a component related to the nonvisualization of the left epididymal tail and/or other imaging abnormality) that was coded as R93819 by Sutherland. According to the comprehensive radiology coding guidelines, all pertinent abnormal imaging findings should be captured. The AI failed to capture this additional abnormality, thereby missing an important code.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Definitive Diagnoses",
+        "clinical_context": "Although the scan primarily ruled out testicular torsion and epididymitis, the report does note a moderate left varicocele and a limitation regarding the left epididymal tail. This incidental abnormal finding is clinically relevant for follow\u2010up.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R300",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI introduced code R300, which is not supported by the imaging report. There is no documentation in the report that justifies the use of R300. The referral did mention dysuria as clinical information; however, when imaging is performed to evaluate potential torsion or epididymitis, associated symptoms that are part of the clinical presentation should not be separately coded if they relate to the definitive imaging findings. Thus, the addition of R300 does not follow the radiology coding guidelines.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms are not coded separately for definitive conditions",
+        "clinical_context": "The clinical indication mentions dysuria; however, since the imaging did not confirm a condition such as epididymitis that would require separate symptom coding, including R300 is not appropriate.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding is more accurate as it captured the necessary abnormal imaging finding (R93819) and did not include an unsupported extra code. The AI omitted an important abnormal imaging code and instead added a code (R300) that is not justified by the radiology report.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2623336",
+    "analysis": [
+      {
+        "sutherland_code": "C439",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical text clearly documents metastatic uveal melanoma. In such cases, comprehensive coding requires that both the metastatic site (C787 for liver metastasis) and the primary malignancy (in this instance represented by C439 for the uveal melanoma) be captured. By omitting the primary tumor code, the AI coding fails to fully reflect the definitive diagnosis. According to the general coding guideline for definitive diagnoses, all primary and secondary diagnoses must be coded.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The report indicates \u2018metastatic uveal melanoma in the right lobe of the liver\u2019, establishing the need to code both the metastasis and the primary tumor.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "D497",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI introduced the code D497, which does not correspond to any definitive finding in the clinical report. There is no indication from the report that a neoplasm of uncertain behavior, benign lesion, or an alternative entity requiring a \u2018D\u2019 code is present. The radiology report clearly describes metastatic uveal melanoma and its hepatic metastasis, so the addition of an extra code is unwarranted and inconsistent with the guidelines.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "There is no description or evidence in the exam or interpretation that supports a lesion of uncertain behavior in the liver or elsewhere, making D497 irrelevant.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate in this case. The omission of the primary tumor code (C439) by AI and the inclusion of an extraneous code (D497) indicate that the AI failed to capture the complete definitive diagnosis as outlined in the radiology report.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2626588",
+    "analysis": [
+      {
+        "sutherland_code": "R9082",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report demonstrates a definitive abnormal finding on the amyloid PET scan (increased amyloid deposition) that is documented explicitly. Sutherland\u2019s use of R9082 captures this abnormal imaging result. According to the general guideline that all definitive diagnoses and pertinent abnormal imaging findings must be coded, this code is warranted. The AI did not capture this abnormal imaging component.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Comprehensive Coding",
+        "clinical_context": "The abnormal amyloid deposition observed by PET imaging is a key finding that supports the diagnosis and should be documented.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R930",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The PET/CT study revealed abnormal radiologic findings (loss of normal gray\u2010white matter contrast, significant amyloid uptake) that are appropriately captured by R930. This code likely represents abnormal imaging findings specific to the brain. Since the radiology report clearly documents these abnormal findings and the guidelines require coding of all definitive imaging abnormalities, its absence in AI coding is a miss.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Comprehensive Coding",
+        "clinical_context": "Abnormal PET/CT findings provide critical diagnostic information that impacts clinical decision\u2010making.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "G3184",
+        "ai_code": "G319",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical statement documents \u201cMild cognitive impairment,\u201d which is definitively coded as G31.84. Sutherland correctly uses G3184 to denote this diagnosis. The AI, however, substituted this with G31.9 (unspecified degenerative disorder), which is less specific and does not accurately capture the documented condition. The guidelines mandate coding the definitive diagnosis with the most specific code available.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Specific Conditions",
+        "clinical_context": "Mild cognitive impairment is a definitive clinical diagnosis mentioned in the report, directly impacting patient management and follow\u2010up.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I6782, E854",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI introduced I6782 and E854, which do not correspond to any findings or clinical details in the radiology report. There is no documentation in the report of cardiovascular or external cause issues that these codes might suggest. Per the guidelines, only definitive and related diagnoses should be coded, and extraneous or unrelated codes are not acceptable.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Unrelated Findings",
+        "clinical_context": "The radiologic study focused exclusively on brain PET/MRI findings and mild cognitive impairment, with no evidence supporting the use of I6782 or E854.",
+        "recommended_action": "neither"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding aligns closely with the clinical findings and established guidelines by including specific codes for abnormal imaging findings and mild cognitive impairment. The AI omitted critical abnormal imaging codes and substituted a specific diagnostic code with a less specific one, in addition to adding unrelated codes. Overall, Sutherland coding is more accurate.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.0
+    }
+  },
+  {
+    "patient_id": "2598282",
+    "analysis": [
+      {
+        "sutherland_code": "C220",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical text clearly documents the patient's known hepatocellular carcinoma (HCC). According to the guidelines, definitive diagnoses documented in the report must be coded. Sutherland correctly includes C220 for HCC, while the AI omitted it.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "HCC is a critical condition in this patient with cirrhosis, directly relevant to the evaluation of osseous metastases.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "M47814",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The finding of 'increased activity secondary to degenerative process' in various joints is noted in the report; however, these are incidental and non\u2010definitive observations. The guidelines state that incidental signs or symptoms that are not definitive diagnoses\u2014or related to the primary condition\u2014should not be coded separately. Thus, adding a degenerative code (M47814) is not supported.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms and Comprehensive Coding",
+        "clinical_context": "The study primarily evaluates osseous metastases in a patient with HCC and cirrhosis; incidental degenerative changes do not require separate coding.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "M159",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Similar to M47814, the use of M159 to code for incidental degenerative changes is not indicated. The imaging report notes degenerative activity in several joints as an incidental observation, not a definitive diagnosis requiring a separate code. The guidelines advise against coding incidental findings that are not the focus of the study or which do not have clinical significance.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms and Comprehensive Coding",
+        "clinical_context": "Since the exam is focused on evaluation for metastases in a patient with known HCC and cirrhosis, the incidental degenerative findings are not pertinent to the primary clinical concern.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate, as it correctly captures the definitive diagnoses (cirrhosis and HCC) without including incidental, non-definitive degenerative codes.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.33
+    }
+  },
+  {
+    "patient_id": "2579160",
+    "analysis": [
+      {
+        "sutherland_code": "Z98890",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The clinical report clearly documents the patient's status post\u2013cholecystectomy, which is appropriately coded with Z90.49. Sutherland\u2019s additional code (Z98890) appears to represent another postprocedural state, but there is no evidence or additional finding in the report (such as complications or other sequelae) that would warrant an extra code. According to the guidelines, only the definitive and pertinent post\u2010surgical diagnosis should be coded. Thus, coding Z90.49 is sufficient, and the additional Z98890 is extraneous.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Specific Conditions regarding postprocedural status",
+        "clinical_context": "The hepatobiliary scan was performed to evaluate for a bile leak in a patient known to be status post\u2013cholecystectomy. The only relevant postprocedural status is the absence of the gallbladder (Z90.49), as no complications or additional postprocedural findings were reported.",
+        "recommended_action": "keep_ai"
+      }
+    ],
+    "overall_assessment": "AI coding is more accurate. The definitive postoperative status is correctly captured with Z90.49 (listed as Z9049 in the provided codes), and there is no clinical justification for including an additional postprocedural code (Z98890).",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.5,
+      "ai_score": 1.0
+    }
+  },
+  {
+    "patient_id": "2527636",
+    "analysis": [
+      {
+        "sutherland_code": "M47819",
+        "ai_code": "M489",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report clearly documents 'degenerative changes of the spine' as an incidental finding. The Sutherland code M47819 (which represents a more specific designation such as M47.819 \u2013 Other spondylosis without myelopathy, site unspecified) accurately captures this degenerative spine finding. In contrast, the AI used M489 (Spondylopathy, unspecified), which is a broader, less precise code and does not specifically address the degenerative nature of the spinal findings. According to the comprehensive coding guidelines and the need for precise coding of pertinent findings, the Sutherland coding is more appropriate.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding, Unrelated Findings",
+        "clinical_context": "The incidental CT finding of degenerative changes of the spine should be coded accurately, as it may have clinical relevance in the patient\u2019s overall assessment and management.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate because it uses a more specific code (M47819) that precisely describes the documented degenerative changes of the spine, while the AI substituted with a less specific code (M489).",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.8
+    }
+  },
+  {
+    "patient_id": "2666625",
+    "analysis": [
+      {
+        "sutherland_code": "R07.81 (Other chest pain)",
+        "ai_code": "R07.989 (Other specified chest pain)",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": true,
+        "reasoning": "Both versions represent a chest pain symptom. The clinical history documents 'pleuritic chest pain' which is being evaluated for pulmonary embolism. While Sutherland\u2019s R07.81 and AI\u2019s R07.989 are both acceptable symptom codes for chest pain, there is no definitive evidence in the imaging findings to upgrade this to a disease process in the chest. Thus, either code technically communicates the symptom. In situations like these, minor substitutions in a symptom code are permissible provided that the underlying clinical context (chest pain in this case) is adequately captured.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses over Related Signs/Symptoms",
+        "clinical_context": "The chest pain was the clinical presentation prompting CT angiography which ultimately excluded pulmonary embolism. It remains a secondary symptom in light of subsequent definitive findings.",
+        "recommended_action": "use_both"
+      },
+      {
+        "sutherland_code": "R79.1 (Elevated D-Dimer) and R50.9 (Fever, unspecified)",
+        "ai_code": "N10 (Acute pyelonephritis) and N12 (Pyelitis)",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "Although Sutherland coded the presenting symptoms (elevated D-dimer and fever) from the clinical history, the radiology impression definitively identifies 'Acute left pyelonephritis and bilateral pyelitis.' According to coding guidelines ('Code all definitive diagnoses documented in the report'), the definitive kidney infection should be coded rather than the non-specific laboratory or systemic symptom codes. Therefore, AI\u2019s inclusion of N10 and N12 more accurately reflects the radiologist\u2019s findings and should take precedence over the symptom codes that were initially provided in the clinical history.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Specific Conditions: Elevated D-Dimer \u2192 R79.1",
+        "clinical_context": "The CT study revealed findings consistent with an acute kidney infection (pyelonephritis and pyelitis) which are definitive diagnoses. The initial symptoms (fever, elevated d-dimer) served as indications for the exam but once a definitive diagnosis is rendered, they are not coded separately if related.",
+        "recommended_action": "keep_ai"
+      }
+    ],
+    "overall_assessment": "AI coding is more accurate overall because it captures the definitive diagnoses of acute left pyelonephritis and bilateral pyelitis, which are directly documented in the radiologist\u2019s impression. Sutherland\u2019s approach focused on coding the initial signs and symptoms (chest pain, elevated d-dimer, and fever) rather than the definitive pathological findings. Minor substitution in the chest pain code is acceptable; however, the omission of the definitive kidney pathology in Sutherland\u2019s coding represents a significant discrepancy.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.5,
+      "ai_score": 1.0
+    }
+  },
+  {
+    "patient_id": "2623358",
+    "analysis": [
+      {
+        "sutherland_code": "Z981",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical text specifies that the examination was performed for evaluation of nonunion after arthrodesis. This clearly implies that the patient has a post-arthrodesis status which must be documented. Sutherland\u2019s use of Z981 correctly captures the post-arthrodesis status. According to the comprehensive coding guideline, all related prior surgical procedures and statuses must be coded when they are directly pertinent to the current clinical evaluation. AI\u2019s omission of this code results in a missed representation of the patient\u2019s surgical history.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding; Specific Conditions for postsurgical statuses",
+        "clinical_context": "The imaging study is aimed at assessing a nonunion following a previous arthrodesis, making the documentation of the patient\u2019s arthrodesis status (Z981) a critical part of contextualizing the findings.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z967",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The additional code Z967 provided by AI does not accurately reflect the clinical scenario. While the report notes the presence of hardware, the focus is on evaluating nonunion after arthrodesis rather than on the mere presence of orthopedic devices. AI\u2019s substitution with Z967 misinterprets the patient's postsurgical state; the correct approach is to document the arthrodesis status (Z981) rather than a code potentially representing a generic orthopedic device.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding; Specific Conditions regarding postsurgical evaluations",
+        "clinical_context": "Mis-coding with Z967 may lead to an incorrect clinical picture by implying a focus on hardware presence rather than on the post-arthrodesis status that is central to the evaluation of nonunion.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate. It correctly identifies the key clinical element of post-arthrodesis status with Z981, which is essential for evaluating nonunion. The AI substitution with Z967 is not supported by the clinical context and deviates from the established guidelines.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2663910",
+    "analysis": [
+      {
+        "sutherland_code": "N400",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report clearly documents an enlarged prostate gland with central prostatic hypertrophy. Sutherland\u2019s use of N400 captures the benign prostatic hyperplasia finding that the imaging identified. AI omitted this code despite its relevance. This follows the guideline of coding all pertinent findings documented in the report.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "The imaging study was performed using a prostate cancer protocol, and the finding of an enlarged prostate is a key observation that must be recorded.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "N402",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Sutherland\u2019s inclusion of N402 appears to capture a specific aspect of the prostatic findings noted in the report (possibly related to morphological details of benign prostatic hyperplasia). Since the imaging report describes central prostatic hypertrophy and a BPH nodule, documenting this detail is important. AI\u2019s omission suggests an incomplete capture of the abnormalities.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Specific Conditions",
+        "clinical_context": "The prostatic morphology is described in detail, and using multiple, specific codes ensures the findings are fully coded.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "N3289",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The additional code N3289 by Sutherland is used to capture other specified disorders of the prostate noted by the radiologist (such as the inflammatory-like changes and the description of the BPH nodule). Given that the radiology report includes multiple descriptors, comprehensive coding is indicated.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "The report notes multiple findings within the prostate that suggest a benign process; documenting these separately supports the thorough representation of the imaging findings.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R188",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "R188 is employed by Sutherland to capture other abnormal findings that do not neatly fall into more specific categories but are nonetheless pertinent (for example, other abnormal radiologic findings seen in the study). The absence of this code in the AI output suggests under-coding of reported abnormalities.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "The imaging report describes a series of findings including minor hemorrhagic foci and other subtle abnormalities that should be coded even if they are not the primary target of the study.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "N421",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI introduced N421, which typically codes for benign prostatic hyperplasia with lower urinary tract symptoms. However, the clinical text does not mention any urinary symptoms; rather, it only documents structural and imaging findings of the prostate. Therefore, this substitution is not supported by the clinical documentation.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Specific Conditions",
+        "clinical_context": "There is no clinical indication of lower urinary tract symptoms in the report, making the application of N421 inappropriate. The focus is on imaging findings rather than symptomatic diagnosis.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding is more accurate and comprehensive as it correctly captures the full spectrum of prostatic findings documented in the imaging report. The AI coding missed several important codes and introduced an inappropriate substitution.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.33
+    }
+  },
+  {
+    "patient_id": "2666006",
+    "analysis": [
+      {
+        "sutherland_code": "I6782",
+        "ai_code": "I6789",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report describes chronic microvascular ischemic disease (severe hypoattenuation of the periventricular/deep white matter). The correct, more specific code for this finding is I67.82. Sutherland\u2019s I6782 accurately reflects this, whereas AI\u2019s I6789 (in the I67.89 series) is less specific and does not appropriately capture the definitive nature of the finding.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "Chronic microvascular ischemic disease directly influences cerebrovascular status and is a definitive imaging finding.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R930",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "R930 represents an abnormal imaging finding. However, since the abnormality (chronic microvascular ischemic disease) is already definitively coded as I67.82, coding R930 is redundant. Per guideline, signs or abnormal imaging findings that are part of a definitive diagnosis should not be coded separately.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms Related to Definitive Conditions",
+        "clinical_context": "The abnormal brain imaging is inherently captured by the chronic microvascular ischemic disease code, making a separate abnormal imaging finding code unnecessary.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "J3489",
+        "ai_code": "J349",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report documents sinus disease (mucosal thickening in the left sphenoid sinus and some ethmoid air cells). Sutherland\u2019s J34.89 (J3489) is more specific for 'Other specified disorders of nose and nasal sinuses' compared to AI\u2019s less specific J34.9 (J349), making the former more appropriate.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Accurate capture of sinus pathology is important when specific imaging findings (such as mucosal thickening) are present.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I6622",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "I66.22 implies an occlusion or significant stenosis of a cerebral artery. The imaging report clearly states that there is no large vessel occlusion and all major vessels are patent (aside from motion\u2010limiting assessments), so there is no evidence to support I66.22.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "There is no documentation of acute vascular occlusion in the CTA images, making this code inappropriate.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z961",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Z96.1x series codes are used to indicate the presence of an external device or postprocedural status. There is no mention in the clinical text of any implanted device or relevant postprocedure status that would justify the use of Z961.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "The imaging report contains no reference to any external device or related status that would require such a code.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "G319",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "G31.9 is used for an unspecified degenerative neurological disorder (e.g., dementia) which is not supported by any evidence or documentation in the radiology report.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "There is no mention of cognitive decline or degenerative neurological conditions in the report.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "E11621",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Although the admitting diagnosis includes E11.621 (Type 2 diabetes mellitus with foot ulcer), the focus of this imaging exam is a stroke evaluation. The clinical and radiologic findings pertain solely to the head and neck vascular status and parenchymal brain findings, making the diabetic foot ulcer diagnosis extraneous in this context.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Medical Necessity",
+        "clinical_context": "The imaging study is directed at evaluating potential cerebrovascular events rather than peripheral complications of diabetes.",
+        "recommended_action": "neither"
+      }
+    ],
+    "overall_assessment": "Sutherland coding demonstrates better accuracy for this case. Key imaging findings such as chronic microvascular ischemic disease and specific sinus disease are more appropriately captured by Sutherland's codes. In contrast, AI omitted the correct chronic ischemia code and introduced extraneous codes (e.g., for occlusion, device status, and unrelated conditions) that are not supported by the clinical findings.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.9,
+      "ai_score": 0.3
+    }
+  },
+  {
+    "patient_id": "2674760",
+    "analysis": [
+      {
+        "sutherland_code": "K429",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report documents a 'tiny hiatal hernia.' Sutherland correctly captured this with code K429, whereas AI omitted it. As comprehensive coding requires inclusion of all pertinent findings\u2014even incidental ones when mentioned\u2014the hiatal hernia should be coded.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding of related/pertinent diagnosis codes",
+        "clinical_context": "Even though the hiatal hernia is a minor/incidental finding, its documentation in the report makes it a condition that should be coded.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "N2889",
+        "ai_code": "Q625",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The clinical text notes 'duplicated bilateral renal collecting systems,' a congenital anatomic variant. Congenital anomalies should be coded using Q codes when available. AI\u2019s substitution of N2889 with Q625 more appropriately reflects the congenital nature of this finding.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and proper use of congenital anomaly codes",
+        "clinical_context": "Duplicated collecting systems are congenital and using a Q code (Q625) ensures accurate classification.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "R162",
+        "ai_code": "R160 and R161",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The report describes organomegaly in two separate organs \u2013 hepatomegaly (liver measuring 20.9 cm) and mild splenomegaly. Sutherland\u2019s single code (R162) does not distinguish these findings, whereas AI provides separate codes (R160 and R161) that differentiate the enlarged liver and spleen. Coding them separately offers a more precise reflection of the radiologic findings.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding of all related/pertinent diagnoses",
+        "clinical_context": "Distinct enlargement of the liver and spleen are both documented and are best captured with separate codes.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R790",
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "R790 corresponds to an abnormal laboratory finding (elevated lipase), which is already contextually overridden by the definitive radiologic diagnosis of acute uncomplicated pancreatitis. Per coding guidelines, related signs/symptoms (or lab abnormalities) should not be coded separately when a definitive diagnosis is established.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms related to a definitive condition are not coded separately",
+        "clinical_context": "Although the clinical information notes an elevated lipase, the imaging confirms acute pancreatitis; hence, coding the lab abnormality separately is redundant.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "M1990",
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "M1990 appears to correspond to incidental degenerative changes in the bones. While the report mentions 'mild degenerative changes,' these findings are typically age\u2010related and of limited clinical significance in this setting. There is no clear directive to code such incidental, non\u2013clinically impactful findings separately in this type of radiology report.",
+        "guideline_reference": "General Guidelines: Only definitive or clinically pertinent diagnoses should be coded",
+        "clinical_context": "Incidental mild degenerative changes are documented but are not central to the patient\u2019s acute presentation, and thus do not require separate coding.",
+        "recommended_action": "neither"
+      }
+    ],
+    "overall_assessment": "AI coding captured additional clinically pertinent details for organomegaly and used an appropriate congenital anomaly code for the duplicated renal collecting system, improving specificity over Sutherland in these areas. However, AI incorrectly added codes for a laboratory abnormality and incidental degenerative changes, and it omitted the hiatal hernia. Overall, both approaches have strengths and weaknesses with AI having a slight edge in specificity for certain findings but also introducing non-indicated codes.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.65,
+      "ai_score": 0.7
+    }
+  },
+  {
+    "patient_id": "2584170",
+    "analysis": [
+      {
+        "sutherland_code": "R791",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical report mentions an 'elevated d-dimer' which, according to the specific coding guidelines, should be coded as R79.1 (elevated D-dimer). Sutherland correctly captured this important abnormal finding with R791. The AI, however, omitted this code, missing a relevant diagnosis that supports the evaluation for pulmonary embolism.",
+        "guideline_reference": "Specific Conditions: Elevated D-Dimer \u2192 R79.1",
+        "clinical_context": "Elevated d-dimer is a key laboratory abnormality in the evaluation of a patient with suspected pulmonary embolism and must be documented.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R7989",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI introduced the code R7989, which does not align with the clinical information. There is no documentation to justify an alternative abnormal result. The appropriate code for an elevated d-dimer is R79.1 (recorded by Sutherland as R791), making the extra code R7989 unnecessary and unsupported by the guidelines.",
+        "guideline_reference": "Specific Conditions: Elevated D-Dimer \u2192 R79.1",
+        "clinical_context": "The introduction of R7989 does not reflect any specific abnormal finding noted in the radiology report and fails to conform with accepted coding guidelines.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate. Sutherland correctly coded the elevated d-dimer (R791) which is a significant finding in the context of the pulmonary embolism evaluation, while the AI omitted this crucial code and added an extraneous, unsupported code (R7989).",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2667407",
+    "analysis": [
+      {
+        "sutherland_code": "M47819",
+        "ai_code": "M47816",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report documents degenerative changes including slight retrolisthesis. Sutherland\u2019s use of M47819 is intended to capture this specific degenerative finding. The AI\u2019s substitution with M47816 appears to be an incorrect variant that does not accurately reflect the report\u2019s details. (See Specific Guidelines regarding coding detailed radiologic findings)",
+        "guideline_reference": "Specific Guidelines: Comprehensive Coding of related findings",
+        "clinical_context": "The report clearly notes degenerative changes in the spine; accurate coding of such findings is important even when they are incidental.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R109",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical information mentions right flank pain and abdominal discomfort. R109 (ICD-10 R10.9: Unspecified abdominal pain) appropriately captures the patient\u2019s symptom as documented. Since there is no definitive alternative diagnosis and the symptom drove the exam, this code should be included.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Pertinent Signs/Symptoms",
+        "clinical_context": "Right flank and abdominal pain were the chief reasons for the CT evaluation; coding these symptoms is necessary in the absence of a definitive diagnosis.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "N3289",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report documents difficulty urinating in the patient\u2019s history. N3289 is used by Sutherland to capture this additional urinary symptom. Although it may be considered a secondary sign, since no definitive urologic condition was provided, documenting the symptom is appropriate and helps complete the clinical picture.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding of all related/pertinent diagnosis codes",
+        "clinical_context": "Difficulty urinating, though resolved, was part of the clinical presentation and should be coded as an additional symptom.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R195",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "R195 appears to capture another aspect of the patient\u2019s urinary or abdominal complaints (likely correlating with symptoms of difficulty urinating or flank discomfort). Given that the clinical history includes multiple symptomatic findings, this additional code by Sutherland ensures a more comprehensive documentation of the patient\u2019s presentation.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and documenting all clinical findings",
+        "clinical_context": "Additional urinary or abdominal symptomatology documented in the clinical history which is relevant to the patient\u2019s presentation.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R1031",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "R1031 is an extra code provided by the AI that does not clearly correspond to any specific finding in the radiology report. The symptoms documented are adequately captured by R109 and R195. The introduction of R1031 appears to be an erroneous substitution that does not match the clinical context of right flank pain or the urinary complaints as outlined in the report.",
+        "guideline_reference": "General Guidelines: Code only definitive diagnoses and pertinent symptoms",
+        "clinical_context": "There is no mention of a distinct symptom location or condition that would justify the use of R1031 in this exam.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding is more accurate as it comprehensively captures the pertinent clinical symptoms and findings (abdominal pain, urinary difficulties, and degenerative spinal changes) clearly documented in the radiology report. In contrast, the AI omitted important symptom codes (R109, N3289, R195) and introduced an extraneous code (R1031) along with a substitution (M47816 for M47819) that does not align with the report details.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.3
+    }
+  },
+  {
+    "patient_id": "2598475",
+    "analysis": [
+      {
+        "sutherland_code": "C220",
+        "ai_code": "C220",
+        "status": "matched",
+        "is_sutherland_correct": true,
+        "is_ai_correct": true,
+        "reasoning": "Both Sutherland and AI correctly identified C220 (the code for hepatocellular carcinoma) as the definitive diagnosis being evaluated in the exam. This is appropriate since the clinical text explicitly states that the patient has HCC and the purpose of the scan is to evaluate for osseous metastases.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "HCC is the primary known diagnosis and is appropriately coded since the exam was ordered to evaluate metastatic disease.",
+        "recommended_action": "keep_both"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "M159",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI added an extra code, M159, which corresponds to an unspecified osteoarthritis diagnosis. The radiology report only mentions 'mild activity due to degenerative processes' in several joints, which is described as an incidental finding consistent with expected age\u2010related degenerative changes. These incidental degenerative changes do not meet the criteria for a definitive clinical diagnosis of osteoarthritis requiring separate coding. Per the guidelines, incidental findings that are not principal or definitive diagnoses, especially when related to expected degenerative changes, generally should not be coded separately.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Unrelated Findings; Specific Conditions: Osteoarthritis + Joint Effusion note",
+        "clinical_context": "The incidental degenerative changes noted in the shoulders, sternoclavicular joints, hips, and knees are common in a 65-year-old and were not the clinical focus of the exam. The imaging was primarily for evaluation of osseous metastases from HCC, not for evaluation of joint disease.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate. While both coders correctly identified the primary diagnosis (C220 for HCC), the AI erroneously added an extra code (M159) for incidental degenerative changes that do not warrant separate coding.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2664161",
+    "analysis": [
+      {
+        "sutherland_code": "Z98890",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report clearly documents that the patient is status post surgery and radiation for adenoid cystic carcinoma. The Sutherland code Z98890 appropriately captures a postprocedural state, which is an important aspect of comprehensive coding. Its omission from the AI coding represents a failure to capture pertinent post\u2010treatment status.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Postsurgical status for sinonasal malignancy surveillance",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "Z9842",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The presence of extensive postsurgical changes in the sinonasal region, described in the report, warrants additional postprocedural status coding. The Sutherland code Z9842 captures this element, and its omission by the AI means a loss of important clinical context.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Documented postsurgical changes following sinonasal mass resection",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "C089",
+        "ai_code": "Z8522",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "Although the patient\u2019s history indicates adenoid cystic carcinoma, the imaging impression states 'no evidence for recurrent/progressive disease' on surveillance. In such cases, the appropriate coding is a personal history code rather than an active malignant neoplasm code. The AI\u2019s substitution of Z8522 (a personal history of malignant neoplasm code) is more accurate than Sutherland\u2019s use of C089, which implies an active cancer diagnosis.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Surveillance Coding for Malignancy",
+        "clinical_context": "Surveillance imaging in a patient status post resection and radiation for adenoid cystic carcinoma",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "E049",
+        "ai_code": "E042",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The report documents a 'multinodular enlarged left thyroid lobe.' For a multinodular goiter, a more specific code is appropriate. The AI code E042 is likely intended to represent nontoxic multinodular goiter, which is more precise than the less-specific Sutherland code E049.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Specific Condition Coding",
+        "clinical_context": "Thyroid gland abnormality noted on imaging",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "Z9841",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Similar to Z98890 and Z9842, the Sutherland code Z9841 captures additional postprocedural status that reflects the extensive postsurgical changes noted in the sinonasal region. Its omission by AI neglects part of the clinical context.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Postoperative changes after sinonasal mass resection",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z923",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI-assigned code Z923 does not have any documented correlate in the clinical report. There is no mention of a condition or history that would justify this code, making its inclusion unsupported by the clinical findings.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding \u2013 only code documented and clinically relevant conditions",
+        "clinical_context": "There is no reference to the condition represented by Z923 in the radiology report",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z961",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "While the report does mention bilateral cataract surgery, post-surgical status for cataracts is generally not required to be coded in the context of a neck MR exam. The AI\u2019s addition of Z961, which appears intended to document an ocular status, is therefore extraneous and not clinically pertinent to the exam\u2019s primary focus.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Incidental Findings",
+        "clinical_context": "The incidental mention of bilateral cataract surgery does not warrant separate coding in this surveillance exam",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z9009",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The code Z9009 is not supported by any clinical detail in the report. There is no indication or documented condition corresponding to this code, and its inclusion by the AI does not reflect the imaging findings.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding \u2013 only document clinically relevant diagnoses",
+        "clinical_context": "No evidence in the exam or patient history supports the condition implied by Z9009",
+        "recommended_action": "neither"
+      }
+    ],
+    "overall_assessment": "Both coding systems capture important elements of the clinical report, but each has deficiencies. Sutherland\u2019s coding correctly captures several relevant postprocedural statuses (Z98890, Z9842, Z9841) that are omitted by the AI; however, it incorrectly codes the patient\u2019s prior malignancy as active (C089) rather than using a personal history code. Conversely, the AI correctly substitutes a personal history code (Z8522) for malignancy and offers a more specific thyroid code (E042) but introduces extraneous codes (Z923, Z961, Z9009) and omits critical postsurgical status codes. Overall, neither system is completely optimal, but the AI\u2019s approach is more accurate for the malignancy and thyroid components while Sutherland\u2019s coding is superior for reflecting postsurgical status.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.65,
+      "ai_score": 0.6
+    }
+  },
+  {
+    "patient_id": "2663810",
+    "analysis": [
+      {
+        "sutherland_code": "M228X1",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report clearly documents mild patella maltracking as part of the impression. Sutherland\u2019s use of M228X1 to represent this definitive diagnosis is appropriate and directly supported by the clinical text, whereas the AI omitted this necessary code. According to the Comprehensive Coding guideline, all definitive findings must be coded.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Comprehensive Coding",
+        "clinical_context": "Mild patella maltracking identified bilaterally on MRI.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "M25861",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Another component of the radiologic findings, likely representing the patella maltracking (or a related aspect) on the opposite knee, is coded by Sutherland as M25861. Since the report explicitly states similar findings in both knees, omitting this code ignores a definitive diagnosis documented in the report. This omission contradicts comprehensive coding guidelines.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Comprehensive Coding",
+        "clinical_context": "Bilateral MRI findings showing mild patella maltracking/Hoffa fat pad impingement.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "M222X1",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI added the code M222X1, which does not correlate with any specific finding in the report. The clinical text does not provide evidence for the pathology that M222X1 would represent, and thus its inclusion is not supported by the definitive diagnosis documented.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Comprehensive Coding",
+        "clinical_context": "There is no radiologic evidence in the report to suggest an alternative diagnosis corresponding to M222X1.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "M25462",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The extra code M25462 provided by the AI is not supported by the clinical findings. The impression only confirms patella maltracking and Hoffa fat pad impingement, which are adequately captured by the Sutherland codes, and does not justify the addition of an extra pathology as would be implied by M25462.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The MRI findings do not display evidence that would warrant an additional diagnosis represented by M25462.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "M222X2",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Like M222X1, the code M222X2 is an additional code from the AI that does not have a correlate in the clinical report. There is no mention or imaging evidence for the pathology typically associated with this code, making its inclusion an overcoding error.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "The report is limited to findings of mild patella maltracking and fat pad impingement without other knee pathology.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R936",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI added R936, a code that does not correlate with any documented abnormality in the imaging study. Since all documented findings (mild patella maltracking and Hoffa fat pad impingement) are properly captured by the Sutherland codes, inclusion of R936 is not supported by the clinical text.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "No imaging evidence or clinical indication of the condition that would warrant R936.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate as it succinctly and correctly captures all definitive diagnoses stated in the radiology report, while the AI erroneously omitted important codes and added several unsupported extra codes.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.4
+    }
+  },
+  {
+    "patient_id": "2593095",
+    "analysis": [
+      {
+        "sutherland_code": "R9082",
+        "ai_code": "R9089",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The Sutherland code R9082 appears to represent a specific radiologic finding related to the evaluation of the meningiomas or abnormal uptake on the PET component. The AI substituted this with R9089, which does not correlate with the documented clinical details. Given the clinical context, the Sutherland code aligns with the intended radiologic detail.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Definitive Diagnoses",
+        "clinical_context": "Imaging findings demonstrating tracer uptake in previously treated meningioma sites require precise documentation; R9082 correctly reflects this, whereas R9089 does not.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "Z98890",
+        "ai_code": "Z923",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The Sutherland code Z98890 is used to denote the postprocedural status following gamma knife radiosurgery, which is clearly mentioned in the history for the right cavernous sinus meningioma. The AI\u2019s extra code, Z923, typically refers to a follow\u2010up encounter after treatment for a malignant neoplasm, which is not applicable for a benign meningioma and does not accurately reflect the patient's procedural history.",
+        "guideline_reference": "Specific Guidelines: Use of Postprocedural and History Codes",
+        "clinical_context": "The patient\u2019s history clearly documents a status post gamma knife radiosurgery, making Z98890 the appropriate code to capture this clinical background.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R930",
+        "ai_code": "I6789",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiological report includes findings that are best captured by R930, a code used for specific imaging observations in this context. The AI introduced I6789, a code not supported by any details in the clinical text and unrelated to the central nervous system pathologies described. Therefore, the Sutherland code more accurately represents the radiologic findings.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding and Specific Condition Coding",
+        "clinical_context": "Appropriate coding of imaging findings in the brain related to meningioma treatment is necessary; R930 reflects these details while I6789 is extraneous.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate as it correctly captures the postprocedural status and the specific imaging findings associated with the meningiomas. The AI introduced extra/suggested codes that do not align with the clinical information provided in the report.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.0
+    }
+  },
+  {
+    "patient_id": "2665472",
+    "analysis": [
+      {
+        "sutherland_code": "G939",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report describes a chronic wedge\u2010shaped infarct in the right cerebellar hemisphere. Sutherland\u2019s use of G939 appears intended to capture a significant intracranial abnormality \u2013 a finding that must be documented per the comprehensive coding guidelines. The AI failed to capture this non\u2010oncologic but clinically pertinent finding.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Chronic infarct noted on MRI is a definitive finding that may impact patient management.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "G936",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Assuming G936 is used to denote an associated intracranial process (for example, edema or another sequela related to the infarct), it qualifies as a definitive imaging finding that should be coded if it is clinically relevant. The omission by the AI represents a gap in capturing all pertinent neurological findings.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Comprehensive Coding",
+        "clinical_context": "The report mentions vasogenic edema in association with metastatic lesions and the chronic infarct; if G936 is targeting that finding, it is relevant.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "J3489",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report documents scattered mucosal thickening throughout the paranasal sinuses. While often an incidental finding, if it is documented and deemed clinically pertinent, it warrants coding. Sutherland\u2019s J3489 (an \u2018other specified\u2019 code for nasal/sinus disorders) captures this finding, and its absence in the AI output is a missed opportunity to reflect all reported abnormalities.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Incidental sinus findings can be relevant, especially when the entire clinical picture is considered.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "C229",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical information identifies a history of metastatic squamous cell carcinoma from the liver (or a hepatic primary). Sutherland correctly includes C229 to document this primary oncologic diagnosis. According to the rule to code all definitive diagnoses and known primaries, omission by the AI is incorrect.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The patient\u2019s oncologic history is critical in understanding the source of the brain metastases and guiding treatment.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "C61",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical text also mentions prostate cancer as part of the patient\u2019s metastatic disease background. Sutherland\u2019s inclusion of C61 accurately codes the primary prostate malignancy. All known definitive neoplastic diagnoses are required; accordingly, the AI\u2019s failure to include this code is a significant oversight.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "Documenting the known primary prostatic carcinoma is essential because it informs the interpretation of intracranial metastases and further clinical management.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "C7931",
+        "ai_code": "C7931",
+        "status": "matched",
+        "is_sutherland_correct": true,
+        "is_ai_correct": true,
+        "reasoning": "Both coding streams correctly identified and coded for intracranial metastatic disease using C7931, which reflects the numerous enhancing metastatic lesions described in the brain. This code is central to the radiologic interpretation of metastases and is appropriately included.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The identification of brain metastases is the primary purpose of the exam and is well supported by the radiologic findings.",
+        "recommended_action": "keep_both"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "C7951, C787, C7989, C801",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The additional codes provided by the AI (C7951, C787, C7989, and C801) do not correlate with any documented metastatic locations or clinical diagnoses in the radiology report. There is no evidence in the report to support metastases in other sites or additional oncologic processes beyond those already identified. According to guidelines, codes should be based exclusively on the definitive diagnoses and pertinent findings stated in the report.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Comprehensive Coding",
+        "clinical_context": "Only brain metastases (and the known primary tumors) are discussed in the report. The AI\u2019s extra codes may confuse the clinical picture by suggesting additional metastatic sites not visualized or commented upon in the imaging study.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding more accurately reflects the documented clinical information. It correctly includes essential primary cancer diagnoses (C229 and C61), appropriately codes the intracranial metastatic disease (C7931), and incorporates other imaging findings such as the chronic infarct and sinus mucosal thickening. In contrast, the AI failed to capture several pertinent diagnoses and introduced extraneous oncologic codes that are unsupported by the report.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.9,
+      "ai_score": 0.4
+    }
+  },
+  {
+    "patient_id": "2675007",
+    "analysis": [
+      {
+        "sutherland_code": "Y929",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology clinical history clearly states 's/p fall, head trauma' so an external cause code is required. Sutherland\u2019s use of Y929 (an external cause code appropriate for the fall mechanism) complies with the trauma coding guidelines. AI omitted this external cause, thereby missing an important component required per the guidelines on injury/trauma.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Injury/Trauma/Fall",
+        "clinical_context": "The fall is the inciting event for the imaging workup; proper external cause coding is necessary for trauma evaluation and for linking the findings.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "\u2014 (no cervical degenerative change codes)",
+        "ai_code": "M47812 and M5030",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The CT cervical spine findings document 'multilevel degenerative changes' with disc space narrowing and facet/uncovertebral joint degenerative change. The comprehensive coding guideline instructs us to code all pertinent diagnoses documented in the report, including incidental or chronic findings that are clearly stated. AI\u2019s additional codes (M47812 and M5030, which correspond to cervical spondylosis/degenerative disc disease) capture these documented degenerative changes. Although these incidental degenerative findings may not be the trauma itself, the guidelines allow unrelated findings to be coded.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding; Unrelated Findings",
+        "clinical_context": "The degenerative changes are clearly described in the CT cervical spine portion of the report and represent chronic findings that, while incidental to the trauma workup, should be documented.",
+        "recommended_action": "use_both"
+      },
+      {
+        "sutherland_code": "\u2014",
+        "ai_code": "R220",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "While the CT Brain portion of the report notes left frontal extracalvarial soft tissue swelling, this finding is considered part of the head trauma (already captured by S0990XA). The guideline indicates that signs or symptoms related to a definitive injury should not be coded separately. Thus, R220 is extraneous and duplicates what is encompassed in the head trauma diagnosis.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms related to definitive conditions are not coded separately",
+        "clinical_context": "The soft tissue swelling is observed in conjunction with the head trauma findings and does not merit a separate code beyond the injury already documented.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "\u2014",
+        "ai_code": "Y92009",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Sutherland\u2019s external cause coding (Y929) appropriately captures the fall mechanism. AI\u2019s additional external cause code Y92009 appears to be a misapplication (likely representing an alternative external cause such as an improper location code), rendering it extraneous in this context.",
+        "guideline_reference": "Injury/Trauma/Fall guidelines regarding the appropriate external cause codes",
+        "clinical_context": "The external cause related to the fall should be coded once in a manner consistent with the trauma guidelines. Adding an extra external cause code, not aligned with the documented mechanism, is not warranted.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding accurately captured the necessary fall-related external cause (Y929) and properly bundled head trauma, whereas AI, while more comprehensive in capturing incidental degenerative findings with M47812 and M5030, missed the mandated external cause code Y929 and added extraneous codes (R220 and Y92009) that are not supported by the guidelines. Therefore, a combined approach (using Sutherland\u2019s trauma codes along with the additional degenerative codes supported by AI) would provide the most comprehensive coding.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.67,
+      "ai_score": 0.67
+    }
+  },
+  {
+    "patient_id": "2674750",
+    "analysis": [
+      {
+        "sutherland_code": "Z954",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report clearly documents an aortic valve replacement. Sutherland\u2019s use of Z954 to indicate a status related to a prior aortic valve replacement is appropriate per comprehensive coding of documented surgical history. Its omission by the AI represents a failure to capture an important historical/procedural finding.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding; Specific Conditions regarding status codes for prior procedures",
+        "clinical_context": "Aortic valve replacement is a key historical detail noted in the lower chest findings and should be reflected in the patient\u2019s coded history.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "Z960",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "In addition to Z954 for aortic valve replacement, Sutherland included Z960 to capture another aspect of the patient\u2019s cardiac device or surgical status. Even though the exact identity of Z960 is less common, given the report documents cardiac surgical history the intent is to capture the device/prosthesis status. Its absence in AI coding is a missed opportunity to fully document the patient\u2019s cardiovascular status.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding; Relevant history documentation",
+        "clinical_context": "The documented aortic valve replacement and associated cardiac findings are significant when reviewing the radiologic study.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R195",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical indication for the exam is 'lower abdominal pain.' Although signs and symptoms that relate to a definitive diagnosis are not coded separately, when no definitive cause is found and the symptom prompted the exam, coding the symptom is appropriate for medical necessity. Sutherland\u2019s inclusion of R195 (used here to capture the abdominal pain complaint) is therefore justified.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Medical Necessity for Primary Diagnosis",
+        "clinical_context": "The patient\u2019s lower abdominal pain is the reason the CT study was performed and thus should be coded.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "E278",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "Sutherland assigned E278 ostensibly to document the incidental finding of nodular thickening of the left adrenal gland. However, the radiology report only states the nodular thickening without comment on adrenal dysfunction or a definitive adrenal pathology. In the absence of a clinical correlation or a more specific adrenal lesion diagnosis, coding an endocrine disorder using an E code is not supported by the guidelines. The AI\u2019s omission of this code is therefore more appropriate.",
+        "guideline_reference": "General Guidelines: Code definitive diagnoses \u2013 avoid over\u2010coding incidental findings when no definitive pathology is documented",
+        "clinical_context": "The adrenal finding is an incidental imaging observation and does not rise to the level of a definitive endocrine disorder.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "R932",
+        "ai_code": "K5900",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "Sutherland\u2019s use of R932 to capture the 'moderate to large colonic stool burden' is nonstandard and does not match the typical ICD\u201010 code for stool or colonic motility issues. In contrast, the AI\u2019s K5900 corresponds to 'constipation, unspecified' which is more in keeping with a clinically recognized code for an imaging finding suggestive of stool burden that might be linked to constipation. Given that the radiologist noted a significant stool burden (which can be clinically relevant even if incidental), AI\u2019s code K5900 is more appropriate.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding with adherence to standard ICD\u201010 codes",
+        "clinical_context": "The finding of a heavy stool burden may contribute to the patient\u2019s abdominal symptoms and is better represented by a standard code for constipation.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z98890",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The code Z98890 appears among the AI extras but is not supported by any element in the radiology report. There is no documentation of a postprocedural state or other condition that would justify its use.",
+        "guideline_reference": "General Guidelines: Code only documented definitive diagnoses and pertinent history",
+        "clinical_context": "No corresponding clinical or historical information is provided to warrant this code.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z980",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Z980 is an extra code generated by the AI without any support in the report. There is no mention of the condition or status described by this code in the clinical text.",
+        "guideline_reference": "General Guidelines: Code only what is clearly documented",
+        "clinical_context": "The radiologist\u2019s report does not contain any information validating this code.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R93421",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "While the report mentions a focus of prominent vasculature in the right kidney upper pole (suggesting an arteriovenous fistula as previously described), this finding is already noted in the context of known renal imaging findings. The AI\u2019s creation of a separate code R93421 for this is not supported by a definitive diagnosis and appears to over\u2010code an incidental imaging observation.",
+        "guideline_reference": "General Guidelines: Code definitive conditions rather than incidental imaging descriptors",
+        "clinical_context": "The kidney finding is noted as a likely AV fistula based on prior studies, but does not require an additional separate code in this exam context.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R935",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The extra AI code R935 is generated without a clear anchor in the report. There is no distinct finding or definitive diagnosis corresponding to this code.",
+        "guideline_reference": "General Guidelines: Code only clearly documented findings",
+        "clinical_context": "No element of the imaging report supports the use of this code.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z952",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Z952 appears as an extra code in the AI set. While similar codes (e.g., Z95.x) are used to document the presence of a prosthetic device, the appropriate codes for the patient\u2019s cardiac history have already been captured by Sutherland (Z954 and Z960). The use of Z952 is therefore redundant and unsupported by the report.",
+        "guideline_reference": "General Guidelines: Avoid redundancy and only code documented history",
+        "clinical_context": "The cardiac prosthesis status is already adequately documented by other codes; no additional code is needed.",
+        "recommended_action": "neither"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding captures the key documented historical and symptomatic findings (eg, the aortic valve replacement and abdominal pain), whereas AI coding missed these important history codes and introduced several extraneous codes that are not supported by the report. However, on the specific issue of representing the colonic stool burden, the AI\u2019s use of K5900 is more acceptable than the nonstandard R932. Overall, there is a mixed performance with Sutherland correct on several high\u2010yield items and AI falling short on accurately reflecting the documented clinical findings.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.65,
+      "ai_score": 0.45
+    }
+  },
+  {
+    "patient_id": "2675480",
+    "analysis": [
+      {
+        "sutherland_code": "N8189",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The code N8189 appears to represent a form of pelvic organ prolapse inferred from the clinical indication. However, the ultrasound report does not provide any imaging confirmation of prolapse. Radiology coding guidelines state that only definitive, imaging\u2010documented diagnoses should be coded. Including this code based solely on the referral indication is not supported by the imaging findings.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The clinical history mentioned pelvic prolapse, but the imaging findings did not comment on or confirm this; thus, it should not be coded.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": "Z780",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "Z780 likely reflects a status (such as a postmenopausal state or another clinical condition) noted in the referral information. However, as the imaging report does not confirm a definitive diagnosis related to this code, adding it is not in line with the guideline to code only findings substantiated by the exam.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "Postmenopausal status is shown in the clinical information but is not an imaging finding; thus, it should not be included as an imaging-based diagnosis.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": "R9389",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The code R9389 seems intended to capture an abnormal imaging finding; however, the report does not clearly document any abnormality that would warrant the use of this nonspecific code. Radiology coding should reflect definitive interpretations, and this code is not supported by the documented sonographic findings.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "There is no clear imaging abnormality noted that justifies a nonspecific abnormal findings code.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "N390",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "N390 is the ICD\u201010 code for urinary tract infection. Although UTI is mentioned in the clinical history of the exam order, the transvaginal ultrasound report does not provide any imaging evidence or definitive confirmation of a UTI diagnosis. Per the guidelines, codes should be based on definitive imaging findings rather than unconfirmed clinical indications.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The mention of UTI is part of the referral information and is not substantiated by the sonographic findings.",
+        "recommended_action": "neither"
+      }
+    ],
+    "overall_assessment": "In this case, the only imaging-supported finding is the suspected endometrial polyp (D251), which both coders included. The additional codes entered by Sutherland (N8189, Z780, R9389) and the extra code entered by the AI (N390) are all based on clinical indications that were not confirmed by the ultrasound exam. Radiology coding guidelines dictate that only definitive imaging diagnoses should be coded. Therefore, the extra codes are not supported and should be omitted.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.25,
+      "ai_score": 0.25
+    }
+  },
+  {
+    "patient_id": "2667355",
+    "analysis": [
+      {
+        "sutherland_code": "Z98890",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical report clearly documents a status post cervical fusion (i.e. \u201cStatus post laminectomy and posterior fusion spanning C3-C6\u201d), which is a definitive post\u2010procedural state that must be recorded. Sutherland\u2019s use of Z98890 properly captures this aspect of the patient\u2019s history, while AI\u2019s omission fails to code an important element of the patient\u2019s surgical history.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding & Specific Guidelines for Postprocedural Status",
+        "clinical_context": "The patient\u2019s surgical history is critical to interpreting the degenerative changes and postoperative status on imaging.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "M4802",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report\u2019s impression states \u2018multilevel spondylosis\u2019 with associated foraminal narrowing. Sutherland\u2019s inclusion of M4802 is intended to capture the overall degenerative spondylosis affecting the cervical spine. Since the imaging findings directly document this degenerative process, the code is appropriate and its absence in the AI output represents a missed diagnosis code.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Specific Conditions on Degenerative Spine",
+        "clinical_context": "Degenerative changes and neural foraminal narrowing are primary imaging findings that explain the patient\u2019s clinical status.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "M2578",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "While the clinical indication includes \u2018new pain,\u2019 guidelines advise that signs and symptoms that are related to a definitive condition (in this case, the postsurgical degenerative changes) should not be coded separately. Sutherland\u2019s addition of M2578 (which appears to represent a pain or joint symptom code) is likely redundant and not warranted based on the imaging report.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms Related to Definitive Conditions",
+        "clinical_context": "The patient\u2019s new pain is already understood within the context of the degenerative and postsurgical findings, so separately coding a symptom is unnecessary.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": "M9981",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "M9981 is typically used to indicate postlaminectomy syndrome. Although the patient is status post laminectomy, the report does not provide imaging or clinical evidence of a syndrome (such as nerve injury or arachnoiditis) but merely documents the postoperative status. Therefore, while Sutherland included this code, its use is not supported by a definitive diagnosis in the report and is not appropriate for coding based solely on the imaging findings.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses & Signs/Symptoms Not Coded Separately",
+        "clinical_context": "The imaging findings confirm postoperative changes but do not document criteria for postlaminectomy syndrome.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "M50222",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "AI added M50222, which appears to represent an additional degenerative disc disorder code. However, the report\u2019s discussion of degenerative changes (including disc height loss, desiccation, and osteophyte formation) is already adequately captured by the other Sutherland codes (such as M50323 and M50322 pertaining to the disc osteophyte complex and foraminal narrowing). Adding an extra code may lead to redundancy, which goes against the guideline to provide comprehensive coding without unnecessary duplication.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding & Avoiding Redundancy",
+        "clinical_context": "The degenerative disc disease findings are sufficiently described and coded; an extra code may overstate the pathology.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding more accurately reflects the imaging findings and patient\u2019s postsurgical state by including essential codes for the status post fusion and degenerative spondylosis. However, two of its codes (M2578 and M9981) appear to represent unnecessary or unsubstantiated additions, while AI\u2019s omission of critical postoperative and degenerative codes (Z98890, M4802) and the addition of a redundant disc code (M50222) detract from its accuracy.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.75,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2604872",
+    "analysis": [
+      {
+        "sutherland_code": "Z471",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical report clearly documents a history of bilateral knee arthroplasty (right in 2015 and left in 2021). Sutherland coded Z471 to capture the patient's status related to prior joint replacement (commonly used for aftercare or to denote the presence of a joint prosthesis) which is pertinent to the work-up for possible prosthesis-related infection. According to the comprehensive coding guidelines, all relevant clinical history should be captured. The omission of Z471 by AI represents a missed opportunity to document this important surgical history.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "The imaging study was specifically performed to evaluate for infection in a patient with prosthetic joints. Documenting the history of joint replacement (via Z471) is crucial as it contextualizes the interpretation of radiological findings.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R936",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI introduced code R936, which appears to correspond to an abnormal imaging finding. However, the final impression clearly states that the study is negative for an infectious process and the noted reactive changes are not definitive for any pathology that would require separate coding. The guidelines discourage coding incidental or non-diagnostic imaging findings when they do not represent a definitive condition.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms and Incidental Findings",
+        "clinical_context": "The reactive changes observed in the imaging were deemed non-specific and consistent with normal post-prosthetic changes. They do not warrant an additional code beyond those that document the prosthetic joint history.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland's coding is more accurate in this case. The inclusion of Z471 is appropriate given the patient\u2019s history of bilateral knee arthroplasty, which is directly relevant to the imaging study for infection evaluation. The extra code R936 introduced by the AI is not justified by the clinical findings.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2665745",
+    "analysis": [
+      {
+        "sutherland_code": "H748X2",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report documents 'Partial opacification of the left mastoid air cells' as one of the findings. According to the comprehensive coding guidelines\u2014which mandate coding all pertinent findings in the report\u2014this incidental but relevant finding should be coded. Sutherland\u2019s inclusion of H748X2 correctly captures this finding, whereas the AI omitted it.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding; Specific Guidelines: Incidental Findings",
+        "clinical_context": "Although the primary clinical indication was lung cancer, the MRI of the brain incidentally noted mastoid air cell opacification. This finding, while incidental, is a documented abnormality that may have clinical or management implications and therefore should be coded.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate in this case by including the incidental finding (H748X2) for partial opacification of the left mastoid air cells. The AI\u2019s omission represents a missed opportunity to document a pertinent radiologic abnormality.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.75
+    }
+  },
+  {
+    "patient_id": "2665712",
+    "analysis": [
+      {
+        "sutherland_code": "I6782",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical text clearly documents a 'RIGHT temporal contusion' as part of the head trauma. Sutherland\u2019s use of I6782 appropriately captures this definitive traumatic brain injury. AI\u2019s failure to include a code addressing this specific injury is an omission.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Injury/Trauma guidelines",
+        "clinical_context": "Head trauma with a defined temporal contusion requires a specific injury code to meet medical necessity.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "Y929",
+        "ai_code": "Y92009",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "For external cause coding in a head trauma scenario, Sutherland\u2019s Y929 (which indicates an unspecified place of occurrence) is more appropriate. The AI\u2019s substitution with Y92009 does not conform as well with trauma coding conventions.",
+        "guideline_reference": "Injury/Trauma/Fall Guidelines: External Cause Coding",
+        "clinical_context": "Accurate external cause codes are needed in trauma cases; here, the site of injury is best captured with Y929.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "G936",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "G936 appears to be used to code for cerebral edema noted as 'moderate surrounding edema' around the hematoma. However, this edema is an inherent part of the traumatic intracranial hemorrhage. According to coding guidelines, signs or symptoms that are directly related to a definitive condition should not be coded separately. Thus, including G936 is not indicated.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms \u2013 Not coded separately when related to definitive conditions",
+        "clinical_context": "The moderate edema is a component of the radiologically described hematoma and does not qualify as an independent diagnosis.",
+        "recommended_action": "remove_sutherland"
+      },
+      {
+        "sutherland_code": "S062X0A",
+        "ai_code": "S06360A",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The report documents a \u2018RIGHT temporal contusion.\u2019 S06360A is the proper code for a traumatic cerebral contusion, whereas S062X0A would typically be used for a different type of brain injury (such as a concussion). Therefore, AI\u2019s selection of S06360A more accurately reflects the injury described.",
+        "guideline_reference": "Injury/Trauma/Fall Guidelines and Specific Conditions: Coding the specific injury",
+        "clinical_context": "The precise nature of the brain injury (contusion) must be captured by the correct code to ensure accurate representation of the trauma severity.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R410",
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Although the clinical history mentions 'confusion,' this sign is directly related to the head trauma and is already accounted for by the definitive injury codes. According to coding guidelines, such signs/symptoms should not be coded separately when they are intrinsic to the traumatic injury\u2019s clinical picture.",
+        "guideline_reference": "General Guidelines: Signs/Symptoms not coded separately if related to a definitive condition",
+        "clinical_context": "Confusion is a common finding in head trauma and does not require a separate code when the traumatic brain injury is clearly documented.",
+        "recommended_action": "remove_ai"
+      }
+    ],
+    "overall_assessment": "Neither coding set is fully correct; Sutherland correctly codes the head trauma (I6782 and Y929) but adds an extraneous edema code (G936) and uses a less accurate code for the temporal contusion (S062X0A) when it should be S06360A. AI correctly identifies the contusion with S06360A and omits the unnecessary edema code, but it misses the critical traumatic injury (I6782), substitutes an inappropriate external cause code (Y92009), and includes an unnecessary symptom code (R410). A combined approach that retains Sutherland\u2019s I6782 and Y929 while adopting AI\u2019s S06360A and omitting both G936 and R410 would provide the most accurate coding.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.6,
+      "ai_score": 0.6
+    }
+  },
+  {
+    "patient_id": "2675017",
+    "analysis": [
+      {
+        "sutherland_code": "N3289",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The Sutherland-assigned code N32.89 (an \u2018other specified disorder\u2019 of the bladder) is not supported by the report because the bladder is described as only 'minimally distended' with no abnormality noted. In radiology coding the findings that are not substantiated by the examination should not be coded. Therefore, AI\u2019s omission of this code is appropriate.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding \u2013 code only findings that are supported by the report",
+        "clinical_context": "The CT exam of the chest, abdomen and pelvis reported a normal bladder without any disorder; coding N32.89 would be erroneous.",
+        "recommended_action": "neither"
+      },
+      {
+        "sutherland_code": "M40204",
+        "ai_code": "M40209",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report clearly describes 'moderate kyphosis' in the setting of multiple chronic compression fractures. Sutherland\u2019s use of M40204 accurately reflects the documented condition. AI\u2019s substitution of M40209, although similar in the M40 series, is not supported by the clinical text where specific descriptor details (such as severity or chronicity) must be matched. Precise matching is important in definitive diagnoses, as per the coding guidelines.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses must be coded exactly as documented",
+        "clinical_context": "The imaging findings include a clear description of moderate kyphosis associated with compression fractures; an accurate code in the M40 series should reflect that description.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "None (code not provided)",
+        "ai_code": "I517",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The radiology report explicitly notes 'cardiomegaly' under the heart findings. AI\u2019s assignment of I51.7 correctly captures this incidental chronic finding. Although Sutherland did not code it, comprehensive coding guidelines indicate that pertinent diagnoses documented in the report should be coded.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding \u2013 code all pertinent diagnoses documented in the report",
+        "clinical_context": "Cardiomegaly is clearly mentioned in the exam findings and is clinically significant as an incidental chronic abnormality.",
+        "recommended_action": "keep_ai"
+      },
+      {
+        "sutherland_code": "None (code not provided)",
+        "ai_code": "I2510, I7090, I700, I359, I348, J9811",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The extra AI codes \u2013 which include I25.10 (atherosclerotic heart disease), I70.90/I70.0 (atherosclerosis), I35.9/I34.8 (valvular disorders), and J98.11 (an unspecified respiratory or related code) \u2013 appear to stem from incidental descriptions such as 'coronary artery calcifications', 'aortic and mitral valve calcifications', and 'atherosclerotic changes' noted in the vessels. However, the report does not confirm definitive clinical diagnoses like coronary artery disease or significant valvular dysfunction. According to coding guidelines, only definitive or clearly supported diagnoses are to be coded. Many of these findings are incidental and non\u2010definitive; thus, overcoding them is not recommended.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses versus incidental findings \u2013 only code findings that are explicitly diagnosed or clearly abnormal",
+        "clinical_context": "The report documents incidental calcifications and atherosclerotic changes that are not elaborated into definitive disease states; as such, the addition of these AI codes may lead to overcoding incidental imaging observations.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding is overall more accurate with respect to the primary musculoskeletal findings and the hypotension documented. However, Sutherland did include one extraneous code (N32.89) that is not supported by the exam, while AI introduced several extra codes that overinterpret incidental calcifications into definitive cardiovascular diagnoses. AI did correctly capture cardiomegaly that was missed by Sutherland, but its additional codes for atherosclerosis and valvular disorders are not justified by the narrative report.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.8,
+      "ai_score": 0.4
+    }
+  },
+  {
+    "patient_id": "2675019",
+    "analysis": [
+      {
+        "sutherland_code": "M47812",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report clearly documents 'atlantoaxial degeneration with pannus formation' as part of the cervical spine findings. Sutherland\u2019s use of M47812 appropriately captures this chronic degenerative change. The AI, by substituting a different degeneration\u2010related code (M4802) and not coding M47812, fails to accurately reflect the specific description provided in the report. According to the general guideline of coding all definitive and pertinent diagnoses from the entire report, the Sutherland code is correct.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Comprehensive Coding",
+        "clinical_context": "The degenerative changes (including atlantoaxial degeneration with pannus formation) are clearly described on the CT cervical spine even though trauma is the clinical indication; these findings should be captured.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "Y929",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Y929 is an external cause code documenting the mechanism/place/context of the injury. Since the exam was performed for trauma evaluation (as noted in the clinical indication) and external cause codes are required to demonstrate medical necessity for trauma workups, omission of Y929 by the AI is an error.",
+        "guideline_reference": "Specific Guidelines: Injury/Trauma/Fall \u2013 external cause codes",
+        "clinical_context": "Trauma workup in the setting of an acute cervical injury mandates inclusion of an external cause code to fully account for the mechanism of injury.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "S12090A",
+        "ai_code": "S12040A",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "S12090A is used by Sutherland to represent the acute distracted fracture through the left lateral mass of C1 as described in the CT report. The AI substituted this with S12040A, a code that does not correctly specify the fracture location or description. Accurate coding of the fracture\u2019s exact anatomical location is crucial under trauma coding guidelines.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Specific Guidelines: Injury/Trauma/Fall \u2013 specific injury documentation",
+        "clinical_context": "The acute fracture of the left lateral mass of C1 is the principal trauma finding and must be precisely coded to reflect the injury\u2019s severity and location.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate. The Sutherland coder correctly captured all definitive diagnoses including the specific degenerative change and external cause, as well as used the correct fracture code for the left lateral mass of C1. In contrast, the AI omitted key codes (M47812, Y929, and the correct fracture code S12090A) and introduced extra codes that do not correspond to the description provided in the report.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.0
+    }
+  },
+  {
+    "patient_id": "2671817",
+    "analysis": [
+      {
+        "sutherland_code": "I70203",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical report documents diffuse soft plaque in the native lower extremity arteries along with evidence of significant stenosis in the left PTA. The Sutherland code I70203 accurately reflects atherosclerosis of native arteries. This is a definitive diagnosis that should be coded per the guidelines. The AI omitted this crucial code, thereby missing a key finding.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "Non-invasive vascular imaging demonstrated atherosclerotic plaque in both the right and left lower extremity arteries, which is a direct, definitive vascular finding.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I70291",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI added code I70291 which appears to designate atherosclerosis of a bypass graft (or an alternative laterality specification) not supported by the report. The clinical context indicates evaluation of native arteries rather than previously surgically altered vessels.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "The imaging procedure is focused on native arterial assessment. There is no mention of any bypass graft; hence, coding for graft disease is not applicable.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I70292",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Similar to I70291, the addition of I70292 suggests a classification intended for bypass graft involvement or further laterality distinction. The report, however, only documents native lower extremity arteries with plaque and stenosis findings, which makes the extra AI code inappropriate.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "The diagnostic focus on native arteries in both extremities does not warrant the use of codes specific to bypass graft pathology.",
+        "recommended_action": "keep_sutherland"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate in this case. The Sutherland coder appropriately captured the definitive diagnosis of atherosclerosis in native lower extremity arteries (I70203), while the AI improperly substituted this with extra codes (I70291 and I70292) that are not supported by the clinical findings.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.5
+    }
+  },
+  {
+    "patient_id": "2526276",
+    "analysis": [
+      {
+        "sutherland_code": "Z905",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The code Z905 in the Sutherland set corresponds to the patient\u2019s status post\u2010partial nephrectomy for left renal cell carcinoma. The clinical text clearly documents a history of left renal cell carcinoma treated with partial nephrectomy, which is an essential part of the patient\u2019s history that must be captured. The AI failed to include this key element.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Patient\u2019s history of surgical treatment (partial nephrectomy) related to left renal cell carcinoma is crucial to understand overall renal pathology and management.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "N289",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Sutherland\u2019s N289 appears to represent the presence of a renal mass \u2013 in this case the Bosniak class IV lesion in the left kidney that is considered highly suspicious for malignancy. The imaging report emphasizes this lesion, making it a definitive finding that must be coded. Omitting this code loses a critical diagnostic element.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The Bosniak class IV lesion is the primary imaging finding suggesting a malignant process in the left kidney.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "N2889",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The Sutherland code N2889 likely captures an additional renal pathology described in the report (possibly an additional cystic lesion or related finding). The radiology report details multiple renal lesions and documenting each pertinent finding is required by the comprehensive coding guidelines. The AI\u2019s omission results in loss of relevant clinical information.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Multiple renal lesions are described in the imaging findings and each contributes to the overall diagnostic picture.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "D3011",
+        "ai_code": "D3001",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "D3011 in the Sutherland coding set is intended to designate the benign neoplasm corresponding to the previously biopsied oncocytoma in the right kidney. The AI substituted this with D3001; however, the difference in the digit indicates a deviation from the specific code required. Given the definitive nature of the oncocytoma diagnosis from prior biopsy, the more precise Sutherland code is preferred.",
+        "guideline_reference": "Specific Conditions: Oncocytoma Coding",
+        "clinical_context": "The confirmed oncocytoma in the right kidney requires precise coding in order to reflect its benign neoplastic status despite its radiologic features.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "None",
+        "ai_code": "N281",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI-generated code N281 does not align with any definitive diagnosis or documented clinical finding in the report. There is no text supporting a renal disorder that would justify the use of this code, making it an erroneous addition.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "There was no mention of an additional kidney disorder that corresponds to code N281 in the patient\u2019s imaging or history.",
+        "recommended_action": "discard_ai_code"
+      },
+      {
+        "sutherland_code": "None",
+        "ai_code": "R93421",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The code R93421 appears to be an abnormal imaging finding code rather than a code for a definitive diagnosis. The guidelines specify that definitive diagnoses should be coded and that incidental findings should not be coded separately when a definitive diagnosis is present. Thus, the inclusion of R93421 is not supported by the clinical text.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The radiology report provides confirmed diagnostic details rather than ambiguous abnormal imaging findings.",
+        "recommended_action": "discard_ai_code"
+      },
+      {
+        "sutherland_code": "None",
+        "ai_code": "R93422",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Similarly to R93421, R93422 is an extraneous code representing a non\u2010definitive abnormal imaging result. Since the report provides specific diagnostic information regarding the renal lesions, the use of these nonspecific findings codes is inappropriate.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses",
+        "clinical_context": "The commentary in the radiology report assigns definitive diagnoses (oncocytoma and suspicious Bosniak lesion) rather than vague abnormal imaging findings.",
+        "recommended_action": "discard_ai_code"
+      }
+    ],
+    "overall_assessment": "Sutherland coding is more accurate because it captures all the pertinent diagnostic information including the patient\u2019s prior surgical history (Z905), the suspicious Bosniak class IV lesion (N289), additional renal findings (N2889), and the confirmed oncocytoma (D3011). The AI coding omitted several essential codes and added extraneous ones (such as N281, R93421, and R93422) that are not supported by the definitive imaging findings as per the coding guidelines.",
+    "coding_accuracy_score": {
+      "sutherland_score": 1.0,
+      "ai_score": 0.2
+    }
+  },
+  {
+    "patient_id": "2665929",
+    "analysis": [
+      {
+        "sutherland_code": "I288",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The radiology report describes findings that are 'suggestive of sequelae of chronic pulmonary embolism.' Sutherland\u2019s use of I288 (Other chronic pulmonary embolism) directly corresponds to that definitive imaging finding. The AI failed to include this important code.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses; Specific Conditions (Chronic PE sequelae)",
+        "clinical_context": "Findings in the chest portion of the CT angiography clearly document chronic pulmonary embolism sequelae that must be coded.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R0602",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The clinical information explicitly notes 'shortness of breath.' R0602 is used to document this symptom. It is a pertinent finding related to the patient\u2019s respiratory and cardiovascular evaluation and should be coded.",
+        "guideline_reference": "General Guidelines: Code all related/pertinent diagnosis codes",
+        "clinical_context": "Shortness of breath was a chief complaint prompting the CT angiography of the chest.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": "R000",
+        "ai_code": null,
+        "status": "missed",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report mentions 'tachycardia' in the clinical history. R000 captures this finding and is an important clinical sign in the workup. Its omission in the AI coding is a significant oversight.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses and Comprehensive Coding",
+        "clinical_context": "Tachycardia is clinically relevant in the evaluation of chest pain and shortness of breath.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z9049",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "There is no documentation in the report that supports the use of Z9049. The clinical text does not indicate any status or encounter that would warrant this code.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding only for related/pertinent diagnoses",
+        "clinical_context": "No finding or historical note in the report correlates with a Z9049 designation.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z98890",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "Z98890 is not supported by any information or relevant past surgical/historical detail in the clinical report. Its inclusion appears unwarranted.",
+        "guideline_reference": "General Guidelines: Code only documented diagnoses",
+        "clinical_context": "There is no indication of any condition or device that would justify this status code.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R933",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The code R933 does not correspond to any explicit documentation within the report. Without a mention of abnormal respiratory rate or related findings to support R933, its inclusion is not justified.",
+        "guideline_reference": "General Guidelines: Only code documented and pertinent findings",
+        "clinical_context": "The report does not detail any respiratory rate abnormality that would require coding with R933.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I77811",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "No evidence in the clinical findings points toward a condition that would use I77811. The radiology report does not document any additional pulmonary vascular or cardiac condition that this code might imply.",
+        "guideline_reference": "General Guidelines: Code only what is clearly documented",
+        "clinical_context": "The imaging findings are centered on chronic pulmonary embolism sequelae (I288) and do not support an extra ischemic or vascular code such as I77811.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I880",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "There is no mention in the text of any condition that would be captured by I880. The clinical report\u2019s cardiovascular findings are adequately addressed by the codes already provided.",
+        "guideline_reference": "General Guidelines: Only code diagnoses that are explicitly documented",
+        "clinical_context": "No new or additional heart condition is mentioned that would justify I880.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "I2782",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The AI\u2019s inclusion of I2782 is not supported by any distinct description in the report. Sutherland\u2019s coding (including I288 for chronic PE sequelae) sufficiently captures the pulmonary embolism history.",
+        "guideline_reference": "General Guidelines: Definitive Diagnoses take precedence",
+        "clinical_context": "No additional or alternative embolism-related condition is clearly described that would necessitate I2782.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "Z96612",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "The report does not document any presence of a device, implant, or status that requires Z96612. The appearance of this code in the AI output is extraneous.",
+        "guideline_reference": "General Guidelines: Code all and only pertinent findings",
+        "clinical_context": "There is no reference to any such device or status in the radiologist\u2019s notes.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "R935",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "R935 does not correlate with any sign or symptom clearly documented in the examination. In the absence of explicit documentation, this code is not warranted.",
+        "guideline_reference": "General Guidelines: Only code documented definitive findings",
+        "clinical_context": "The report lists specific symptoms (shortness of breath and tachycardia) that are already appropriately coded, making R935 redundant.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "N1330",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "There is no supportive text for N1330. The radiology report does not mention any renal parenchymal disease or conditions that would justify this code.",
+        "guideline_reference": "General Guidelines: Code only findings that are documented",
+        "clinical_context": "While renal findings are described (a right upper pole cyst and mild hydronephrosis), there is no mention of a condition corresponding to N1330.",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "N3289",
+        "status": "substituted",
+        "is_sutherland_correct": true,
+        "is_ai_correct": false,
+        "reasoning": "N3289 is not supported by any specific renal abnormality other than the mild hydronephrosis already noted. Its inclusion is not appropriate given the details provided in the report.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding limited to pertinent findings",
+        "clinical_context": "The only renal findings described are a small cyst and mild left-sided hydronephrosis (the latter better captured by another code).",
+        "recommended_action": "keep_sutherland"
+      },
+      {
+        "sutherland_code": null,
+        "ai_code": "N281",
+        "status": "substituted",
+        "is_sutherland_correct": false,
+        "is_ai_correct": true,
+        "reasoning": "The report clearly documents 'mild left-sided hydronephrosis' in the kidneys/ureters section. Although Sutherland did not include a code for hydronephrosis, the AI\u2019s assignment of N281 (presumably representing hydronephrosis) adheres to the guideline to code all related/pertinent findings from the report.",
+        "guideline_reference": "General Guidelines: Comprehensive Coding",
+        "clinical_context": "Mild left-sided hydronephrosis is a clearly reported abnormality on the CT exam of the abdomen and pelvis and should be coded.",
+        "recommended_action": "keep_ai"
+      }
+    ],
+    "overall_assessment": "Sutherland\u2019s coding accurately captures the key cardiopulmonary findings such as chronic pulmonary embolism sequelae (I288), shortness of breath (R0602), and tachycardia (R000), which were missed by the AI. In contrast, the AI introduced several extraneous codes unsupported by the report \u2013 with the notable exception of N281, which correctly reflects the mild left-sided hydronephrosis noted in the abdominal findings. Overall, Sutherland\u2019s approach is more accurate for the primary findings, though incorporating the hydronephrosis code from the AI would provide a more comprehensive documentation of pertinent abnormalities.",
+    "coding_accuracy_score": {
+      "sutherland_score": 0.8,
+      "ai_score": 0.5
+    }
+  }
+]
