@@ -23,30 +23,30 @@ class SutherlandDashboard:
         """Load all analysis data"""
         try:
             # Load analysis results
-            with open('analysis_results.json', 'r') as f:
+            with open('results/analysis_results.json', 'r') as f:
                 self.analysis_results = json.load(f)
             
             # Load classification results
-            with open('code_classifications.json', 'r') as f:
+            with open('results/code_classifications.json', 'r') as f:
                 self.classification_results = json.load(f)
             
             # Load partial match reviews
-            with open('partial_match_reviews.json', 'r') as f:
+            with open('results/partial_match_reviews.json', 'r') as f:
                 self.partial_match_reviews = json.load(f)
             
             # Load No Match reviews
             try:
-                with open('no_match_reviews.json', 'r') as f:
+                with open('results/no_match_reviews.json', 'r') as f:
                     self.no_match_reviews = json.load(f)
             except FileNotFoundError:
                 self.no_match_reviews = []
             
             # Load comprehensive metrics
-            with open('comprehensive_metrics.json', 'r') as f:
+            with open('results/comprehensive_metrics.json', 'r') as f:
                 self.comprehensive_metrics = json.load(f)
             
             # Load original data
-            self.original_df = pd.read_csv('sutherland_radiology_results.csv')
+            self.original_df = pd.read_csv('data/sutherland_radiology_results.csv')
             
             self.data_loaded = True
             
